@@ -76,3 +76,146 @@ Shop.seed do |s|
   s.latitude = "33.589645 "
   s.longitude = "130.398415"
 end
+Shop.seed do |s|
+  s.id = 7
+  s.name = "スタバメディアモール天神"
+  s.address = "〒810-0001 福岡県福岡市中央区天神１丁目１０−１３"
+  s.mood = "とても静か"
+  s.price_id = 1
+  s.power_id = 1
+  s.open_time = "9時"
+  s.close_time = "21時"
+  s.holiday = "最終月曜日"
+  s.latitude = "33.590907 "
+  s.longitude = "130.400564"
+end
+Shop.seed do |s|
+  s.id = 8
+  s.name = "コメダ天神南店"
+  s.address = "〒810-0001 福岡県福岡市中央区２ 天神１丁目２−１"
+  s.mood = "とても静か"
+  s.price_id = 1
+  s.power_id = 1
+  s.open_time = "9時"
+  s.close_time = "21時"
+  s.holiday = "最終月曜日"
+  s.latitude = "33.589295"
+  s.longitude = "130.403634"
+end
+Shop.seed do |s|
+  s.id = 9
+  s.name = "スタバ天神地下街店"
+  s.address = "〒810-0000 福岡県福岡市中央区天神２丁目地下０号 天神地下街"
+  s.mood = "とても静か"
+  s.price_id = 1
+  s.power_id = 1
+  s.open_time = "9時"
+  s.close_time = "21時"
+  s.holiday = "最終月曜日"
+  s.latitude = "33.588061"
+  s.longitude = "130.401138"
+end
+Shop.seed do |s|
+  s.id = 10
+  s.name = "エスプレッサメンテ"
+  s.address = "〒810-0001 福岡県福岡市中央区天神２丁目１２"
+  s.mood = "とても静か"
+  s.price_id = 1
+  s.power_id = 1
+  s.open_time = "9時"
+  s.close_time = "21時"
+  s.holiday = "最終月曜日"
+  s.latitude = "33.591907"
+  s.longitude = "130.398294"
+end
+Shop.seed do |s|
+  s.id = 11
+  s.name = "VITO中洲ゲイツ店"
+  s.address = "〒810-0801 福岡県福岡市博多区中洲３丁目７−２４"
+  s.mood = "とても静か"
+  s.price_id = 1
+  s.power_id = 1
+  s.open_time = "9時"
+  s.close_time = "21時"
+  s.holiday = "最終月曜日"
+  s.latitude = "33.593775"
+  s.longitude = "130.406223"
+end
+Shop.seed do |s|
+  s.id = 12
+  s.name = "Café&Meal MUJI 天神大名"
+  s.address = "〒810-0041 福岡県福岡市中央区大名１丁目１５−４１"
+  s.mood = "とても静か"
+  s.price_id = 1
+  s.power_id = 1
+  s.open_time = "9時"
+  s.close_time = "21時"
+  s.holiday = "最終月曜日"
+  s.latitude = "33.587337"
+  s.longitude = "130.396749"
+end
+Shop.seed do |s|
+  s.id = 13
+  s.name = "スタバ天神西通店"
+  s.address = "〒810-0041 福岡県福岡市中央区大名１丁目１３−２５"
+  s.mood = "とても静か"
+  s.price_id = 1
+  s.power_id = 1
+  s.open_time = "9時"
+  s.close_time = "21時"
+  s.holiday = "最終月曜日"
+  s.latitude = "33.587888"
+  s.longitude = "130.396641"
+end
+Shop.seed do |s|
+  s.id = 14
+  s.name = "スタートアップカフェ"
+  s.address = "〒810-0041 福岡県福岡市中央区大名２丁目６−１１"
+  s.mood = "とても静か"
+  s.price_id = 1
+  s.power_id = 1
+  s.open_time = "9時"
+  s.close_time = "21時"
+  s.holiday = "最終月曜日"
+  s.latitude = "33.589162"
+  s.longitude = "130.395307"
+end
+Shop.seed do |s|
+  s.id = 15
+  s.name = "マクドナルドキャナルシティ博多店"
+  s.address = "〒812-0018 福岡県福岡市博多区住吉１丁目２−２０"
+  s.mood = "とても静か"
+  s.price_id = 1
+  s.power_id = 1
+  s.open_time = "9時"
+  s.close_time = "21時"
+  s.holiday = "最終月曜日"
+  s.latitude = "33.58956"
+  s.longitude = "130.411763"
+end
+Shop.seed do |s|
+  s.id = 16
+  s.name = "サブウェイ天神ロフト店"
+  s.address = "〒810-0004 福岡県福岡市中央区渡辺通４−９−２５"
+  s.mood = "とても静か"
+  s.price_id = 1
+  s.power_id = 1
+  s.open_time = "9時"
+  s.close_time = "21時"
+  s.holiday = "最終月曜日"
+  s.latitude = "33.58695"
+  s.longitude = "130.401579"
+end
+Shop.seed do |s|
+  s.id = 17
+  s.name = "黒猫屋珈琲店"
+  s.address = "〒810-0041 福岡県福岡市中央区５ 大名1丁目5−5 月光ビル"
+  s.mood = "とても静か"
+  s.price_id = 1
+  s.power_id = 1
+  s.open_time = "9時"
+  s.close_time = "21時"
+  s.holiday = "最終月曜日"
+  s.latitude = "33.585335"
+  s.longitude = "130.391875"
+end

@@ -1,1 +1,7 @@
-トップページですよshops/index
+- @shops.each do |shop|
+  .content
+    %p= shop.id
+    %span.name
+      = shop.name
+    %span.address
+      = shop.address
