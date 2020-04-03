@@ -135,51 +135,61 @@ Image.seed do |s|
 end
 Image.seed do |s|
   s.id = 28
-  s.src = "demo110.jpg"
+  s.src = "demo140.jpg"
   s.shop_id = 11
 end
 Image.seed do |s|
   s.id = 29
-  s.src = "demo111.jpg"
+  s.src = "demo141.jpg"
   s.shop_id = 11
 end
 Image.seed do |s|
   s.id = 30
-  s.src = "demo120.jpg"
-  s.shop_id = 12
+  s.src = "demo142.jpg"
+  s.shop_id = 11
 end
 Image.seed do |s|
   s.id = 31
-  s.src = "demo121.jpg"
+  s.src = ""
   s.shop_id = 12
 end
 Image.seed do |s|
   s.id = 32
-  s.src = "demo130.jpg"
-  s.shop_id = 13
+  s.src = ""
+  s.shop_id = 12
 end
 Image.seed do |s|
   s.id = 33
-  s.src = "demo131.jpg"
+  s.src = "demo120.jpg"
   s.shop_id = 13
 end
 Image.seed do |s|
   s.id = 34
-  s.src = "demo132.jpg"
+  s.src = "demo121.jpg"
   s.shop_id = 13
 end
 Image.seed do |s|
   s.id = 35
-  s.src = "demo140.jpg"
-  s.shop_id = 14
+  s.src = "demo122.jpg"
+  s.shop_id = 13
 end
 Image.seed do |s|
   s.id = 36
-  s.src = "demo141.jpg"
+  s.src = "demo121.jpg"
   s.shop_id = 14
 end
 Image.seed do |s|
   s.id = 37
-  s.src = "demo142.jpg"
+  s.src = "demo131.jpg"
+  s.shop_id = 14
+end
+Image.seed do |s|
+  s.id = 38
+  s.src = "demo132.jpg"
+  s.shop_id = 14
+end
+Image.seed do |s|
+  s.id = 39
+  s.src = "demo133.jpg"
   s.shop_id = 14
 end
