@@ -103,3 +103,83 @@ Image.seed do |s|
   s.src = ""
   s.shop_id = 7
 end
+Image.seed do |s|
+  s.id = 22
+  s.src = "demo80.jpg"
+  s.shop_id = 8
+end
+Image.seed do |s|
+  s.id = 23
+  s.src = "demo81.jpg"
+  s.shop_id = 8
+end
+Image.seed do |s|
+  s.id = 24
+  s.src = "demo90.jpg"
+  s.shop_id = 9
+end
+Image.seed do |s|
+  s.id = 25
+  s.src = "demo91.jpg"
+  s.shop_id = 9
+end
+Image.seed do |s|
+  s.id = 26
+  s.src = "demo100.jpg"
+  s.shop_id = 10
+end
+Image.seed do |s|
+  s.id = 27
+  s.src = "demo101.jpg"
+  s.shop_id = 10
+end
+Image.seed do |s|
+  s.id = 28
+  s.src = "demo110.jpg"
+  s.shop_id = 11
+end
+Image.seed do |s|
+  s.id = 29
+  s.src = "demo111.jpg"
+  s.shop_id = 11
+end
+Image.seed do |s|
+  s.id = 30
+  s.src = "demo120.jpg"
+  s.shop_id = 12
+end
+Image.seed do |s|
+  s.id = 31
+  s.src = "demo121.jpg"
+  s.shop_id = 12
+end
+Image.seed do |s|
+  s.id = 32
+  s.src = "demo130.jpg"
+  s.shop_id = 13
+end
+Image.seed do |s|
+  s.id = 33
+  s.src = "demo131.jpg"
+  s.shop_id = 13
+end
+Image.seed do |s|
+  s.id = 34
+  s.src = "demo132.jpg"
+  s.shop_id = 13
+end
+Image.seed do |s|
+  s.id = 35
+  s.src = "demo140.jpg"
+  s.shop_id = 14
+end
+Image.seed do |s|
+  s.id = 36
+  s.src = "demo141.jpg"
+  s.shop_id = 14
+end
+Image.seed do |s|
+  s.id = 37
+  s.src = "demo142.jpg"
+  s.shop_id = 14
+end
