@@ -10,14 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_02_024144) do
+ActiveRecord::Schema.define(version: 2020_04_03_024019) do
+
+  create_table "images", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "src"
+    t.bigint "shop_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["shop_id"], name: "index_images_on_shop_id"
+  end
 
   create_table "shops", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.string "address"
     t.string "mood"
-    t.string "price_id"
-    t.string "power_id"
+    t.string "price"
+    t.string "power"
     t.string "open_time"
     t.string "close_time"
     t.string "holiday"
@@ -27,4 +35,5 @@ ActiveRecord::Schema.define(version: 2020_04_02_024144) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "images", "shops"
 end

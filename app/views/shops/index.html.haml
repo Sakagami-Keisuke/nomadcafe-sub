@@ -1,7 +1,34 @@
-- @shops.each do |shop|
-  .content
-    %p= shop.id
-    %span.name
-      = shop.name
-    %span.address
-      = shop.address
+
+
+.shop-index
+  - @shops.each do |shop|
+    .content
+      = link_to shop_path(shop.id) do
+        = shop.name
+
+      .shop-list
+        %table
+          %tr
+            %th 雰囲気
+            %td
+              = shop.mood
+          %tr
+            %th 料金
+            %td
+              = shop.price
+          %tr
+            %th 電源
+            %td
+              = shop.power
+          %tr
+            %th open
+            %td
+              = shop.open_time
+          %tr
+            %th close
+            %td
+              = shop.close_time
+          %tr
+            %th 定休日
+            %td
+              = shop.holiday

@@ -1,0 +1,10 @@
+shops/show
+
+.shop-name
+  = @shop.name
+.shop-address
+  = @shop.address
+.shop-photo
+  %figure.shop--img
+  - @shop.images.each do |image|
+    = image_tag image.src, :size =>'300x250', class: 'user-image'
