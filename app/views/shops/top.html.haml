@@ -1,15 +1,16 @@
-TOP ページ
+.topwrapper
+  .background-top
+    .explanationbox
+      .top-title
+        NomadCafe
+        %br
 
-.top-title
-  NomadCafe
-  %br
-
-.explanation
-  学生や社会人でノマド（放浪）的に学習したり仕事をしたりする人向け
-%br wifiや電源がフリーでノマドワークに適したお店を地図、テキスト画像で表示。
-%br アプリを開く一手間で、現在地からお店までの位置をgoogle mapsで示し、即座にご案内します。
+      .explanation
+        ノマドワークに適した、wifi・電源フリーのお店をすぐにご案内します。
 
 
-.guidance
-  = link_to shops_path do
-    = "indexへ"
+    .guidance
+      .guidance-box
+        = link_to  shops_path,class: 'top-btn' do
+          %i.fa.fa-arrow-left
+          %span カフェ一覧

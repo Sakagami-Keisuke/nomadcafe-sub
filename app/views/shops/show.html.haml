@@ -1,10 +1,52 @@
-shops/show
+.indexwrapper
+  .background-show
 
-.shop-name
-  = @shop.name
-.shop-address
-  = @shop.address
-.shop-photo
-  %figure.shop--img
-  - @shop.images.each do |image|
-    = image_tag image.src, :size =>'300x250', class: 'user-image'
+
+    .shop-summary
+      .summary-background
+        .shop-name
+          = @shop.name
+        %table
+          %tr
+            %th 料 金
+            %td
+              = @shop.price
+          %tr
+            %th 電 源
+            %td.show
+              = @shop.power
+          %tr
+            %th 雰 囲 気
+            %td
+              = @shop.mood
+          %tr
+            %th o p e n
+            %td
+              = @shop.open_time
+          %tr
+            %th c l o s e
+            %td
+              = @shop.close_time
+          %tr
+            %th 定 休 日
+            %td
+              = @shop.holiday
+
+      .navi-link-btn
+        = link_to  "https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=#{@shop.name}&dirflg=w", :target => "_blank", class: 'btn' do
+          %i.fa.fa-arrow-left
+          %span 経路案内
+        -# %a{:href => "https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=#{@shop.name}&dirflg=w", :target => "_blank"} ナビする
+
+
+
+    .shop-photo
+      %figure.shop-img
+      - @shop.images.each do |image|
+        = image_tag image.src, :size =>'1400x1950', class: 'shop-image'
+    .shop-movie
+      youtube動画　埋め込み
+    .shop-comment-box
+      ユーザのコメント一覧
+
+

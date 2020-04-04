@@ -143,7 +143,7 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 12
-  s.name = "Café&Meal MUJI 天神大名"
+  s.name = "Café&Meal MUJI"
   s.address = "〒810-0041 福岡県福岡市中央区大名１丁目１５−４１"
   s.mood = "静か"
   s.price = "400円〜"
@@ -182,7 +182,7 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 15
-  s.name = "マクドナルドキャナルシティ博多店"
+  s.name = "マクドナルドキャナルシティ店"
   s.address = "〒812-0018 福岡県福岡市博多区住吉１丁目２−２０"
   s.mood = "静か"
   s.price = "400円〜"
