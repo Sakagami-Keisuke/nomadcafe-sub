@@ -1,7 +1,5 @@
 .indexwrapper
   .background-show
-
-
     .shop-summary
       .summary-background
         .shop-name
@@ -44,6 +42,13 @@
       %figure.shop-img
       - @shop.images.each do |image|
         = image_tag image.src, :size =>'1400x1950', class: 'shop-image'
+
+    .blank
+    .return
+      = link_to shops_path, class: 'return-btn' do
+        %span もどる
+
+
     .shop-movie
       youtube動画　埋め込み
     .shop-comment-box
