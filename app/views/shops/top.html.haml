@@ -4,12 +4,24 @@
       .top-title
         NomadCafe
         %br
-
       .explanation
         ノマドワークに適した、wifi・電源フリーのお店をすぐにご案内します。
+        .sign-out
+        - if user_signed_in?
+          = link_to destroy_user_session_path, :method => :delete, class: 'signout-btn' do
+            %span サインアウト
+        - else
+          .sign-in
+            = link_to new_user_session_path,class: 'signin-btn' do
+              %span テストサインイン（こちらへ）
+              %br
+          .registrations
+            = link_to new_user_registration_path,class: 'regist-btn' do
+              %span ユーザー新規登録
 
 
-    .guidance
-      .guidance-box
-        = link_to  shops_path,class: 'top-btn' do
-          %span 福岡・天神エリアをさがす
+    -if user_signed_in?
+      .guidance
+        .guidance-box
+          = link_to  shops_path, class: 'top-btn' do
+            %span 福岡・天神エリアをさがす

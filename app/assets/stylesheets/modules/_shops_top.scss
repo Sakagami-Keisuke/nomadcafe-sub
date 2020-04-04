@@ -22,6 +22,96 @@
 .explanation{
   text-align: center;
 }
+
+
+
+.sign-out{
+  padding-top: 30px;
+  text-align: center;
+}
+.signout-btn {
+    width: 600px;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    border: 2px solid white;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 60px;
+  }
+.signout-btn:hover {
+  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background-size:cover;
+  border-color: white;
+  color:white;
+}
+
+
+.sign-in{
+  padding-top: 60px;
+  text-align: center;
+}
+.signin-btn {
+  display: inline-block;
+  width: 650px;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  border: 2px solid white;
+  font-size: 36px;
+  color: white;
+  letter-spacing: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 60px;
+}
+.signin-btn:hover {
+background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+background-size:cover;
+border-color: white;
+color:white;
+}
+
+
+.registrations{
+  padding-top: 200px;
+  text-align: center;
+}
+.regist-btn {
+  margin: auto;
+  width: 650px;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  border: 2px solid white;
+  font-size: 36px;
+  color: white;
+  letter-spacing: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 40px;
+}
+.regist-btn:hover {
+background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+background-size:cover;
+border-color: white;
+color:white;
+}
+
+
+
 .guidance-box {
   margin-top: 60px;
   text-align: center;
@@ -41,9 +131,8 @@
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
-  border-radius: 20px;
+  border-radius: 60px;
 }
-
 .top-btn:hover {
   background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
   background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
@@ -51,5 +140,4 @@
   background-size:cover;
   border-color: white;
   color:white;
-
 }

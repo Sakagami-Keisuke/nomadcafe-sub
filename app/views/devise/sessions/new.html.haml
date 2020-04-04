@@ -1,0 +1,26 @@
+%h2 サインイン
+= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+  .field
+    = f.label :ニックネーム
+    %br/
+    = f.text_field :nickname, placeholder:"入力不要です", autofocus: true
+  .field
+    = f.label :パスワード
+    - if @minimum_password_length
+      %em
+        (#{@minimum_password_length} 文字以上)
+    %br/
+    = f.password_field :password,placeholder:"入力不要です",  autocomplete: "new-password"
+  .field
+    = f.label :パスワード（再確認）
+    %br/
+    = f.password_field :password_confirmation, placeholder:"入力不要です", autocomplete: "new-password"
+  .actions
+    -# = f.submit "サインアップ"
+-# = render "devise/shared/links"
+
+= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+  = f.hidden_field :nickname, value: "test"
+  = f.hidden_field :password, value: "test0000"
+  = f.hidden_field :password_confirmation, value: "test0000"
+  = f.submit "かんたんログインする", class:"easy_btn"
