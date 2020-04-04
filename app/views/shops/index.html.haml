@@ -1,5 +1,9 @@
 .indexwrapper
   .background-index
+    .googlemap
+      GoogleMapAPI表示
+    %script{:async => "", :src => "https://maps.googleapis.com/maps/api/js?key=#{ENV['API_KEY']}&callback=initMap"}
+
     .shop-index
       - @shops.each do |shop|
         .navi-link-btn
@@ -8,9 +12,4 @@
             %span #{shop.name}
 
 
-
-
-        -# .content
-        -#   = link_to shop_path(shop.id) do
-        -#     = shop.name
 

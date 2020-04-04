@@ -4,6 +4,22 @@
   background-position: center;    /* 背景の位置指定 */
   background-size: auto ;
 }
+.googlemap{
+  font-size: 60px;
+  text-align: center;
+  line-height: 600px;
+  width: 900px;
+  height: 600px;
+  margin: auto;
+  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background-size:cover;
+
+}
+
+
+
 
 /* ここから下がボタンのCSS　*/
 .index-btn {
