@@ -16,7 +16,7 @@
 }
 
 .top-title{
-  font-size: 36px;
+  font-size: 36px;font-weight: bold;
   text-align: center;
 }
 .explanation{
@@ -30,10 +30,10 @@
 /* ここから下がボタンのCSS　*/
 .top-btn {
   display: inline-block;
-  width: 450px;
-  height: 100px;
+  width: 650px;
+  height: 120px;
   text-align: center;
-  line-height: 100px;
+  line-height: 120px;
   border: 2px solid white;
   font-size: 36px;
   color: white;
@@ -42,8 +42,8 @@
   font-weight: bold;
   padding: 8px 16px;
   border-radius: 20px;
-
 }
+
 .top-btn:hover {
   background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
   background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
