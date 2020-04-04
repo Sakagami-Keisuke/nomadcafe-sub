@@ -30,23 +30,23 @@
   text-align: center;
 
 }
-  .easy-btn {
+  .e-login-btn {
+    margin-top: 25px;
     background-color:rgba(0,0,0,0);
     display: inline-block;
-    width: 350px;
-    height: 50px;
-
+    width: 400px;
     line-height: 30px;
     border: 2px solid rgb(83, 47, 47);
-    font-size: 22px;
+    font-size: 32px;
+    letter-spacing: 5px;
     color: rgb(77, 36, 36);
     text-decoration: none;
     font-weight: bold;
-    padding: 8px 16px;
+    padding: 16px 0px 16px 0px;
     border-radius: 60px;
     transition: .4s;
   }
-  .easy-btn:hover {
+  .e-login-btn:hover {
   background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
   background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
   background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);

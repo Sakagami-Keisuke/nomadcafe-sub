@@ -30,11 +30,11 @@
             %td
               = @shop.holiday
 
-      .navi-link-btn
-        = link_to  "https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=#{@shop.name}&dirflg=w", :target => "_blank", class: 'btn' do
-          %i.fa.fa-map-marked-alt
-          %span 経路案内
-        -# %a{:href => "https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=#{@shop.name}&dirflg=w", :target => "_blank"} ナビする
+        .navi-link-btn
+          = link_to  "https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=#{@shop.name}&dirflg=w", :target => "_blank", class: 'btn' do
+            %i.fa.fa-map-marked-alt
+            %span ナビ開始
+          -# %a{:href => "https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=#{@shop.name}&dirflg=w", :target => "_blank"} ナビする
 
 
 

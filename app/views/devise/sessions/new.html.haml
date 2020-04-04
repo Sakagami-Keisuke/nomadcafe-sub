@@ -12,6 +12,7 @@
         %span.title サ イ ン イ ン
         .blankspace
         = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+          -# = render "devise/shared/error_messages", resource: resource
           .field
             = f.label :ニックネーム
             %br/
@@ -35,4 +36,4 @@
         = f.hidden_field :nickname, value: "test"
         = f.hidden_field :password, value: "test0000"
         = f.hidden_field :password_confirmation, value: "test0000"
-        = f.submit "かんたんログインする", class:"easy-btn"
+        = f.submit "かんたんログイン", class:"e-login-btn"

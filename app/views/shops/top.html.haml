@@ -6,10 +6,10 @@
         %br
       .explanation
         ノマドワークに適した、wifi・電源フリーのお店をすぐにご案内します。
-        .sign-out
+        .user-signed
         - if user_signed_in?
-          = link_to destroy_user_session_path, :method => :delete, class: 'signout-btn' do
-            %span サインアウト
+          -# = link_to destroy_user_session_path, :method => :delete, class: 'signout-btn' do
+          -#   %span サインアウト
         - else
           .sign-in
             = link_to new_user_session_path,class: 'signin-btn' do
@@ -25,3 +25,9 @@
         .guidance-box
           = link_to  shops_path, class: 'top-btn' do
             %span 福岡・天神エリアをさがす
+
+
+      .user-signout
+        - if user_signed_in?
+          = link_to destroy_user_session_path, :method => :delete, class: 'signout-btn' do
+            %span サインアウト
