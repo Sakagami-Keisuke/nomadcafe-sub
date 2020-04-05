@@ -20,10 +20,10 @@
         -# - else
         -#   = link_to 'サインアップ', new_user_registration_path
         -#   = link_to 'ログイン', new_user_session_path
-        - if notice
-          %p.notice.alert= notice
-        - if alert
-          %p.alert.alert-error= alert
+        -# - if notice
+        -#   %p.notice.alert= notice
+        -# - if alert
+        -#   %p.alert.alert-error= alert
         -# - if user_signed_in?
         -#   %p= current_user.email
         -#   %p.btn= link_to "Sign out", destroy_user_session_path, :method => :delete
