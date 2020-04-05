@@ -1,12 +1,21 @@
-.background-top {
+.background-signin {
   width: 100vw;
   height: 830px;
   background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(topdemo.jpg);  /* 背景画像指定 */
   background-repeat:  no-repeat;  /* 背景の繰り返し設定 */
   background-position: center;    /* 背景の位置指定 */
   background-size: cover;
-
 }
+
+.background-signout {
+  width: 100vw;
+  height: 830px;
+  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(mapimage.jpg);  /* 背景画像指定 */
+  background-repeat:  no-repeat;  /* 背景の繰り返し設定 */
+  background-position: center;    /* 背景の位置指定 */
+  background-size: cover;
+}
+
 
 span.indicator{
   float: right;
@@ -33,14 +42,12 @@ span.indicator{
   height: 100px;
   background-color: rgba(255, 0, 0, 0.096);
 }
-
 .top-title{
   font-size: 36px;font-weight: bold;
   text-align: center;
 }
 .explanation{
   text-align: center;
-
 }
 
 
