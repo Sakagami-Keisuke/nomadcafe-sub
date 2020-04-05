@@ -1,0 +1,56 @@
+.user-sessions-form{
+  text-align: center;
+  span.title{
+    font-size: 26px;
+    line-height: 55px;
+  }
+  .blankspace{
+    margin-top: 20px;
+  }
+  .nickname {
+    height: 35px;
+    margin-bottom: 20px;
+  }
+  .password {
+    height: 35px;
+    margin-bottom: 20px;
+  }
+  .password_confirmation {
+    height: 35px;
+    margin-bottom: 20px;
+  }
+  label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+#new_user{
+  margin-top: 15px;
+  text-align: center;
+
+}
+  .e-login-btn {
+    margin-top: 25px;
+    background-color:rgba(0,0,0,0);
+    display: inline-block;
+    width: 400px;
+    line-height: 30px;
+    border: 2px solid rgb(83, 47, 47);
+    font-size: 32px;
+    letter-spacing: 5px;
+    color: rgb(77, 36, 36);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 16px 0px 16px 0px;
+    border-radius: 60px;
+    transition: .4s;
+  }
+  .e-login-btn:hover {
+  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background-size:cover;
+  border-color: white;
+  color:white;
+  }

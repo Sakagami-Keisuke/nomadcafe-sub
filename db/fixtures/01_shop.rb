@@ -32,7 +32,7 @@ Shop.seed do |s|
   s.price = "500円/1時間〜"
   s.power = "全席有"
   s.open_time = "9時"
-  s.close_time = "21時"
+  s.close_time = "19時"
   s.holiday = "不定休"
   s.latitude = "33.593852"
   s.longitude = "130.39835"
@@ -91,14 +91,14 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 8
-  s.name = "コメダ天神南店"
-  s.address = "〒810-0001 福岡県福岡市中央区２ 天神１丁目２−１"
-  s.mood = "静か"
-  s.price = "400円〜"
-  s.power = "電源10箇所"
-  s.open_time = "9時"
-  s.close_time = "21時"
-  s.holiday = "不定休"
+  s.name = "コメダコーヒー天神南店"
+  s.address = "〒810-0001 福岡県福岡市中央区天神１丁目２−１"
+  s.mood = "やや賑やか"
+  s.price = "550円〜"
+  s.power = "全席"
+  s.open_time = "7時"
+  s.close_time = "23時"
+  s.holiday = "年中無休"
   s.latitude = "33.589295"
   s.longitude = "130.403634"
 end
@@ -206,16 +206,4 @@ Shop.seed do |s|
   s.latitude = "33.58695"
   s.longitude = "130.401579"
 end
-Shop.seed do |s|
-  s.id = 17
-  s.name = "黒猫屋珈琲店"
-  s.address = "〒810-0041 福岡県福岡市中央区５ 大名1丁目5−5 月光ビル"
-  s.mood = "静か"
-  s.price = "400円〜"
-  s.power = "電源10箇所"
-  s.open_time = "9時"
-  s.close_time = "21時"
-  s.holiday = "不定休"
-  s.latitude = "33.585335"
-  s.longitude = "130.391875"
-end
+
