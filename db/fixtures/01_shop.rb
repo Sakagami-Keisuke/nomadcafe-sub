@@ -91,14 +91,14 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 8
-  s.name = "コメダ天神南店"
-  s.address = "〒810-0001 福岡県福岡市中央区２ 天神１丁目２−１"
-  s.mood = "静か"
-  s.price = "400円〜"
-  s.power = "電源10箇所"
-  s.open_time = "9時"
-  s.close_time = "21時"
-  s.holiday = "不定休"
+  s.name = "コメダコーヒー天神南店"
+  s.address = "〒810-0001 福岡県福岡市中央区天神１丁目２−１"
+  s.mood = "やや賑やか"
+  s.price = "550円〜"
+  s.power = "全席"
+  s.open_time = "7時"
+  s.close_time = "23時"
+  s.holiday = "年中無休"
   s.latitude = "33.589295"
   s.longitude = "130.403634"
 end

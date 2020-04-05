@@ -12,13 +12,13 @@
   text-align: center;
   font-size: 35px;
   font-weight: bold;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   margin-bottom: 10px;
 }
 
 .summary-background{
   margin: auto;
-  max-width: 60%;
+  max-width: 80%;
   height: 550px;
   background-color: rgba(255,0,0,0.2);
   border-radius: 30px;
@@ -70,17 +70,17 @@
   text-align: center;
   padding-top: 10px;
 
-  .btn:before{
+  .navi-btn:before{
     content:'';
     height:100%;
     display:inline-block;
     vertical-align:middle;
   }
-  .btn{
+  .navi-btn{
     text-decoration: none;
     border-radius: 20px;
     display: inline-block;
-    width: 500px;
+    width: 90%;
     height: 100px;
     text-align: center;
     line-height: 100px;
@@ -89,23 +89,22 @@
     background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
     color:#fff;
     position:relative;
-    height:100px;
     font-size:35px;
-    letter-spacing: 15px;
+    letter-spacing: 5px;
     padding:0 10px;
     cursor:pointer;
-    transition:400ms ease all;
+    transition:600ms ease all;
     outline:none;
   }
-  .btn:hover{
+  .navi-btn:hover{
     background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
     background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
     background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
     color:white;
-    font-size: 65px;
-    letter-spacing: 15px;
+    font-size: 45px;
+    letter-spacing: 12px;
   }
-  .btn:before,button:after{
+  .navi-btn:before,button:after{
     content:'';
     position:absolute;
     top:0;
@@ -115,13 +114,13 @@
     background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
     transition:200ms ease all;
   }
-  .btn:after{
+  .navi-btn:after{
     right:inherit;
     top:inherit;
     left:0;
     bottom:0;
   }
-  .btn:hover:before,:hover:after{
+  .navi-btn:hover:before,:hover:after{
     width:100%;
     transition:1500ms ease all;
   }
@@ -175,7 +174,7 @@
 
 }
 .shop-image:hover{
-  transform: scale(2.0);
+  transform: scale(1.7);
   transition-duration: 1.0s;
 
 
