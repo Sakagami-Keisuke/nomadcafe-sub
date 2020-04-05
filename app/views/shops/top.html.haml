@@ -1,6 +1,8 @@
 .topwrapper
   .background-top
-    .explanationbox
+    .explanationbox   
+      - if user_signed_in?
+        %span.indicator ようこそ#{@user.nickname}さん
       .top-title
         NomadCafe
         %br

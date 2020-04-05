@@ -8,6 +8,24 @@
 
 }
 
+span.indicator{
+  float: right;
+  bottom: 30px;
+  right: 80px;
+  position: fixed;
+  padding: 10px;
+  border: 2px solid rgb(61, 25, 25);
+  font-size: 16px;
+  color: rgb(61, 25, 25);
+  letter-spacing: 3px;
+  font-weight: bold;
+  border-radius: 20px;
+  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background-size:cover;
+
+}
 
 .explanationbox{
   margin: auto;
@@ -92,7 +110,7 @@ color:white;
 
 
 .guidance-box {
-  margin-top: 20px;
+  margin-top: 70px;
   text-align: center;
 }
 /* ここから下がボタンのCSS　*/
