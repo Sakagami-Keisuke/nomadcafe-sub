@@ -51,7 +51,16 @@
 
     .shop-movie
       youtube動画　埋め込み
-    .shop-comment-box
-      ユーザのコメント一覧
+
+
+.container
+  - if current_user
+    = form_with(model:[@shop, Comment.new],local: true) do |form|
+      .comment-text
+        = form.text_area :text, placeholder: "口コミを書く", size: "100x2" ,rows: "2"
+      .comment-submit
+        = form.submit "口コミを書く",class: "submit-btn"
+  - else
+    
 
 
