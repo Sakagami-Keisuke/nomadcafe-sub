@@ -5,17 +5,26 @@
   background-size:cover;
 }
 .googlemap{
-  font-size: 60px;
-  text-align: center;
-  line-height: 600px;
   width: 900px;
   height: 600px;
   margin: auto;
-  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-  background-size:cover;
+
+  #map{
+    height: 100%;
+    width: 100%;
+    border: 2px solid white;
+  }
+  .image{
+    height:6rem;
+    width:7rem;
+  }
+    .sample {
+    font-family: '1';  
+    }
+
 }
+
+
 
 .index-link-box {
   font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
