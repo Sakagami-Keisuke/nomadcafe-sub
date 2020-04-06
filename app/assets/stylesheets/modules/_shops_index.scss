@@ -17,17 +17,21 @@
   background-size:cover;
 }
 
-
+.index-link-box {
+  font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+  text-align: center;
+  padding-top: 10px;
+}
 
 .index-btn {
   display: inline-block;
   // max-width: 180px;
-  width: 550px;
+  width: 500px;
   height: 100px;
   text-align: center;
   line-height: 100px;
   border: 2px solid white;
-  font-size: 32px;
+  font-size: 28px;
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -43,6 +47,75 @@
   border-color: white;
   color:white;
 }
+
+
+
+
+
+
+
+
+.edit-box{
+  text-align: center;
+}
+
+.edit-btn {
+  width: 40px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  border: 2px solid white;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 150px;
+  transition: .4s;
+}
+.edit-btn:hover {
+  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background-size:cover;
+  border-color: white;
+  color:white;
+}
+
+
+
+.destroy-btn {
+  width: 40px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  border: 2px solid white;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 150px;
+  transition: .4s;
+}
+.destroy-btn:hover {
+  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background-size:cover;
+  border-color: white;
+  color:white;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .totop{
@@ -113,3 +186,10 @@
   border-color: white;
   color:white;
 }
+
+
+
+
+
+
+
