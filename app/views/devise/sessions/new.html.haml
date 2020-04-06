@@ -29,11 +29,11 @@
             %br/
             = f.password_field :password_confirmation, class:'password_confirmation', placeholder:"入力不要です", autocomplete: "new-password"
           .actions
-            -# = f.submit "サインアップ"
+            = f.submit "サインアップ",class:"login-btn"
 
       .easy-login
       = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-        = f.hidden_field :nickname, value: "test"
+        = f.hidden_field :nickname, value: "TEST"
         = f.hidden_field :password, value: "test0000"
         = f.hidden_field :password_confirmation, value: "test0000"
         = f.submit "かんたんログイン", class:"e-login-btn"

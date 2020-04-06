@@ -30,11 +30,33 @@
             %td
               = @shop.holiday
 
-        .navi-link-btn
-          = link_to  "https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=#{@shop.name}&dirflg=w", :target => "_blank", class: 'navi-btn' do
+        .com-index ---------------＜コメント一覧＞---------------
+        .comments-container
+          .comments-index
+            - if @comments
+              - @comments.each do |comment|
+                .comment-innner
+                  %p.comm-user
+                    #{comment.user.nickname}さんの口コミ
+                    ：
+                  = comment.text
+
+
+        -# .navi-link-btn
+        .mapnavi
+          = link_to  "https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=#{@shop.name}&dirflg=w", :target => "_blank", class: 'return-btn' do
             %i.fa.fa-map-marked-alt
             %span ナビ開始
           -# %a{:href => "https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=#{@shop.name}&dirflg=w", :target => "_blank"} ナビする
+
+        .comments-form
+          - if current_user
+            = form_with(model:[@shop, Comment.new],local: true) do |form|
+              .comment-text
+                = form.text_area :text,class: "text_area", placeholder: "口コミを書く", size: "70x2" ,rows: "3"
+              .comment-submit
+                = form.submit "送信",class: "comment-btn"
+          - else
 
 
 
@@ -42,7 +64,6 @@
       %figure.shop-img
       - @shop.images.each do |image|
         = image_tag image.src, :size =>'1400x1950', class: 'shop-image'
-
     .blank
     .return
       = link_to shops_path, class: 'return-btn' do
@@ -51,7 +72,23 @@
 
     .shop-movie
       youtube動画　埋め込み
-    .shop-comment-box
-      ユーザのコメント一覧
 
 
+-# .comments-container
+-#   - if current_user
+-#     = form_with(model:[@shop, Comment.new],local: true) do |form|
+-#       .comment-text
+-#         = form.text_area :text, placeholder: "口コミを書く", size: "100x2" ,rows: "2"
+-#       .comment-submit
+-#         = form.submit "口コミを書く",class: "submit-btn"
+-#   - else
+
+-# .comments-index
+-#   %h4 ＜コメント一覧＞
+-#   - if @comments
+-#     - @comments.each do |comment|
+-#       %p
+-#         %strong
+-#           = link_to comment.user.nickname, "/users/#{comment.user_id}"
+-#           ：
+-#         = comment.text
