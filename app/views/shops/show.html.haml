@@ -1,3 +1,6 @@
+.googlemap
+  #map-02
+ 
 .indexwrapper
   .background-show
     .shop-summary
@@ -58,8 +61,6 @@
                 = form.submit "送信",class: "comment-btn"
           - else
 
-
-
     .shop-photo
       %figure.shop-img
       - @shop.images.each do |image|
@@ -69,26 +70,46 @@
       = link_to shops_path, class: 'return-btn' do
         %span もどる
 
-
     .shop-movie
       youtube動画　埋め込み
 
 
--# .comments-container
--#   - if current_user
--#     = form_with(model:[@shop, Comment.new],local: true) do |form|
--#       .comment-text
--#         = form.text_area :text, placeholder: "口コミを書く", size: "100x2" ,rows: "2"
--#       .comment-submit
--#         = form.submit "口コミを書く",class: "submit-btn"
--#   - else
 
--# .comments-index
--#   %h4 ＜コメント一覧＞
--#   - if @comments
--#     - @comments.each do |comment|
--#       %p
--#         %strong
--#           = link_to comment.user.nickname, "/users/#{comment.user_id}"
--#           ：
--#         = comment.text
+
+
+
+
+
+
+
+
+:javascript
+  function initMap() {
+
+  var test = {lat: #{@shop.latitude}, lng: #{@shop.longitude}};
+ 
+    var myOptions = {
+        zoom: 15,
+        center: test,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map_02 = new google.maps.Map(
+        document.getElementById("map-02"),  //二つ目の地図のIDを指定
+        myOptions
+    );
+    var contentString = '住所：#{@shop.address}';
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString
+    });
+    var marker_02 = new google.maps.Marker({
+        position: test,
+        map: map_02,
+        animation: google.maps.Animation.DROP,   // アイコンの動き DROP BOUNCE
+        clickable: true,          // クリックできるようにする
+        draggable: false,         // ドラッグできないようにする
+        zIndex:5,                 // 前面表示の度合い
+    });
+  }
+%script{:async => "", :src => "https://maps.googleapis.com/maps/api/js?key=#{Rails.application.credentials.googlemap[:MAP_SECRET_KEY]}&callback=initMap"}
+
+  :cdata

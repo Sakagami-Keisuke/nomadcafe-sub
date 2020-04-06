@@ -176,9 +176,27 @@ function initMap() {
     alert("この端末では位置情報が取得できません");
   };
 
+
+
+
+//二つ目の地図-------------------------------------------------------------
+  // var latlng = new google.maps.LatLng(33.588689,130.399967 )
+  // var myOptions = {
+  //     zoom: 15,
+  //     center: latlng,
+  //     mapTypeId: google.maps.MapTypeId.ROADMAP
+  // };
+  // var map_02 = new google.maps.Map(
+  //     document.getElementById("map-02"),  //二つ目の地図のIDを指定
+  //     myOptions
+  // );
+  // var marker_02 = new google.maps.Marker({
+  //     position: latlng,
+  //     map: map_02,
+  //     animation: google.maps.Animation.DROP,   // アイコンの動き DROP BOUNCE
+  //     clickable: true,          // クリックできるようにする
+  //     draggable: false,         // ドラッグできないようにする
+  //     zIndex:5,                 // 前面表示の度合い
+  // });
+
 }
-
-
-
-
-
