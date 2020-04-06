@@ -1,3 +1,22 @@
+.googlemap{
+  width: 900px;
+  height: 600px;
+  margin: auto;
+  #map-02{
+    height: 100%;
+    width: 100%;
+    border: 2px solid white;
+  }
+  .image{
+    height:6rem;
+    width:7rem;
+  }
+    .sample {
+    font-family: '1';  
+    }
+}
+
+
 
 .background-show{
   background-color: rgb(250, 233, 233);
@@ -6,6 +25,10 @@
   // background-position: center;    /* 背景の位置指定 */
   // background-size: auto ;
 }
+
+
+
+
 .shop-name{
   line-height: 60px;
   text-align: center;
