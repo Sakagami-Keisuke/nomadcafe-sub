@@ -4,7 +4,7 @@ var marker = [];
 var infoWindow = [];
 var markerData = [ 
     {
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=エンジニアカフェ&dirflg=w" target="_blank">エンジニアカフェ</a><br><img src="/demo1.jpg"class=image > ',
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=エンジニアカフェ&dirflg=w" target="_blank">エンジニアカフェ</a><br><img src="/demo10.jpg"class=image > ',
     lat: 33.593152,
     lng: 130.401884
     }, {
@@ -40,39 +40,32 @@ var markerData = [
     lat: 33.588061,
     lng: 130.401138
     }, {
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=エスプレッサメンテ&dirflg=w" target="_blank">エスプレッサメンテ</a><br><img src="/demo100.jpg"class=image > ',
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=マクドナルド新天町店&dirflg=w" target="_blank">マクドナルド新天町店</a><br><img src="/demo100.jpg"class=image > ',
     lat: 33.591907 ,
     lng: 130.398294
     },{
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=VITO中洲ゲイツ店&dirflg=w" target="_blank">VITO中洲ゲイツ店</a><br><img src="/demo141.jpg"class=image > ',
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=VITO中洲ゲイツ店&dirflg=w" target="_blank">VITO中洲ゲイツ店</a><br><img src="/demo110.jpg"class=image > ',
     lat: 33.593775,
     lng: 130.406223
     }, {
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=Café&MealMUJI天神大名&dirflg=w" target="_blank">MUJI 天神大名</a><br><img src="/demo110.jpg"class=image > ',
+  name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=CaféMealMUJI&dirflg=w" target="_blank">Café&Meal MUJI</a><br><img src="/demo120.jpg"class=image > ',
     lat: 33.587337,
     lng: 130.396749
     },  {
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタバ天神西通店&dirflg=w" target="_blank">スタバ天神西通店</a><br><img src="/demo120.jpg"class=image > ',
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタバ天神西通店&dirflg=w" target="_blank">スタバ天神西通店</a><br><img src="/demo130.jpg"class=image > ',
     lat: 33.587888,
     lng: 130.396641
     }, {
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタートアップカフェ&dirflg=w" target="_blank">スタートアップカフェ</a><br><img src="/demo130.jpg"class=image > ',
-    lat: 33.589162 ,
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタートアップカフェ&dirflg=w" target="_blank">スタートアップカフェ</a><br><img src="/demo140.jpg"class=image > ',
+    lat: 33.589162,
     lng: 130.395307
     },{
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=マクドナルドキャナルシティ博多店&dirflg=w" target="_blank">マクド キャナルシティ博多店</a><br><img src="/demo1.jpg"class=image > ',
-    lat: 33.58956,
-    lng: 130.411763
-    },{
-    name: 'サブウェイ 天神ロフト店<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=サブウェイ天神ロフト店&dirflg=w" target="_blank">サブウェイ 天神ロフト店</a><br><img src="/demo1.jpg"class=image > ',
-    lat: 33.58695 ,
-    lng: 130.401579
-    },{
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=黒猫屋珈琲店&dirflg=w" target="_blank">黒猫屋珈琲店</a><br><img src="/demo1.jpg"class=image > ',
-    lat: 33.585335 ,
-    lng: 130.391875
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=タリーズコーヒー西鉄天神駅店&dirflg=w" target="_blank">タリーズコーヒー西鉄天神駅店</a><br><img src="/demo150.jpg"class=image > ',
+    lat: 33.589917,
+    lng: 130.398976
     }
 
+    
 
 ];  
  //==================マーカー配列記述終わり==============
@@ -176,27 +169,5 @@ function initMap() {
     alert("この端末では位置情報が取得できません");
   };
 
-
-
-
-//二つ目の地図-------------------------------------------------------------
-  // var latlng = new google.maps.LatLng(33.588689,130.399967 )
-  // var myOptions = {
-  //     zoom: 15,
-  //     center: latlng,
-  //     mapTypeId: google.maps.MapTypeId.ROADMAP
-  // };
-  // var map_02 = new google.maps.Map(
-  //     document.getElementById("map-02"),  //二つ目の地図のIDを指定
-  //     myOptions
-  // );
-  // var marker_02 = new google.maps.Marker({
-  //     position: latlng,
-  //     map: map_02,
-  //     animation: google.maps.Animation.DROP,   // アイコンの動き DROP BOUNCE
-  //     clickable: true,          // クリックできるようにする
-  //     draggable: false,         // ドラッグできないようにする
-  //     zIndex:5,                 // 前面表示の度合い
-  // });
 
 }
