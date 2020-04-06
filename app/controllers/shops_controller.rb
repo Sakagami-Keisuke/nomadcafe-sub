@@ -32,11 +32,22 @@ class ShopsController < ApplicationController
 
   def create
     Shop.create(shop_params)
-    redirect_to  shop_path(params[:shop_id])
+    redirect_to  shops_path
   end
 
-
-
+  def edit
+    @shop = Shop.find(params[:id])
+  end
+  def destroy
+    shop = Shop.find(params[:id])
+    shop.destroy
+    redirect_to  shops_path
+  end
+  def update
+    shop = Shop.find(params[:id])
+    shop.update(shop_params)
+    redirect_to  shops_path
+  end
 
 
   

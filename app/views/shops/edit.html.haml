@@ -3,13 +3,13 @@
   .background-signout
     .explanationbox
       .top-title
-        お店を登録する
+        お店の情報を編集
         %br
       .explanation
         （./bin/rake db:seed_fu    db/fixtures/01_shop.rbの追記も忘れずに。）
 
       .shopnew-container
-        = form_with(model: @shop, local: true) do |f|
+        = form_with(model: @shop, method: :patch, local: true) do |f|
           = f.text_field :name,class:'name', placeholder: "お店の名前"
           = f.text_field :address, class:'address',placeholder: "住所"
           = f.text_field :mood, class:'mood',placeholder: "雰囲気"

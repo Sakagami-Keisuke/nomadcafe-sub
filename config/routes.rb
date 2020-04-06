@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   
   root "shops#top"
   
-  resources :shops, only: [:index, :show, :new ,:create] do
+  resources :shops, only: [:index, :show, :new ,:create, :edit, :update, :destroy] do
     resources :comments, only: :create
   end
 
