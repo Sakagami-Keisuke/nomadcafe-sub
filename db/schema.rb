@@ -20,6 +20,13 @@ ActiveRecord::Schema.define(version: 2020_04_05_113714) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "favorites", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "shop_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "images", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "src"
     t.bigint "shop_id"
@@ -28,7 +35,15 @@ ActiveRecord::Schema.define(version: 2020_04_05_113714) do
     t.index ["shop_id"], name: "index_images_on_shop_id"
   end
 
+  create_table "likes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "shop_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "shops", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "user_id"
     t.string "name"
     t.string "address"
     t.string "mood"
@@ -41,6 +56,7 @@ ActiveRecord::Schema.define(version: 2020_04_05_113714) do
     t.decimal "longitude", precision: 9, scale: 6
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_shops_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
