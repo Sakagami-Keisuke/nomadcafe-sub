@@ -28,18 +28,12 @@
           .guidance-box
             = link_to  shops_path, class: 'top-btn' do
               %span 福岡・天神エリアをさがす
-
-
         .user-signout
           - if user_signed_in?
             = link_to destroy_user_session_path, :method => :delete, class: 'signout-btn' do
               %span サインアウト
 
 
-
-
-
-    
   - else
     .background-signout
       .explanationbox
@@ -69,8 +63,6 @@
           .guidance-box
             = link_to  shops_path, class: 'top-btn' do
               %span 福岡・天神エリアをさがす
-
-
         .user-signout
           - if user_signed_in?
             = link_to destroy_user_session_path, :method => :delete, class: 'signout-btn' do

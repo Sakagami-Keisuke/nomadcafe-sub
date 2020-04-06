@@ -77,3 +77,39 @@
   border-color: white;
   color:white;
 }
+
+
+
+
+.shopnew{
+  float: right;
+  bottom: 100px;
+  right: 40px;
+  position: fixed;
+  padding: 10px;
+  padding-top: 40px;
+  text-align: center;
+}
+.shopnew-btn {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border: 2px solid white;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 4px 5px;
+  border-radius: 60px;
+  transition: .4s;
+  }
+.shopnew-btn:hover {
+  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background-size:cover;
+  border-color: white;
+  color:white;
+}

@@ -22,9 +22,24 @@ class ShopsController < ApplicationController
     # @image = @shop.images.includes(:shop)
     @comment = Comment.new
     @comments = @shop.comments.includes(:user)
+    
   end
 
 
+  def new
+    @shop = Shop.new
+  end
+
+  def create
+    Shop.create(shop_params)
+    redirect_to  shop_path(params[:shop_id])
+  end
+
+
+
+
+
+  
 end
 
 

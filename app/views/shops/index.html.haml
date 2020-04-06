@@ -15,3 +15,8 @@
     .totop
       = link_to root_path, class: 'totop-btn' do
         %span トップにもどる
+    .shopnew
+      - if current_user.nickname == "TEST" && current_user.id == 1
+        = link_to new_shop_path,class: 'shopnew-btn' do
+          %span お店を登録する
+      - else
