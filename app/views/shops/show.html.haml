@@ -89,7 +89,7 @@
   var test = {lat: #{@shop.latitude}, lng: #{@shop.longitude}};
  
     var myOptions = {
-        zoom: 15,
+        zoom: 17,
         center: test,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
@@ -109,6 +109,14 @@
         draggable: false,         // ドラッグできないようにする
         zIndex:5,                 // 前面表示の度合い
     });
+
+    var infowindow = new google.maps.InfoWindow({
+        content: '#{@shop.name}'
+    });
+    infowindow.open(map_02, marker_02);
+
+
+
   }
 %script{:async => "", :src => "https://maps.googleapis.com/maps/api/js?key=#{Rails.application.credentials.googlemap[:MAP_SECRET_KEY]}&callback=initMap"}
 
