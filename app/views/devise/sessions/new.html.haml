@@ -36,4 +36,18 @@
         = f.hidden_field :nickname, value: "TEST"
         = f.hidden_field :password, value: "test0000"
         = f.hidden_field :password_confirmation, value: "test0000"
-        = f.submit "かんたんログイン", class:"e-login-btn"
+        = f.submit "かんたんログイン（管理者）", class:"e-login-btn"
+
+      .easy-login
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        = f.hidden_field :nickname, value: "ko"
+        = f.hidden_field :password, value: "ko0000"
+        = f.hidden_field :password_confirmation, value: "ko0000"
+        = f.submit "かんたんログイン（ko）", class:"e-login-btn"
+
+      .easy-login
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        = f.hidden_field :nickname, value: "ayu"
+        = f.hidden_field :password, value: "ayu0000"
+        = f.hidden_field :password_confirmation, value: "ayu0000"
+        = f.submit "かんたんログイン（ayu）", class:"e-login-btn"
