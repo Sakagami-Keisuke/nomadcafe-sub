@@ -38,6 +38,7 @@ class ShopsController < ApplicationController
   def edit
     @shop = Shop.find(params[:id])
   end
+
   def destroy
     shop = Shop.find(params[:id])
     shop.destroy
