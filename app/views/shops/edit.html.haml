@@ -25,3 +25,7 @@
       .back
         = link_to shops_path, class: 'totop-btn' do
           %span もどる
+
+      .geocoding-link
+        = link_to "https://www.geocoding.jp/",:target => "_blank", class: 'geocoding-btn' do 
+          %span 緯度経度を検索

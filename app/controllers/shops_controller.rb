@@ -28,6 +28,7 @@ class ShopsController < ApplicationController
 
   def new
     @shop = Shop.new
+    @shop.images.build
   end
 
   def create
