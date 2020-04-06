@@ -117,16 +117,16 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 10
-  s.name = "エスプレッサメンテ"
-  s.address = "〒810-0001 福岡県福岡市中央区天神２丁目１２"
-  s.mood = "静か"
-  s.price = "400円〜"
-  s.power = "電源10箇所"
-  s.open_time = "9時"
-  s.close_time = "21時"
-  s.holiday = "不定休"
-  s.latitude = "33.591907"
-  s.longitude = "130.398294"
+  s.name = "マクドナルド新天町店"
+  s.address = "〒810-0001 福岡県福岡市中央区天神２丁目９−２０２"
+  s.mood = "朝は静か"
+  s.price = "100円〜"
+  s.power = "電源あり12席"
+  s.open_time = "24時間"
+  s.close_time = "24時間"
+  s.holiday = "年中無休"
+  s.latitude = "33.590196"
+  s.longitude = "130.398437"
 end
 Shop.seed do |s|
   s.id = 11
