@@ -6,12 +6,22 @@
 
     .shop-index
       - @shops.each do |shop|
-        .navi-link-btn
+        .index-link-box
           = link_to  shop_path(shop.id),class: 'index-btn' do
             %i.fa.fa-coffee
             %span #{shop.name}
+        .edit-box
+          - if current_user.nickname == "TEST" && current_user.id == 1
+            = link_to '編集', "/shops/#{shop.id}/edit", method: :get, class: 'edit-btn' 
+            = link_to '削除', "/shops/#{shop.id}", method: :delete, class: 'destroy-btn',data: {confirm: "削除しますか？"}
+          - else
 
     .blank
     .totop
       = link_to root_path, class: 'totop-btn' do
         %span トップにもどる
+    .shopnew
+      - if current_user.nickname == "TEST" && current_user.id == 1
+        = link_to new_shop_path,class: 'shopnew-btn' do
+          %span お店を登録する
+      - else

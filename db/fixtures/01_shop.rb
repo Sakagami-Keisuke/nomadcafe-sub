@@ -182,28 +182,15 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 15
-  s.name = "マクドナルドキャナルシティ店"
-  s.address = "〒812-0018 福岡県福岡市博多区住吉１丁目２−２０"
+  s.name = "タリーズコーヒー西鉄天神駅店"
+  s.address = "〒810-0001 福岡県福岡市博多区天神２丁目１１−3"
   s.mood = "静か"
   s.price = "400円〜"
   s.power = "電源10箇所"
-  s.open_time = "9時"
+  s.open_time = "8時"
   s.close_time = "21時"
   s.holiday = "不定休"
-  s.latitude = "33.58956"
-  s.longitude = "130.411763"
-end
-Shop.seed do |s|
-  s.id = 16
-  s.name = "サブウェイ天神ロフト店"
-  s.address = "〒810-0004 福岡県福岡市中央区渡辺通４−９−２５"
-  s.mood = "静か"
-  s.price = "400円〜"
-  s.power = "電源10箇所"
-  s.open_time = "9時"
-  s.close_time = "21時"
-  s.holiday = "不定休"
-  s.latitude = "33.58695"
-  s.longitude = "130.401579"
+  s.latitude = " 33.589917"
+  s.longitude = "130.398976"
 end
 
