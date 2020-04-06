@@ -22,9 +22,37 @@ class ShopsController < ApplicationController
     # @image = @shop.images.includes(:shop)
     @comment = Comment.new
     @comments = @shop.comments.includes(:user)
+    
   end
 
 
+  def new
+    @shop = Shop.new
+    @shop.images.build
+  end
+
+  def create
+    Shop.create(shop_params)
+    redirect_to  shops_path
+  end
+
+  def edit
+    @shop = Shop.find(params[:id])
+  end
+
+  def destroy
+    shop = Shop.find(params[:id])
+    shop.destroy
+    redirect_to  shops_path
+  end
+  def update
+    shop = Shop.find(params[:id])
+    shop.update(shop_params)
+    redirect_to  shops_path
+  end
+
+
+  
 end
 
 
