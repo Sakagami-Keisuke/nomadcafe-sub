@@ -1,3 +1,13 @@
+html{
+  font-size: 62.5%;
+  }
+  // --------------------------
+body{
+  font-size:1.6rem;/* 16px*/
+  line-height: 2;
+    }
+
+
 .background-signin {
   width: 100vw;
   height: 830px;
@@ -6,7 +16,6 @@
   background-position: center;    /* 背景の位置指定 */
   background-size: cover;
 }
-
 .background-signout {
   width: 100vw;
   height: 830px;
@@ -15,8 +24,6 @@
   background-position: center;    /* 背景の位置指定 */
   background-size: cover;
 }
-
-
 span.indicator{
   float: right;
   bottom: 30px;
@@ -24,7 +31,7 @@ span.indicator{
   position: fixed;
   padding: 10px;
   border: 2px solid rgb(61, 25, 25);
-  font-size: 16px;
+  font-size: 1.6rem;
   color: rgb(61, 25, 25);
   letter-spacing: 3px;
   font-weight: bold;
@@ -33,25 +40,21 @@ span.indicator{
   background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
   background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
   background-size:cover;
-
 }
-
 .explanationbox{
   margin: auto;
   max-width: 90%;
-  height: 100px;
+  height: 15rem;
   background-color: rgba(255, 0, 0, 0.096);
 }
 .top-title{
-  font-size: 36px;font-weight: bold;
+  font-size: 4.0rem;font-weight: bold;
   text-align: center;
 }
 .explanation{
+  font-size: 2rem;
   text-align: center;
 }
-
-
-
 .user-signed{
   padding-top: 40px;
   text-align: center;
@@ -67,7 +70,7 @@ span.indicator{
   text-align: center;
   line-height: 120px;
   border: 2px solid white;
-  font-size: 36px;
+  font-size: 3.6rem;
   color: white;
   letter-spacing: 10px;
   text-decoration: none;
@@ -83,8 +86,6 @@ background-size:cover;
 border-color: white;
 color:white;
 }
-
-
 .registrations{
   padding-top: 100px;
   text-align: center;
@@ -96,7 +97,7 @@ color:white;
   text-align: center;
   line-height: 120px;
   border: 2px solid white;
-  font-size: 36px;
+  font-size: 3.6rem;
   color: white;
   letter-spacing: 10px;
   text-decoration: none;
@@ -112,10 +113,7 @@ background-size:cover;
 border-color: white;
 color:white;
 }
-
-
-
-
+// --------------------------
 .guidance-box {
   margin-top: 70px;
   text-align: center;
@@ -123,12 +121,11 @@ color:white;
 /* ここから下がボタンのCSS　*/
 .top-btn {
   display: inline-block;
-  width: 650px;
-  height: 120px;
+  width: 50%;
   text-align: center;
   line-height: 120px;
   border: 2px solid white;
-  font-size: 36px;
+  font-size: 3.6rem;
   color: white;
   letter-spacing: 10px;
   text-decoration: none;
@@ -144,9 +141,7 @@ color:white;
   border-color: white;
   color:white;
 }
-
-
-
+// ------------------------------------
 .user-signout{
   padding-top: 100px;
   text-align: center;
@@ -157,7 +152,7 @@ color:white;
   text-align: center;
   line-height: 120px;
   border: 2px solid white;
-  font-size: 20px;
+  font-size: 2.0rem;
   color: white;
   letter-spacing: 10px;
   text-decoration: none;
@@ -172,4 +167,93 @@ background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0
 background-size:cover;
 border-color: white;
 color:white;
+}
+
+
+// -------------------------------
+/* スマホ　横幅　480px
+------------------------------ */
+@media screen and (max-width:420px) {
+ 
+  .background-signin {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(democafe.jpg);  /* 背景画像指定 */
+    background-repeat:  no-repeat;  /* 背景の繰り返し設定 */
+    background-position: center;    /* 背景の位置指定 */
+    background-size: cover;
+  }
+
+  .explanationbox{
+    margin: auto;
+    max-width: 100%;
+    height: 12rem;
+  }
+  .top-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.5rem;
+  }
+  .explanation{
+    font-size: 0.8rem;
+  }
+  .guidance-box {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  .top-btn {
+    width: 80%;
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 0.6rem;
+    border: 0.1rem solid white;
+    height: 8rem;
+    line-height: 8rem;
+    margin-top: 2rem;
+   
+  }
+  .user-signout{
+    padding-top: 2rem;
+  }
+  .signout-btn {
+    width: 35%;
+    border: 0.1rem solid white;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: normal;
+  }
+  span.indicator{
+    font-size: 0.1rem;
+    bottom: 3rem;
+    right: 2rem;
+    border: 1px solid rgb(61, 25, 25);
+    letter-spacing: 0.1rem;
+    font-weight: normal;
+    border-radius: 2rem;
+  }
+  .sign-in{
+    padding-top: 7rem;
+  }
+  .signin-btn {
+    width: 80%;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.6rem;
+    border: 0.1rem bold white;
+    height: 8rem;
+    line-height: 8rem;
+    margin-top: 2rem;
+  }
+  .registrations{
+    padding-top: 10rem;
+  }
+  .regist-btn {
+    width: 45%;
+    border: 0.1rem bold white;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+  }
 }

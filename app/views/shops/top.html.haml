@@ -16,11 +16,11 @@
           - else
             .sign-in
               = link_to new_user_session_path,class: 'signin-btn' do
-                %span テストサインイン（こちらへ）
+                %span テストサインイン
                 %br
             .registrations
               = link_to new_user_registration_path,class: 'regist-btn' do
-                %span ユーザー新規登録
+                %span 登録して利用
 
 
       -if user_signed_in?
@@ -54,11 +54,11 @@
           - else
             .sign-in
               = link_to new_user_session_path,class: 'signin-btn' do
-                %span テストサインイン（こちらへ）
+                %span テストサインイン
                 %br
             .registrations
               = link_to new_user_registration_path,class: 'regist-btn' do
-                %span ユーザー新規登録
+                %span 登録して利用
 
 
       -if user_signed_in?
