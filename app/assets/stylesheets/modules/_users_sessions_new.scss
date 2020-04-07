@@ -1,35 +1,61 @@
+html{
+  font-size: 62.5%;
+  }
+  // --------------------------
+body{
+  font-size:1.6rem;/* 16px*/
+  line-height: 2;
+    }
+
 .user-sessions-form{
   text-align: center;
   span.title{
-    font-size: 26px;
-    line-height: 55px;
+    font-size: 2.6rem;
+    line-height: 5.5rem;
   }
-  .blankspace{
-    margin-top: 20px;
-  }
+
   .nickname {
-    height: 35px;
+    height: 4rem;
+    width: 40%;
     margin-bottom: 20px;
   }
   .password {
-    height: 35px;
+    height: 4rem;
+    width: 40%;
     margin-bottom: 20px;
   }
   .password_confirmation {
-    height: 35px;
+    height: 4rem;
+    width: 40%;
     margin-bottom: 20px;
   }
   label {
-    font-size: 16px;
+    font-size: 2rem;
     font-weight: bold;
   }
 }
-
 #new_user{
   margin-top: 15px;
   text-align: center;
-
 }
+.sessions-btn{
+  background-color: gold;
+  font-size: 2rem;
+  border-bottom: solid 3px goldenrod;
+  box-shadow: 3px 3px 3px gray;
+  transition: 0.3s;
+  border-radius: 60px;
+  padding: 0px 15px;
+}
+.sessions-btn:active {
+  transform: translateY(2px);
+  border-bottom: none;
+}
+.sessions-btn:hover {
+  background-color: orange;
+}
+
+
   .e-login-btn {
     margin-top: 25px;
     background-color:rgba(0,0,0,0);
@@ -54,3 +80,56 @@
   border-color: white;
   color:white;
   }
+// -------------------------------
+/* スマホ　横幅　480px
+------------------------------ */
+@media screen and (max-width:420px) {
+
+
+  .user-sessions-form{
+    font-size: 1.5rem;
+  }
+  #user_nickname.nickname {
+    height: 3rem;
+    width: 60%;
+  }
+  #user_password.password {
+    height: 3rem;
+    width: 60%;
+  }
+  #user_password_confirmation.password_confirmation {
+    height: 3rem;
+    width: 60%;
+  }
+  .e-login-btn {
+    margin-top: 2.5rem;
+    background-color:rgba(0,0,0,0);
+    display: inline-block;
+    width: 80%;
+    line-height: 30px;
+    border: 2px solid rgb(83, 47, 47);
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    color: rgb(77, 36, 36);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 16px 0px 16px 0px;
+    border-radius: 60px;
+    transition: .4s;
+  }
+  .sessions-btn{
+    font-size: 1.5rem;
+    padding: 4px 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+}

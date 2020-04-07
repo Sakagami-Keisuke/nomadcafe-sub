@@ -9,7 +9,7 @@
 
 
       .user-sessions-form
-        %span.title サ イ ン ア ッ プ
+        -# %span.title サ イ ン ア ッ プ
         .blankspace
         = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
           -# = render "devise/shared/error_messages", resource: resource
@@ -29,12 +29,12 @@
             %br/
             = f.password_field :password_confirmation, class:'password_confirmation',  autocomplete: "new-password"
           .actions
-            = f.submit "サインアップ", class: "easy-btn"
+            = f.submit "登録して利用する", class: "easy-btn"
 
-      .blank
-      .totop
-        = link_to root_path, class: 'stop-btn' do
-          %span やめる
+      
+      .back-to
+        = link_to root_path, class: 'back-to-btn' do
+          %span もどる
 
 
 
