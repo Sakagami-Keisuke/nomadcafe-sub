@@ -1,32 +1,38 @@
+.background-show{
+  background-color: rgb(250, 233, 233);
+}
 .googlemap{
- 
   #map-02{
     height: 100%;
     width: 100%;
     border: 2px solid white;
   }
   .image{
-    height:6rem;
-    width:7rem;
+    height:13vw;
+    width:15vw;
   }
     .sample {
     font-family: '1';  
     }
 }
-
-
-
-.background-show{
-  background-color: rgb(250, 233, 233);
-  // background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(coffe.jpg);  /* 背景画像指定 */
-  // background-repeat:  repeat-y;  /* 背景の繰り返し設定 */
-  // background-position: center;    /* 背景の位置指定 */
-  // background-size: auto ;
+.shop-summary{
+  margin: 3vw auto;
+  width: 85vw;
+  height: 68vw;
+  background: -moz-linear-gradient(top, #FFC778, transparent);
+  background: -webkit-linear-gradient(top, #FFC778, transparent);
+  background: linear-gradient(to bottom, #FFC778, transparent),url(democafe.jpg);
+  background-size: cover;
+  color: white;
+  border-radius: 5vw;
 }
-
-
-
-
+.summary-background{
+  margin: auto;
+  width: 85vw;
+  height: 68vw;
+  background-color: rgba(255,0,0,0.2);
+  border-radius: 5vw;
+}
 .shop-name{
   line-height: 60px;
   text-align: center;
@@ -35,106 +41,74 @@
   letter-spacing: 5px;
   margin-bottom: 5px;
 }
-.summary-background{
-  margin: auto;
-  max-width: 100%;
-  height: 600px;
-  background-color: rgba(255,0,0,0.2);
-  border-radius: 60px;
-}
-.shop-summary{
-  margin: auto;
-  max-width: 60%;
-  height: 600px;
-  background: -moz-linear-gradient(top, #FFC778, transparent);
-  background: -webkit-linear-gradient(top, #FFC778, transparent);
-  background: linear-gradient(to bottom, #FFC778, transparent),url(democafe.jpg);
-  background-size: cover;
-  color: white;
-  border-radius: 60px;
   table {
     margin: auto;
-    font-size: 18px;
+    font-size: 1.5vw;
     font-weight: bold;
-    letter-spacing: 8px;
+    letter-spacing: 1vw;
   }
   tr {
-    height: 30px;
+    height: 1.5vw;
   }
   table th{
     padding: 0 10px 10px 50px;
-    width: 200px;
+    width: 20vw;
     font-weight: bold;
   }
   table td{
     padding: 3px;
-    width: 250px;
+    width: 20vw;
+  }
+.com-index{
+  width: 90vw;
+  text-align: center;
+  font-size: 1.5vw;
+}
+p.comm-user{
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+.comments-container{
+  font-size: 1.2vw;
+  overflow: scroll;
+  width: 90%;
+  height: 34vw;
+  margin: 0 auto;
+  background-color: rgba(255,0,0,0.2);
+  .comments-index{
+    display: block;
+  }
+  .comment-innner{
+   margin-left: 10px;
   }
 }
-
-
-
-.navi-link-btn {
-  font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
-  text-align: center;
-  padding-top: 10px;
-
-//   .navi-btn:before{
-//     content:'';
-//     height:100%;
-//     display:inline-block;
-//     vertical-align:middle;
-//   }
-//   .navi-btn{
-//     text-decoration: none;
-//     border-radius: 20px;
-//     display: inline-block;
-//     width: 90%;
-//     height: 100px;
-//     text-align: center;
-//     line-height: 100px;
-//     background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-//     background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-//     background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-//     color:#fff;
-//     position:relative;
-//     font-size:35px;
-//     letter-spacing: 5px;
-//     padding:0 10px;
-//     cursor:pointer;
-//     transition:600ms ease all;
-//     outline:none;
-//   }
-//   .navi-btn:hover{
-//     background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
-//     background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
-//     background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
-//     color:white;
-//     font-size: 45px;
-//     letter-spacing: 12px;
-//   }
-//   .navi-btn:before,button:after{
-//     content:'';
-//     position:absolute;
-//     top:0;
-//     right:0;
-//     height:2px;
-//     width:0;
-//     background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-//     transition:200ms ease all;
-//   }
-//   .navi-btn:after{
-//     right:inherit;
-//     top:inherit;
-//     left:0;
-//     bottom:0;
-//   }
-//   .navi-btn:hover:before,:hover:after{
-//     width:100%;
-//     transition:1500ms ease all;
-//   }
+#comment_text.text_area{
+  height: 5vw;
+  width: 60vw;
 }
-
+.text_area{
+  margin: 2vw auto;
+  display: block;
+  text-align: center;
+}
+.comment-submit{
+  display: block;
+  text-align: center;
+  }
+.comment-btn {
+    padding: 1vw;
+    width: 10vw;
+    display: inline-block;
+    text-decoration: none;
+    background: #9c7d4f;
+    color: #FFF;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 5px #9c7d4f;
+    border: dashed 1px #FFF;
+  }
+  .comment-btn:hover {
+    border: dotted 1px #FFF;
+  }
 
 
 .return{
@@ -167,11 +141,6 @@
   border-color: black;
   color:black;
 }
-
-
-
-
-
 .mapnavi{
   z-index: 100;
   float: right;
@@ -180,20 +149,14 @@
   position: fixed;
   padding: 10px;
 }
-
-
-
-
-
-
 .shop-image{
   z-index: 1;
   display: block;
   border: 3px solid #ddd;
   border-radius: 30px;
-  width: 60%;
-  height: 60%;
-  margin: 130px auto 0;
+  width: 75vw;
+  height: 60vw;
+  margin: 5vw auto 0;
   transition-duration: 0.5s;
 }
 .shop-image img{
@@ -206,60 +169,64 @@
 }
 
 
-.com-index{
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
+
+
+// -------------------------------
+/* スマホ　横幅　480px
+------------------------------ */
+@media screen and (max-width:420px) {
+ 
+  .shop-name {
+    line-height: 10vw;
+    font-size: 3vw;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+.shop-summary{
+
+  height: 80vw;
+
+}
+.summary-background{
+
+  height: 80vw;
+
+}
+table {
+  margin: auto;
+  font-size: 1.5vw;
+  font-weight: bold;
+  letter-spacing: 1vw;
+}
+table th{
+  padding: 0 0vw 0vw 10vw;
+  width: 20vw;
+  font-weight: bold;
+}
+table td{
+  padding: 0px;
+  width: 20vw;
 }
 .comments-container{
-  font-size: 18px;
-  overflow: scroll;
-  width: 90%;
-  height: 280px;
-  margin: 0 auto;
-  // background-color: rgb(228, 185, 185);
-  .comments-index{
-    display: block;
-  }
-  .comment-innner{
-   margin-left: 10px;
-  }
-  p.comm-user{
-    font-size: 22px;
-    font-weight: bold;
-  }
+  font-size: 1vw;
 }
-
-
-
-.comments-form{
-  width: 100%;
-  // background-color: rgb(228, 185, 185);
-  .comment-text{
-  }
-.text_area{
-  margin: 20px auto;
-  display: block;
-  text-align: center;
+#comment_text.text_area{
+  height: 10vw;
+  width: 60vw;
+  background-color: rgb(248, 239, 239);
 }
-.comment-submit{
-  display: block;
-  text-align: center;
-  }
-
-}
-
 .comment-btn {
-    padding: 2px;
-    width: 70px;
-    display: inline-block;
-    text-decoration: none;
-    background: #9c7d4f;
-    color: #FFF;
-    border-radius: 4px;
-    box-shadow: 0px 0px 0px 5px #9c7d4f;
-    border: dashed 1px #FFF;
-  }
-  .comment-btn:hover {
-    border: dotted 1px #FFF;
-  }
+  width: 13vw;
+}
+.mapnavi{
+  float: left;
+  bottom: 30px;
+  left: 30px;
+}
+
+
+
+
+
+}
