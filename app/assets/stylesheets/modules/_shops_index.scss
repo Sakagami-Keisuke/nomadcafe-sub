@@ -5,10 +5,9 @@
   background-size:cover;
 }
 
-
 .googlemap{
-  width: 900px;
-  height: 600px;
+  width: 85vw;
+  height: 40vw;
   margin: auto;
   #map{
     height: 100%;
@@ -16,36 +15,30 @@
     border: 2px solid white;
   }
   .image{
-    height:6rem;
-    width:7rem;
+    height:4vw;
+    width:4vw;
   }
     .sample {
     font-family: '1';  
     }
 }
-
-
-
 .index-link-box {
   font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
   text-align: center;
   padding-top: 10px;
 }
-
 .index-btn {
   display: inline-block;
-  // max-width: 180px;
-  width: 500px;
-  height: 100px;
+  width: 45vw;
   text-align: center;
-  line-height: 100px;
+  line-height: 7vw;
   border: 2px solid white;
-  font-size: 28px;
+  font-size: 2.5vw;
   color: white;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
-  border-radius: 60px;
+  border-radius: 15vw;
   transition: .4s;
 }
 .index-btn:hover {
@@ -56,18 +49,9 @@
   border-color: white;
   color:white;
 }
-
-
-
-
-
-
-
-
 .edit-box{
   text-align: center;
 }
-
 .edit-btn {
   width: 40px;
   height: 55px;
@@ -90,9 +74,6 @@
   border-color: white;
   color:white;
 }
-
-
-
 .destroy-btn {
   width: 40px;
   height: 55px;
@@ -115,19 +96,7 @@
   border-color: white;
   color:white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-.totop{
+.to-top{
   float: right;
   bottom: 20px;
   right: 40px;
@@ -136,22 +105,21 @@
   padding-top: 40px;
   text-align: center;
 }
-.totop-btn {
+.to-top-btn {
   display: inline-block;
-  width: 150px;
-  height: 50px;
+  width: 13vw;
   text-align: center;
-  line-height: 50px;
+  line-height: 3vw;
   border: 2px solid white;
-  font-size: 16px;
+  font-size: 1.5vw;
   color: white;
   text-decoration: none;
   font-weight: bold;
-  padding: 4px 5px;
-  border-radius: 60px;
+  padding: 1vw 1vw;
+  border-radius: 10vw;
   transition: .4s;
   }
-.totop-btn:hover {
+.to-top-btn:hover {
   background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
   background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
   background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
@@ -159,10 +127,6 @@
   border-color: white;
   color:white;
 }
-
-
-
-
 .shopnew{
   float: right;
   bottom: 100px;
@@ -174,17 +138,16 @@
 }
 .shopnew-btn {
   display: inline-block;
-  width: 150px;
-  height: 50px;
+  width: 13vw;
   text-align: center;
-  line-height: 50px;
+  line-height: 3vw;
   border: 2px solid white;
-  font-size: 16px;
+  font-size: 1.5vw;
   color: white;
   text-decoration: none;
   font-weight: bold;
-  padding: 4px 5px;
-  border-radius: 60px;
+  padding: 1vw 1vw;
+  border-radius: 10vw;
   transition: .4s;
   }
 .shopnew-btn:hover {
@@ -196,7 +159,86 @@
   color:white;
 }
 
-
+// -------------------------------
+/* スマホ　横幅　480px
+------------------------------ */
+@media screen and (max-width:420px) {
+ 
+  .googlemap{
+    width: 95vw;
+    height: 90vw;
+    margin: auto;
+    #map{
+      height: 100%;
+      width: 100%;
+      border: 2px solid white;
+    }
+    .image{
+      height:4vw;
+      width:4vw;
+    }
+  }
+  .index-btn {
+    display: block;
+    width: 65vw;
+    margin-left: 2vw;
+    line-height: 10vw;
+    font-size: 4vw;
+    border-radius: 20vw;
+  }
+  .to-top{
+    float: right;
+    bottom: 1vw;
+    right: 0.5vw;
+    padding: 10px;
+    padding-top: 40px;
+  }
+  .to-top-btn {
+    width: 18vw;
+    text-align: center;
+    line-height: 10vw;
+    border: 2px solid white;
+    font-size: 4vw;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1vw 1vw;
+    }
+    .shopnew{
+      float: right;
+      bottom: 20vw;
+      right: 0.5vw;
+      padding-top: 40px;
+    }
+    .shopnew-btn {
+      width: 18vw;
+      text-align: center;
+      line-height: 10vw;
+      border: 2px solid white;
+      font-size: 4vw;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 1vw 1vw;
+      }
+      .edit-box{
+        text-align: left;
+      }
+      .edit-btn {
+        margin-left: 19vw;
+        line-height: 15vw;
+        font-size: 4vw;
+        letter-spacing: 0.5vw;
+        padding: 2vw 5vw;
+      }
+      .destroy-btn {
+        margin-left: 2vw;
+        line-height: 15vw;
+        font-size: 4vw;
+        letter-spacing: 0.5vw;
+        padding: 2vw 5vw;
+      }
+}
 
 
 

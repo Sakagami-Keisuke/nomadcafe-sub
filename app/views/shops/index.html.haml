@@ -21,11 +21,11 @@
           - else
 
     .blank
-    .totop
-      = link_to root_path, class: 'totop-btn' ,data: {"turbolinks" => false}do
-        %span トップにもどる
+    .to-top
+      = link_to root_path, class: 'to-top-btn' ,data: {"turbolinks" => false}do
+        %span もどる
     .shopnew
       - if current_user.nickname == "TEST" && current_user.id == 1
         = link_to new_shop_path,class: 'shopnew-btn' do
-          %span お店を登録する
+          %span 店舗登録
       - else

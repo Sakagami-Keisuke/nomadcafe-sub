@@ -94,7 +94,7 @@ function initMap() {
         var myLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
                           // マップオプションを変数に格納
         var mymapOptions = {
-          zoom : 16,                 // 拡大倍率
+          zoom : 14,                 // 拡大倍率
           center : { lat: 33.588689,lng: 130.399967 },     // myLatLng, // 緯度・経度　SSL化までは使わない
           maxZoom:20,                // 最大ズームの設定
           minZoom: 15,               // 最小ズームの設定
@@ -133,7 +133,7 @@ function initMap() {
             map: map,                 // 表示先の地図の種類
             animation: google.maps.Animation.DROP,   // アイコンの動き DROP BOUNCE
             clickable: true,          // クリックできるようにする
-            draggable: false,         // ドラッグできないようにする
+            draggable: true,         // ドラッグできないようにする
             zIndex:5,                 // 前面表示の度合い
             });
 
@@ -145,7 +145,7 @@ function initMap() {
         }
 
         function markerEvent(i) {
-          marker[i].addListener('mouseover', function() { 
+          marker[i].addListener('click', function() { 
           infoWindow[i].open(map, marker[i]); 
           });
         }
