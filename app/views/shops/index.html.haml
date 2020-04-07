@@ -11,7 +11,7 @@
     .shop-index
       - @shops.each do |shop|
         .index-link-box
-          = link_to  shop_path(shop.id),class: 'index-btn' do
+          = link_to  shop_path(shop.id),class: 'index-btn',data: {"turbolinks" => false} do
             %i.fa.fa-coffee
             %span #{shop.name}
         .edit-box
@@ -22,7 +22,7 @@
 
     .blank
     .totop
-      = link_to root_path, class: 'totop-btn' do
+      = link_to root_path, class: 'totop-btn' ,data: {"turbolinks" => false}do
         %span トップにもどる
     .shopnew
       - if current_user.nickname == "TEST" && current_user.id == 1

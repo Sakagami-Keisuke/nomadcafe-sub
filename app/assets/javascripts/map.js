@@ -1,66 +1,67 @@
+
 // ============マーカー配列を空、吹き出し配列を空、マーカーデータ配列に直接入力=============  
 
 var marker = [];
 var infoWindow = [];
 var markerData = [ 
     {
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=エンジニアカフェ&dirflg=w" target="_blank">エンジニアカフェ</a><br><img src="/demo10.jpg"class=image > ',
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=エンジニアカフェ&dirflg=w" target="_blank">エンジニアカフェ</a> ',
     lat: 33.593152,
     lng: 130.401884
     }, {
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=カフェベローチェ&dirflg=w" target="_blank">カフェベローチェ</a><br><img src="/demo22.jpg"class=image > ',
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=カフェベローチェ&dirflg=w" target="_blank">カフェベローチェ</a> ',
     lat: 33.592187,
     lng: 130.399474
     }, {
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=ブックアンドコー&dirflg=w" target="_blank">BOOK & CO.</a><br><img src="/demo30.jpg"class=image > ',
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=ブックアンドコー&dirflg=w" target="_blank">BOOK & CO.</a> ',
     lat: 33.593852,
     lng: 130.39835
     }, {
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=タリーズ天神店&dirflg=w" target="_blank">タリーズ 天神店</a><br><img src="/demo40.jpg"class=image > ',
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=タリーズ天神店&dirflg=w" target="_blank">タリーズ 天神店</a> ',
     lat: 33.591618,
     lng: 130.396871
     },{
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=タリーズ新天町店&dirflg=w" target="_blank">タリーズ 新天町店</a><br><img src="/demo50.jpg"class=image > ',
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=タリーズ新天町店&dirflg=w" target="_blank">タリーズ 新天町店</a> ',
     lat: 33.590074,
     lng: 130.397071
     }, {
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタバ天神VIORO店&dirflg=w" target="_blank">スタバ 天神VIORO店</a><br><img src="/demo60.jpg"class=image > ',
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタバ天神VIORO店&dirflg=w" target="_blank">スタバ 天神VIORO店</a> ',
     lat: 33.589645 ,
     lng: 130.398415
     },{
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタバメディアモール天神&dirflg=w" target="_blank">スタバ メディアモール天神</a><br><img src="/demo70.jpg"class=image > ',
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタバメディアモール天神&dirflg=w" target="_blank">スタバ メディアモール天神</a>',
     lat: 33.590907,
     lng: 130.400564
     },{
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=コメダ天神南店&dirflg=w" target="_blank">コメダ天神南店</a><br><img src="/demo80.jpg"class=image > ',
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=コメダ天神南店&dirflg=w" target="_blank">コメダ天神南店</a> ',
     lat: 33.589295,
     lng: 130.403634
     },{
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタバ天神地下街店&dirflg=w" target="_blank">スタバ天神地下街店</a><br><img src="/demo90.jpg"class=image > ',
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタバ天神地下街店&dirflg=w" target="_blank">スタバ天神地下街店</a>',
     lat: 33.588061,
     lng: 130.401138
     }, {
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=マクドナルド新天町店&dirflg=w" target="_blank">マクドナルド新天町店</a><br><img src="/demo100.jpg"class=image > ',
-    lat: 33.591907 ,
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=マクドナルド新天町店&dirflg=w" target="_blank">マクドナルド新天町店</a> ',
+    lat: 33.590196,
     lng: 130.398294
     },{
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=VITO中洲ゲイツ店&dirflg=w" target="_blank">VITO中洲ゲイツ店</a><br><img src="/demo110.jpg"class=image > ',
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=VITO中洲ゲイツ店&dirflg=w" target="_blank">VITO中洲ゲイツ店</a>',
     lat: 33.593775,
     lng: 130.406223
     }, {
-  name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=CaféMealMUJI&dirflg=w" target="_blank">Café&Meal MUJI</a><br><img src="/demo120.jpg"class=image > ',
+  name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=CaféMealMUJI&dirflg=w" target="_blank">Café&Meal MUJI</a><br>',
     lat: 33.587337,
     lng: 130.396749
     },  {
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタバ天神西通店&dirflg=w" target="_blank">スタバ天神西通店</a><br><img src="/demo130.jpg"class=image > ',
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタバ天神西通店&dirflg=w" target="_blank">スタバ天神西通店</a> ',
     lat: 33.587888,
     lng: 130.396641
     }, {
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタートアップカフェ&dirflg=w" target="_blank">スタートアップカフェ</a><br><img src="/demo140.jpg"class=image > ',
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタートアップカフェ&dirflg=w" target="_blank">スタートアップカフェ</a> ',
     lat: 33.589162,
     lng: 130.395307
     },{
-    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=タリーズコーヒー西鉄天神駅店&dirflg=w" target="_blank">タリーズコーヒー西鉄天神駅店</a><br><img src="/demo150.jpg"class=image > ',
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=タリーズコーヒー西鉄天神駅店&dirflg=w" target="_blank">タリーズコーヒー西鉄天神駅店</a> ',
     lat: 33.589917,
     lng: 130.398976
     }
@@ -129,7 +130,7 @@ function initMap() {
             });
 
             infoWindow[i] = new google.maps.InfoWindow({ 
-              content: "<p style='width:120px; text-decoration: none; font-size:10px; text-align:center;'>"
+              content: "<p style='width:auto;  text-decoration: none; font-size:10px; text-align:center;'>"
                + markerData[i]['name'] + '</div>' 
             });
             markerEvent(i); 

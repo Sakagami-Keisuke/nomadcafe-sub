@@ -193,4 +193,17 @@ Shop.seed do |s|
   s.latitude = " 33.589917"
   s.longitude = "130.398976"
 end
+Shop.seed do |s|
+  s.id = 16
+  s.name = "レックコーヒー天神店"
+  s.address = "〒810-0001 福岡県福岡市中央区天神２丁目３−３７"
+  s.mood = "静か"
+  s.price = "440円〜"
+  s.power = "全席有"
+  s.open_time = "8時"
+  s.close_time = "0時"
+  s.holiday = "不定休"
+  s.latitude = " 33.587336"
+  s.longitude = "130.398705"
+end
 
