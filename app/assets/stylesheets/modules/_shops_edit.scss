@@ -1,14 +1,4 @@
-
-.background-shop-new{
-  width: 100vw;
-  height: 830px;
-  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(art.jpg);
-  background-repeat:  no-repeat;  /* 背景の繰り返し設定 */
-  background-position: center;    /* 背景の位置指定 */
-  background-size: cover;
-  width: 100vw;
-}
-ul.shop-new-form{
+ul.shop-edit-form{
   text-align: center;
   width: 45vw;
   margin: 0 auto;
@@ -20,8 +10,9 @@ ul.shop-new-form{
     background-color: rgba(37, 36, 36, 0.55);
     color: white;
     text-align: center;
-    width: 30vw;
-    height: 2.3vw;
+    width: 40vw;
+    height: 2.5vw;
+    margin-top: 3px;
   }
 }
 .geocoding-link{
@@ -38,4 +29,3 @@ ul.shop-new-form{
 .totop-btn{
   text-decoration: none;
 }
-

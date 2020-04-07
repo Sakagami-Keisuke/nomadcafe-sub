@@ -187,7 +187,6 @@ color:white;
     background-position: center;    /* 背景の位置指定 */
     background-size: cover;
   }
-
   .explanationbox{
     margin: auto;
     max-width: 100%;
@@ -217,7 +216,6 @@ color:white;
     line-height: 8rem;
     margin-top: 2rem;
     border-radius: 15vw;
-   
   }
   .topsignout{
     padding-top: 15vw;
@@ -232,8 +230,8 @@ color:white;
   span.indicator{
     font-size: 1vw;
     width: 25vw;
-    bottom: 2vw;
-    right: 2vw;
+    bottom: 5vw;
+    right: 5vw;
     border: 1px solid rgb(61, 25, 25);
     letter-spacing: 0vw;
     font-weight: normal;
