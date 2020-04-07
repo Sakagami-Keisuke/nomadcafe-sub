@@ -343,3 +343,38 @@ Image.seed do |s|
   s.src = "demo165.jpg"
   s.shop_id = 16
 end
+Image.seed do |s|
+  s.id = 70
+  s.src = "demo170.jpg"
+  s.shop_id = 17
+end
+Image.seed do |s|
+  s.id = 71
+  s.src = "demo171.jpg"
+  s.shop_id = 17
+end
+Image.seed do |s|
+  s.id = 72
+  s.src = "demo172.jpg"
+  s.shop_id = 17
+end
+Image.seed do |s|
+  s.id = 73
+  s.src = "demo173.jpg"
+  s.shop_id = 17
+end
+Image.seed do |s|
+  s.id = 74
+  s.src = "demo174.jpg"
+  s.shop_id = 17
+end
+Image.seed do |s|
+  s.id = 75
+  s.src = "demo175.jpg"
+  s.shop_id = 17
+end
+Image.seed do |s|
+  s.id = 76
+  s.src = "demo176.jpg"
+  s.shop_id = 17
+end

@@ -29,17 +29,20 @@ span.indicator{
   bottom: 30px;
   right: 80px;
   position: fixed;
-  padding: 10px;
-  border: 2px solid rgb(61, 25, 25);
-  font-size: 1.6rem;
-  color: rgb(61, 25, 25);
-  letter-spacing: 3px;
-  font-weight: bold;
-  border-radius: 20px;
+  width: 15vw;
+  font-size: 1.5vw;
+  line-height: 1.5vw;
+  border: 2px solid white;
+  text-align: center;
   background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
   background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
   background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
   background-size:cover;
+  border-color: white;
+  color:white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 10vw;
 }
 .explanationbox{
   margin: auto;
@@ -65,17 +68,18 @@ span.indicator{
 }
 .signin-btn {
   display: inline-block;
-  width: 60%;
-  text-align: center;
-  line-height: 100px;
+  width: 65vw;
+  font-size: 3vw;
+  line-height: 10vw;
   border: 2px solid white;
-  font-size: 3.6rem;
+  text-align: center;
+  text-align: center;
   color: white;
-  letter-spacing: 10px;
+  letter-spacing:2vw;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
-  border-radius: 60px;
+  border-radius: 10vw;
 }
 .signin-btn:hover {
 background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
@@ -90,19 +94,19 @@ color:white;
   text-align: center;
 }
 .regist-btn {
-  margin: auto;
-  width: 650px;
-  height: 120px;
-  text-align: center;
-  line-height: 120px;
+  display: inline-block;
+  width: 35vw;
+  font-size: 2vw;
+  line-height: 5vw;
   border: 2px solid white;
-  font-size: 3.6rem;
+  text-align: center;
+  text-align: center;
   color: white;
-  letter-spacing: 10px;
+  letter-spacing:2vw;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
-  border-radius: 40px;
+  border-radius: 10vw;
 }
 .regist-btn:hover {
 background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
@@ -120,17 +124,18 @@ color:white;
 /* ここから下がボタンのCSS　*/
 .top-btn {
   display: inline-block;
-  width: 50%;
-  text-align: center;
-  line-height: 120px;
+  width: 65vw;
+  font-size: 3vw;
+  line-height: 10vw;
   border: 2px solid white;
-  font-size: 3.6rem;
+  text-align: center;
+  text-align: center;
   color: white;
-  letter-spacing: 10px;
+  letter-spacing:2vw;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
-  border-radius: 60px;
+  border-radius: 10vw;
 }
 .top-btn:hover {
   background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
@@ -141,25 +146,25 @@ color:white;
   color:white;
 }
 // ------------------------------------
-.user-signout{
+.topsignout{
   padding-top: 100px;
   text-align: center;
 }
-.signout-btn {
-  width: 500px;
-  height: 100px;
-  text-align: center;
-  line-height: 120px;
+.topsignout-btn {
+  display: inline-block;
+  width: 15vw;
+  font-size: 2vw;
+  line-height: 2vw;
   border: 2px solid white;
-  font-size: 2.0rem;
+  text-align: center;
+  text-align: center;
   color: white;
-  letter-spacing: 10px;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
-  border-radius: 60px;
+  border-radius: 10vw;
 }
-.signout-btn:hover {
+.topsignout-btn:hover {
 background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
 background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
 background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
@@ -199,7 +204,7 @@ color:white;
     font-size: 0.8rem;
   }
   .guidance-box {
-    margin-top: 1.5rem;
+    margin-top: 10vw;
     text-align: center;
   }
   .top-btn {
@@ -211,12 +216,13 @@ color:white;
     height: 8rem;
     line-height: 8rem;
     margin-top: 2rem;
+    border-radius: 15vw;
    
   }
-  .user-signout{
-    padding-top: 2rem;
+  .topsignout{
+    padding-top: 15vw;
   }
-  .signout-btn {
+  .topsignout-btn {
     width: 35%;
     border: 0.1rem solid white;
     font-size: 1.5rem;
@@ -224,13 +230,14 @@ color:white;
     font-weight: normal;
   }
   span.indicator{
-    font-size: 0.1rem;
-    bottom: 3rem;
-    right: 2rem;
+    font-size: 1vw;
+    width: 25vw;
+    bottom: 2vw;
+    right: 2vw;
     border: 1px solid rgb(61, 25, 25);
-    letter-spacing: 0.1rem;
+    letter-spacing: 0vw;
     font-weight: normal;
-    border-radius: 2rem;
+    border-radius: 10vw;
   }
   .sign-in{
     padding-top: 7rem;
@@ -244,6 +251,7 @@ color:white;
     height: 8rem;
     line-height: 8rem;
     margin-top: 2rem;
+    border-radius: 15vw;
   }
   .registrations{
     padding-top: 10rem;
@@ -254,5 +262,7 @@ color:white;
     font-size: 1.5rem;
     letter-spacing: 0.5rem;
     font-weight: bold;
+    line-height: 6rem;
+    border-radius: 15vw;
   }
 }

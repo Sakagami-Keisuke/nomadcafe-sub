@@ -31,9 +31,9 @@
           .guidance-box
             = link_to  "#", class: 'top-btn' do
               %span 東京・渋谷エリアをさがす
-        .user-signout
+        .topsignout
           - if user_signed_in?
-            = link_to destroy_user_session_path, :method => :delete, class: 'signout-btn' do
+            = link_to destroy_user_session_path, :method => :delete, class: 'topsignout-btn' do
               %span サインアウト
 
 

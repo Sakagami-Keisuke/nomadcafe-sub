@@ -206,4 +206,16 @@ Shop.seed do |s|
   s.latitude = " 33.587336"
   s.longitude = "130.398705"
 end
-
+Shop.seed do |s|
+  s.id = 17
+  s.name = "グランドミラージュカフェ"
+  s.address = "〒810-0021 福岡県福岡市中央区今泉１丁目１７−１６"
+  s.mood = "静か"
+  s.price = "500円〜"
+  s.power = "６箇所"
+  s.open_time = "12時"
+  s.close_time = "2時"
+  s.holiday = "土日定休"
+  s.latitude = "33.586168"
+  s.longitude = "130.39879"
+end

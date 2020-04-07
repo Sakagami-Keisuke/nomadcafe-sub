@@ -64,6 +64,14 @@ var markerData = [
     name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=タリーズコーヒー西鉄天神駅店&dirflg=w" target="_blank">タリーズコーヒー西鉄天神駅店</a> ',
     lat: 33.589917,
     lng: 130.398976
+    },{
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=レックコーヒー天神店&dirflg=w" target="_blank">レックコーヒー天神店</a> ',
+    lat: 33.587336,
+    lng: 130.398705
+    },{
+    name: '<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=グランドミラージュカフェ&dirflg=w" target="_blank">グランドミラージュカフェ</a> ',
+    lat: 33.586168,
+    lng: 130.398790
     }
 
     
