@@ -39,3 +39,28 @@ ul.shop-new-form{
   text-decoration: none;
 }
 
+// -------------------------------
+/* スマホ　横幅　480px
+------------------------------ */
+@media screen and (max-width:420px) {
+ 
+  ul.shop-new-form{
+    text-align: center;
+
+    margin: 0 auto;
+    input::placeholder{
+      color: white;
+      letter-spacing: 0.5vw;
+    }
+    input{
+      background-color: rgba(37, 36, 36, 0.55);
+      color: white;
+      text-align: center;
+      width: 50vw;
+      height: 6vw;
+ 
+    }
+  }
+
+}
+
