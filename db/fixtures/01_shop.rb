@@ -113,7 +113,7 @@ end
 Shop.seed do |s|
   s.id = 9
   s.name = "スタバ天神地下街店"
-  s.englishname = "Starbucks Coffee Underground"
+  s.englishname = "Starbucks Coffee TenjinUnderground"
   s.address = "〒810-0000 福岡県福岡市中央区天神２丁目地下０号 天神地下街"
   s.mood = "静か"
   s.price = "400円〜"
@@ -235,4 +235,18 @@ Shop.seed do |s|
   s.holiday = "土日定休"
   s.latitude = "33.586168"
   s.longitude = "130.39879"
+end
+Shop.seed do |s|
+  s.id = 18
+  s.name = "上島珈琲店 天神地下街店"
+  s.englishname = "Ueshima Coffe TenjinUnderground"
+  s.address = "〒810-0001 福岡県福岡市中央区天神２丁目地下3号"
+  s.mood = "静か"
+  s.price = "500円〜"
+  s.power = "22席"
+  s.open_time = "7時30分"
+  s.close_time = "22時"
+  s.holiday = "不定休"
+  s.latitude = "33.592261"
+  s.longitude = "130.398746"
 end

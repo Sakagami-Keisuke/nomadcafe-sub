@@ -6,7 +6,7 @@ body{
 // --------------------------------
 .topwrapper{
   width: 100vw;
-  height: 63vw;
+  height: 100vh;
   background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(topdemo.jpg);  /* 背景画像指定 */
   background-repeat: repeat; 
   background-position: center;  
@@ -14,7 +14,7 @@ body{
 }
 .signout-topwrapper{
   width: 100vw;
-  height: 63vw;
+  height: 100vh;
   background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(mapimage.jpg);  /* 背景画像指定 */
   background-repeat: repeat; 
   background-position: center;  
@@ -192,7 +192,7 @@ color:white;
 ------------------------------ */
 @media screen and (max-width:420px) {
  
-  .background-signin {
+  .topwrapper{
     width: 100vw;
     height: 100vh;
     background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(democafe.jpg);  /* 背景画像指定 */
@@ -200,45 +200,55 @@ color:white;
     background-position: center;    /* 背景の位置指定 */
     background-size: cover;
   }
+  .heder-container{
+    height: 23vw;
+
+    p.toptext-eng {
+      margin-left: 1vw;
+      font-size: 1vw;
+      letter-spacing: 0vw;
+    }
+  }
+  span.indicator{
+    display: none;
+  }
+
+
+  .background-signin {
+    width: 100vw;
+    height: 100vh;
+    background: none;
+  }
   .explanationbox{
     margin: auto;
     max-width: 100%;
     height: 12rem;
   }
-  .top-title{
-    font-family: "Sawarabi Gothic";
-    font-size: 4rem;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 0.5rem;
-  }
-  .explanation{
-    font-size: 0.8rem;
-  }
+ 
   .guidance-box {
-    margin-top: 10vw;
-    text-align: center;
+    margin-top: 15vw;
   }
   .top-btn {
     width: 80%;
-    font-size: 1.5rem;
-    font-weight: normal;
-    letter-spacing: 0.6rem;
+    font-size: 1.5vw;
+    letter-spacing: 2vw;
     border: 0.1rem solid white;
-    height: 8rem;
-    line-height: 8rem;
+    height: 30vw;
+    line-height: 10vw;
     margin-top: 2rem;
     border-radius: 15vw;
   }
   .topsignout{
-    padding-top: 15vw;
+    padding-top: 20vw;
   }
   .topsignout-btn {
-    width: 35%;
+    width: 40vw;
     border: 0.1rem solid white;
-    font-size: 1.5rem;
-    letter-spacing: 0.5rem;
+    font-size: 1.5vw;
+    letter-spacing: 1vw;
+    height: 10vw;
     font-weight: normal;
+    line-height: 5vw;
   }
   span.indicator{
     font-size: 1vw;
@@ -250,30 +260,37 @@ color:white;
     font-weight: normal;
     border-radius: 10vw;
   }
+  // 以下サインアウト時-------------------------
+
+  .signout-topwrapper{
+    height: 100vh;
+  }
   .sign-in{
-    padding-top: 7rem;
+    padding-top: 13vw;
   }
   .signin-btn {
-    width: 70%;
-    font-size: 2rem;
+    width: 80%;
+    font-size: 3vw;
+    line-height: 10vw;
     font-weight: bold;
-    letter-spacing: 0.6rem;
+    letter-spacing: 1.5vw;
     border: 0.1rem bold white;
-    height: 8rem;
-    line-height: 8rem;
-    margin-top: 2rem;
+    height: 22vw;
+    margin-top: 8vw;
     border-radius: 15vw;
   }
   .registrations{
-    padding-top: 10rem;
+    padding-top: 10vw;
   }
   .regist-btn {
-    width: 45%;
-    border: 0.1rem bold white;
-    font-size: 1.5rem;
-    letter-spacing: 0.5rem;
+    width: 80%;
+    font-size: 3vw;
+    line-height: 10vw;
     font-weight: bold;
-    line-height: 6rem;
+    letter-spacing: 1.5vw;
+    border: 0.1rem bold white;
+    height: 22vw;
+    margin-top: 8vw;
     border-radius: 15vw;
   }
 }

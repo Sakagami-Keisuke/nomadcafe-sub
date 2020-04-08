@@ -107,23 +107,18 @@ body{
     width: 60%;
   }
   .e-login-btn {
-    margin-top: 2.5rem;
-    background-color:rgba(0,0,0,0);
-    display: inline-block;
     width: 80%;
-    line-height: 30px;
-    border: 2px solid rgb(83, 47, 47);
-    font-size: 1.5rem;
-    letter-spacing: 5px;
-    color: rgb(77, 36, 36);
-    text-decoration: none;
+    height: 13vw;
+    line-height: 13vw;
+    font-size: 3vw;
     font-weight: bold;
-    padding: 16px 0px 16px 0px;
-    border-radius: 60px;
-    transition: .4s;
+    letter-spacing: 1.5vw;
+    border: 0.1rem bold white;
+    margin-top: 1vw;
+    border-radius: 15vw;
   }
   .sessions-btn{
-    font-size: 1.5rem;
+    font-size: 4vw;
     padding: 4px 10px;
   }
 

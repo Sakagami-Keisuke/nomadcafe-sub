@@ -35,7 +35,6 @@
   display: inline-block;
   width: 50vw;
   font-size: 1.5vw;
-
   border: 2px solid white;
   text-align: center;
   color: white;
@@ -127,6 +126,7 @@
   padding: 1vw 1vw;
   border-radius: 10vw;
   transition: .4s;
+  background-color: rgba(112, 108, 108, 0.5);
   }
 .to-top-btn:hover {
   background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
@@ -176,6 +176,13 @@
 ------------------------------ */
 @media screen and (max-width:420px) {
  
+  .background-index{
+    background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(top.jpg);  /* 背景画像指定 */
+    background-repeat:  repeat-y;  /* 背景の繰り返し設定 */
+    background-position: center;    /* 背景の位置指定 */
+    background-size:cover;
+  }
+
   .googlemap{
     width: 95vw;
     height: 90vw;
@@ -190,32 +197,32 @@
       width:4vw;
     }
   }
+  // ------------------
   .index-btn {
     display: block;
     width: 65vw;
     margin-left: 2vw;
-    line-height: 10vw;
+    line-height: 7vw;
     font-size: 4vw;
     border-radius: 20vw;
   }
+  // ------------------
   .to-top{
     float: right;
-    bottom: 1vw;
+    bottom: 90vw;
     right: 0.5vw;
     padding: 10px;
-    padding-top: 40px;
+    padding-top: 10px;
   }
   .to-top-btn {
     width: 18vw;
-    text-align: center;
-    line-height: 10vw;
+    height: 25vw;
+    line-height: 7vw;
     border: 2px solid white;
-    font-size: 4vw;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 1vw 1vw;
+    font-size: 2vw;
+  
     }
+    // ----------------------
     .shopnew{
       float: right;
       bottom: 20vw;
@@ -233,6 +240,7 @@
       font-weight: bold;
       padding: 1vw 1vw;
       }
+      // ------------------------
       .edit-box{
         text-align: left;
       }

@@ -7,6 +7,7 @@ body{
   line-height: 2;
     }
 .back-to{
+  margin-top: 5vw;
   text-align: center;
 }
 .back-to-btn {
@@ -40,33 +41,35 @@ color:white;
 ------------------------------ */
 @media screen and (max-width:420px) {
  
-  .easy-btn {
-    margin-top: 2rem;
-    background-color:rgba(0,0,0,0);
-    display: inline-block;
-    width: 65%;
-    border: 1px solid rgb(83, 47, 47);
-    font-size: 2rem;
-    font-weight: normal;
+  // .easy-btn {
+  //   margin-top: 2rem;
+  //   background-color:rgba(0,0,0,0);
+  //   display: inline-block;
+  //   width: 65%;
+  //   border: 1px solid rgb(83, 47, 47);
+  //   font-size: 2rem;
+  //   font-weight: normal;
+  // }
 
+  .actions{
+    margin-top: 10vw;
+  }
+  .back-to{
+    margin-top: 10vw;
   }
   .back-to-btn {
-    margin-top: 5rem;
-    background-color:rgba(0,0,0,0);
-    display: inline-block;
-    width: 57%;
-    border: 1px solid rgb(83, 47, 47);
-    font-size: 2rem;
-    font-weight: normal;
-
+    width: 80%;
+    font-size: 3vw;
+    line-height: 10vw;
+    font-weight: bold;
+    letter-spacing: 1.5vw;
+    border: 0.1rem bold white;
+    height: 22vw;
+    margin-top: 8vw;
+    border-radius: 15vw;
+  }
   }
 
-  }
-
-
-
- 
-  
 
 
 
