@@ -13,7 +13,7 @@
         .index-link-box
           = link_to  shop_path(shop.id),class: 'index-btn',data: {"turbolinks" => false} do
             %i.fa.fa-coffee
-            %span #{shop.name}
+            %span #{shop.name}<br>#{shop.englishname}
         .edit-box
           - if current_user.nickname == "TEST" && current_user.id == 1
             = link_to '編集', "/shops/#{shop.id}/edit", method: :get, class: 'edit-btn' 
@@ -23,7 +23,7 @@
     .blank
     .to-top
       = link_to root_path, class: 'to-top-btn' ,data: {"turbolinks" => false}do
-        %span もどる
+        %span もどる<br>Go back to previous page
     .shopnew
       - if current_user.nickname == "TEST" && current_user.id == 1
         = link_to new_shop_path,class: 'shopnew-btn' do

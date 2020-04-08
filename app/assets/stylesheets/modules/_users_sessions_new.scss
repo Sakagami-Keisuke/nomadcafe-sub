@@ -15,22 +15,25 @@ body{
   }
 
   .nickname {
-    height: 4rem;
-    width: 30%;
-    margin-bottom: 20px;
+    font-size: 1.5vw;
+    width: 30vw;
+    line-height: 3vw;
+    margin-bottom: 1vw;
   }
   .password {
-    height: 4rem;
-    width: 30%;
-    margin-bottom: 20px;
+    font-size: 1.5vw;
+    width: 30vw;
+    line-height: 3vw;
+    margin-bottom: 1vw;
   }
   .password_confirmation {
-    height: 4rem;
-    width: 30%;
-    margin-bottom: 20px;
+    font-size: 1.5vw;
+    width: 30vw;
+    line-height: 3vw;
+    margin-bottom: 1vw;
   }
   label {
-    font-size: 2rem;
+    font-size: 1.5vw;
     font-weight: bold;
   }
 }

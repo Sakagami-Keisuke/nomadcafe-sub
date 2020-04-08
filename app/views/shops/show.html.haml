@@ -68,18 +68,7 @@
           = link_to shops_path, class: 'return-btn' ,data: {"turbolinks" => false} do
             %span もどる
 
-        .shop-movie
-          youtube動画　埋め込み
-
-
-
-
-
-
-
-
-
-
+-# --------------------------------------------------------------
 
 :javascript
   function initMap() {
@@ -109,7 +98,7 @@
     });
 
     var infowindow = new google.maps.InfoWindow({
-        content: '#{@shop.name}'
+        content: '#{@shop.name}<br>#{@shop.englishname}'
     });
     infowindow.open(map_02, marker_02);
 

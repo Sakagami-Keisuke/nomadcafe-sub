@@ -6,7 +6,6 @@
       %i.fa.fa-coffee
       %span.toptext ノマドワークに適した wifi・電源フリー のお店をご案内します
       %p.toptext-eng We will guide you to wifi and power-free Cafes suitable "for nomad work"
-
       .hedaer-box
         .hedaer-innner
       .background-signin
@@ -26,7 +25,8 @@
     .heder-container
       %h1 NomadCafe
       %i.fa.fa-coffee
-      %span ノマドワークに適した wifi・電源フリー のお店をご案内します
+      %span.toptext ノマドワークに適した wifi・電源フリー のお店をご案内します
+      %p.toptext-eng We will guide you to wifi and power-free Cafes suitable "for nomad work"
       .hedaer-box
         .hedaer-innner
       .background-signout
@@ -34,10 +34,10 @@
           .explanation
             .sign-in
               = link_to new_user_session_path,class: 'signin-btn' do
-                %span テストサインイン
+                %span テストサインイン<br>Use application test
                 %br
             .registrations
               = link_to new_user_registration_path,class: 'regist-btn' do
-                %span 登録して利用
+                %span 登録して利用<br>Register and use
 
 

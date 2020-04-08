@@ -2,6 +2,7 @@ class CreateShops < ActiveRecord::Migration[5.2]
   def change
     create_table :shops do |t|
       t.string :name
+      t.string :englishname
       t.string :address
       t.string :mood
       t.string :price

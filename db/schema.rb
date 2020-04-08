@@ -43,8 +43,8 @@ ActiveRecord::Schema.define(version: 2020_04_05_113714) do
   end
 
   create_table "shops", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "user_id"
     t.string "name"
+    t.string "englishname"
     t.string "address"
     t.string "mood"
     t.string "price"
@@ -56,7 +56,6 @@ ActiveRecord::Schema.define(version: 2020_04_05_113714) do
     t.decimal "longitude", precision: 9, scale: 6
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_shops_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

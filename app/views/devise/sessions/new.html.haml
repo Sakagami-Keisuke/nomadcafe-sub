@@ -2,31 +2,30 @@
   .heder-container
     %h1 NomadCafe
     %i.fa.fa-coffee
-    %span かんたんログインボタンを押してください
-    .hedaer-box
-      .hedaer-innner
+    %span.toptext ノマドワークに適した wifi・電源フリー のお店をご案内します
+    %p.toptext-eng We will guide you to wifi and power-free Cafes suitable "for nomad work"
+  .hedaer-box
+    .hedaer-innner
   .user-sessions-form
-    -# %span.title サ イ ン イ ン
     .blankspace
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-      -# = render "devise/shared/error_messages", resource: resource
       .field
         = f.label :ニックネーム
         %br/
-        = f.text_field :nickname, class:'nickname', placeholder:"入力不要です", autofocus: true
+        = f.text_field :nickname, class:'nickname', placeholder:"nickname", autofocus: true
       .field
         = f.label :パスワード
         - if @minimum_password_length
           %em
             (#{@minimum_password_length} 文字以上)
         %br/
-        = f.password_field :password, class:'password', placeholder:"入力不要です",  autocomplete: "new-password"
+        = f.password_field :password, class:'password', placeholder:"passward",  autocomplete: "new-password"
       .field
         = f.label :パスワード（再確認）
         %br/
-        = f.password_field :password_confirmation, class:'password_confirmation', placeholder:"入力不要です", autocomplete: "new-password"
+        = f.password_field :password_confirmation, class:'password_confirmation', placeholder:"password_confirmation", autocomplete: "new-password"
       .actions
-        = f.submit "サインアップ",class:"sessions-btn"
+        = f.submit "sign in",class:"sessions-btn"
 
   .easy-login
   = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
