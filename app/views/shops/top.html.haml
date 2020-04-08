@@ -1,57 +1,37 @@
-.topwrapper
-  - if user_signed_in?
-    .background-signin
-      .explanationbox
-        - if user_signed_in?
-          %span.indicator ようこそ#{@user.nickname}さん
-        .top-title
-          NomadCafe
-          %br
-        .explanation
-          ノマドワークに適した、wifi・電源フリーのお店をすぐにご案内します。
-          .user-signed
-          - if user_signed_in?
-            -# = link_to destroy_user_session_path, :method => :delete, class: 'signout-btn' do
-            -#   %span サインアウト
-          - else
-            .sign-in
-              = link_to new_user_session_path,class: 'signin-btn' do
-                %span テストサインイン
-                %br
-            .registrations
-              = link_to new_user_registration_path,class: 'regist-btn' do
-                %span 登録して利用
+- if user_signed_in?
+  .topwrapper
+    .heder-container
+      %h1 NomadCafe
+      %span.indicator ようこそ#{@user.nickname}さん
+      %i.fa.fa-coffee
+      %span.toptext ノマドワークに適した wifi・電源フリー のお店をご案内します
+      %p.toptext-eng We will guide you to wifi and power-free Cafes suitable "for nomad work"
 
-
-      -if user_signed_in?
-        .guidance
-          .guidance-box
-            = link_to  shops_path, class: 'top-btn' ,data: {"turbolinks" => false} do
-              %span 福岡・天神エリアをさがす
-          .guidance-box
-            = link_to  "#", class: 'top-btn' do
-              %span 東京・渋谷エリアをさがす
-        .topsignout
-          - if user_signed_in?
+      .hedaer-box
+        .hedaer-innner
+      .background-signin
+        .explanationbox
+          .guidance
+            .guidance-box
+              = link_to  shops_path, class: 'top-btn' ,data: {"turbolinks" => false} do
+                %span 福岡・天神エリアをさがす<br>Find a cafe in the Fukuoka/Tenjin area
+            .guidance-box
+              = link_to  "#", class: 'top-btn' do
+                %span 東京・渋谷エリアをさがす<br>Find a cafe in the Tokyo / Shibuya area
+          .topsignout
             = link_to destroy_user_session_path, :method => :delete, class: 'topsignout-btn' do
-              %span サインアウト
-
-
-  - else
-    .background-signout
-      .explanationbox
-        - if user_signed_in?
-          %span.indicator ようこそ#{@user.nickname}さん
-        .top-title
-          NomadCafe
-          %br
-        .explanation
-          ノマドワークに適した、wifi・電源フリーのお店をすぐにご案内します。
-          .user-signed
-          - if user_signed_in?
-            -# = link_to destroy_user_session_path, :method => :delete, class: 'signout-btn' do
-            -#   %span サインアウト
-          - else
+              %span サインアウト<br>Sign out
+- else
+  .signout-topwrapper
+    .heder-container
+      %h1 NomadCafe
+      %i.fa.fa-coffee
+      %span ノマドワークに適した wifi・電源フリー のお店をご案内します
+      .hedaer-box
+        .hedaer-innner
+      .background-signout
+        .explanationbox
+          .explanation
             .sign-in
               = link_to new_user_session_path,class: 'signin-btn' do
                 %span テストサインイン
@@ -61,12 +41,3 @@
                 %span 登録して利用
 
 
-      -if user_signed_in?
-        .guidance
-          .guidance-box
-            = link_to  shops_path, class: 'top-btn' do
-              %span 福岡・天神エリアをさがす
-        .user-signout
-          - if user_signed_in?
-            = link_to destroy_user_session_path, :method => :delete, class: 'signout-btn' do
-              %span サインアウト

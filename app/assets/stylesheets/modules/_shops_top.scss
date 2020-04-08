@@ -1,37 +1,55 @@
-html{
-  font-size: 62.5%;
-  }
-  // --------------------------
+html{font-size: 62.5%;}
 body{
   font-size:1.6rem;/* 16px*/
   line-height: 2;
-    }
-
-
-.background-signin {
+}
+// --------------------------------
+.topwrapper{
   width: 100vw;
-  height: 830px;
+  height: 77vw;
   background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(topdemo.jpg);  /* 背景画像指定 */
-  background-repeat:  no-repeat;  /* 背景の繰り返し設定 */
-  background-position: center;    /* 背景の位置指定 */
+  background-repeat: repeat; 
+  background-position: center;  
   background-size: cover;
 }
-.background-signout {
+.signout-topwrapper{
   width: 100vw;
-  height: 830px;
+  height: 77vw;
   background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(mapimage.jpg);  /* 背景画像指定 */
-  background-repeat:  no-repeat;  /* 背景の繰り返し設定 */
-  background-position: center;    /* 背景の位置指定 */
+  background-repeat: repeat; 
+  background-position: center;  
   background-size: cover;
 }
+.heder-container{
+  width: 100vw;
+  height: 12vw;
+  background-color: rgba(66, 32, 32, 0.8);
+  color: white;
+  h1{
+    font-size: 3.2vw;
+    letter-spacing: 1vw;
+    margin-left: 2vw;
+  }
+  i{
+    margin-left: 2vw;
+  }
+  span.toptext {
+    font-size: 1.2vw;
+  }
+  p.toptext-eng {
+    margin-left: 2.5vw;
+    font-size: 1.2vw;
+    letter-spacing: 0.2vw;
+  }
+}
+
 span.indicator{
   float: right;
-  bottom: 30px;
-  right: 80px;
-  position: fixed;
-  width: 15vw;
-  font-size: 1.5vw;
-  line-height: 1.5vw;
+  top:1vw;
+  margin-right: 4vw;
+  width: 12vw;
+  font-size: 1.2vw;
+  line-height: 1.2vw;
   border: 2px solid white;
   text-align: center;
   background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
@@ -44,98 +62,27 @@ span.indicator{
   padding: 8px 16px;
   border-radius: 10vw;
 }
-.explanationbox{
-  margin: auto;
-  max-width: 90%;
-  height: 15rem;
-  background-color: rgba(255, 0, 0, 0.096);
-}
-.top-title{
-  font-size: 4.0rem;font-weight: bold;
-  text-align: center;
-}
-.explanation{
-  font-size: 2rem;
-  text-align: center;
-}
-.user-signed{
-  padding-top: 40px;
-  text-align: center;
-}
-.sign-in{
-  padding-top: 100px;
-  text-align: center;
-}
-.signin-btn {
-  display: inline-block;
-  width: 65vw;
-  font-size: 3vw;
-  line-height: 10vw;
-  border: 2px solid white;
-  text-align: center;
-  text-align: center;
-  color: white;
-  letter-spacing:2vw;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 16px;
-  border-radius: 10vw;
-}
-.signin-btn:hover {
-background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-background-size:cover;
-border-color: white;
-color:white;
-}
-.registrations{
-  padding-top: 100px;
-  text-align: center;
-}
-.regist-btn {
-  display: inline-block;
-  width: 35vw;
-  font-size: 2vw;
-  line-height: 5vw;
-  border: 2px solid white;
-  text-align: center;
-  text-align: center;
-  color: white;
-  letter-spacing:2vw;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 16px;
-  border-radius: 10vw;
-}
-.regist-btn:hover {
-background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-background-size:cover;
-border-color: white;
-color:white;
-}
 // --------------------------
+
 .guidance-box {
-  margin-top: 70px;
+  margin-top: 8vw;
   text-align: center;
 }
-/* ここから下がボタンのCSS　*/
 .top-btn {
   display: inline-block;
-  width: 65vw;
-  font-size: 3vw;
-  line-height: 10vw;
+  width: 50vw;
+  font-size: 1.5vw;
+  line-height: auto;
   border: 2px solid white;
   text-align: center;
-  text-align: center;
   color: white;
-  letter-spacing:2vw;
+  letter-spacing:0.5vw;
   text-decoration: none;
   font-weight: bold;
-  padding: 8px 16px;
+  padding: 1.5vw 1vw;
   border-radius: 10vw;
+  background-color: rgba(112, 108, 108, 0.5);
+  transition: .4s;
 }
 .top-btn:hover {
   background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
@@ -147,22 +94,23 @@ color:white;
 }
 // ------------------------------------
 .topsignout{
-  padding-top: 100px;
+  padding-top: 10vw;
   text-align: center;
 }
 .topsignout-btn {
   display: inline-block;
-  width: 15vw;
-  font-size: 2vw;
-  line-height: 2vw;
+  width: 21vw;
+  font-size: 2w;
+  line-height: 3vw;
   border: 2px solid white;
-  text-align: center;
   text-align: center;
   color: white;
   text-decoration: none;
   font-weight: bold;
-  padding: 8px 16px;
+  padding: 0.5vw 1vw;
   border-radius: 10vw;
+  background-color: rgba(112, 108, 108, 0.5);
+  transition: .4s;
 }
 .topsignout-btn:hover {
 background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
@@ -172,6 +120,70 @@ background-size:cover;
 border-color: white;
 color:white;
 }
+// --------------------------------
+
+.sign-in{
+  margin-top: 10vw;
+  text-align: center;
+}
+.signin-btn {
+  display: inline-block;
+  width: 50vw;
+  font-size: 2vw;
+  line-height: 10vw;
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  letter-spacing:1vw;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5vw 1vw;
+  border-radius: 10vw;
+  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background-size:cover;
+  border-color: white;
+  color:white;
+  transition: .4s;
+}
+.signin-btn:hover {
+background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+background-size:cover;
+border-color: white;
+color:black;
+}
+.registrations{
+  margin-top: 10vw;
+  text-align: center;
+}
+.regist-btn {
+  display: inline-block;
+  width: 50vw;
+  font-size: 2vw;
+  line-height: 10vw;
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  letter-spacing:1vw;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5vw 1vw;
+  border-radius: 10vw;
+  background-color: rgba(112, 108, 108, 0.5);
+  transition: .4s;
+}
+.regist-btn:hover {
+background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+background-size:cover;
+border-color: white;
+color:white;
+}
+
 
 
 // -------------------------------
@@ -193,7 +205,7 @@ color:white;
     height: 12rem;
   }
   .top-title{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Sawarabi Gothic";
     font-size: 4rem;
     font-weight: bold;
     text-align: center;

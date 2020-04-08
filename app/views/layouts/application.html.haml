@@ -3,6 +3,7 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0", name: "viewport"}
+    %link{:href => "https://fonts.googleapis.com/css?family=Sawarabi+Gothic", :rel => "stylesheet"}/
     %title Nomadcafe
     = csrf_meta_tags
     = csp_meta_tag
@@ -12,22 +13,4 @@
 
   %body
     %header
-      %nav
-        -# - if user_signed_in?
-        -#   %strong= link_to current_user.nickname, pages_show_path
-        -#   = link_to 'プロフィール変更', edit_user_registration_path
-        -#   = link_to 'ログアウト', destroy_user_session_path, method: :delete
-        -# - else
-        -#   = link_to 'サインアップ', new_user_registration_path
-        -#   = link_to 'ログイン', new_user_session_path
-        -# - if notice
-        -#   %p.notice.alert= notice
-        -# - if alert
-        -#   %p.alert.alert-error= alert
-        -# - if user_signed_in?
-        -#   %p= current_user.email
-        -#   %p.btn= link_to "Sign out", destroy_user_session_path, :method => :delete
-        -# - else
-          -# %p.btn= link_to "Sign up", new_user_registration_path
-          -# %p.btn= link_to "Sign in", new_user_session_path
     = yield

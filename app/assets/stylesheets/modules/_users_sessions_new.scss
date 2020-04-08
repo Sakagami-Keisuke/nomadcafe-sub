@@ -34,13 +34,14 @@ body{
     font-weight: bold;
   }
 }
+//---------------------------------
 #new_user{
   margin-top: 15px;
   text-align: center;
 }
 .sessions-btn{
   background-color: gold;
-  font-size: 2rem;
+  font-size: 1.5vw;
   border-bottom: solid 3px goldenrod;
   box-shadow: 3px 3px 3px gray;
   transition: 0.3s;
@@ -54,22 +55,23 @@ body{
 .sessions-btn:hover {
   background-color: orange;
 }
-
+// ------------------------------------
 
   .e-login-btn {
-    margin-top: 25px;
-    background-color:rgba(0,0,0,0);
+    margin-top: 1.2vw;
     display: inline-block;
-    width: 500px;
-    line-height: 30px;
-    border: 2px solid rgb(83, 47, 47);
-    font-size: 32px;
-    letter-spacing: 5px;
-    color: rgb(77, 36, 36);
+    width: 35vw;
+    font-size: 1.5vw;
+    line-height: 3.5vw;
+    border: 2px solid white;
+    text-align: center;
+    color: white;
+    letter-spacing:1vw;
     text-decoration: none;
     font-weight: bold;
-    padding: 16px 0px 16px 0px;
-    border-radius: 60px;
+    padding: 0.5vw 1vw;
+    border-radius: 10vw;
+    background-color: rgba(112, 108, 108, 0.5);
     transition: .4s;
   }
   .e-login-btn:hover {
