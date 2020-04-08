@@ -115,11 +115,12 @@
         var myLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
                           // マップオプションを変数に格納
         var mymapOptions = {
-          zoom : 16,                 // 拡大倍率
+          zoom : 17,                 // 拡大倍率
           center : { lat: 33.588689,lng: 130.399967 },     // myLatLng, // 緯度・経度　SSL化までは使わない
           maxZoom:20,                // 最大ズームの設定
           minZoom: 15,               // 最小ズームの設定
           scaleControl:true,         // 距離スケール表示
+          mapTypeId: google.maps.MapTypeId.TERRAIN
         };
                                             // マップオブジェクト作成
         var map = new google.maps.Map(
