@@ -59,17 +59,20 @@
     padding: 3px;
     width: 20vw;
   }
-.com-index{
+.comment-title{
   width: 90vw;
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 2vw;
+  color:rgb(42, 42, 117);
 }
-p.comm-user{
-  font-size: 1.5vw;
+p.comment-name{
+  font-size: 1.8vw;
   font-weight: bold;
+  color:rgb(87, 87, 182);
 }
 .comments-container{
-  font-size: 1.2vw;
+  color:rgb(35, 35, 88);
+  font-size: 1.5vw;
   overflow: scroll;
   width: 90%;
   height: 34vw;
@@ -109,6 +112,26 @@ p.comm-user{
   .comment-btn:hover {
     border: dotted 1px #FFF;
   }
+
+
+input.visible{
+  width : 2vw;
+  height: 2vw;
+  transform: scale(1.5);
+  margin-left:10px;
+}
+
+input[value="sss"]:checked ~ .comments-form{
+  visibility:visible;
+  }
+.comments-form{
+  visibility:hidden;
+}
+.hidden-visible-btn{
+  text-align: center;
+  font-size: 2vw;
+  color:rgb(122, 36, 36);
+}
 
 
 .return{
@@ -167,6 +190,17 @@ p.comm-user{
   transform: scale(1.8);
   transition-duration: 2.0s;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -231,3 +265,4 @@ table td{
   width: 35vw;
 }
 }
+

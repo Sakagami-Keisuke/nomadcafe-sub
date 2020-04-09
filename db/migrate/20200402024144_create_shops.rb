@@ -4,6 +4,7 @@ class CreateShops < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :englishname
       t.string :address
+      t.decimal :evaluation, :precision => 2, :scale => 1
       t.string :mood
       t.string :price
       t.string :power

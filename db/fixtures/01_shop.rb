@@ -3,6 +3,7 @@ Shop.seed do |s|
   s.name = "エンジニアカフェ"
   s.englishname = "Engineer Cafe"
   s.address = "〒810-0001 福岡県福岡市中央区天神１丁目１５−３０"
+  s.evaluation = 5
   s.mood = "静か"
   s.price = "無料"
   s.power = "電源30箇所"
@@ -17,6 +18,7 @@ Shop.seed do |s|
   s.name = "カフェベローチェ"
   s.englishname = "CAFE VELOCE 1chome"
   s.address = "〒810-0001 福岡県福岡市中央区天神１丁目１２−２０"
+  s.evaluation = 3
   s.mood = "静か"
   s.price = "400円〜"
   s.power = "電源10箇所"
@@ -31,6 +33,7 @@ Shop.seed do |s|
   s.name = "BOOK & CO."
   s.englishname = "BOOK & CO."
   s.address = "〒810-0001 福岡県福岡市中央区天神４丁目４−１１"
+  s.evaluation = 3
   s.mood = "静か"
   s.price = "500円/1時間〜"
   s.power = "全席有"
@@ -45,6 +48,7 @@ Shop.seed do |s|
   s.name = "タリーズ 天神店"
   s.englishname = "TULLY'S COFFEE　Tenjin"
   s.address = "〒810-0001 福岡県福岡市中央区天神２丁目１４−３３"
+  s.evaluation = 4
   s.mood = "静か"
   s.price = "330円〜"
   s.power = "電源10箇所"
@@ -59,6 +63,7 @@ Shop.seed do |s|
   s.name = "タリーズ 新天町店"
   s.englishname = "TULLY'S COFFEE　Shintencho"
   s.address = "〒810-0001 福岡県福岡市中央区天神２丁目７−２４１"
+  s.evaluation = 4
   s.mood = "静か"
   s.price = "330円〜"
   s.power = "電源10箇所"
@@ -73,6 +78,7 @@ Shop.seed do |s|
   s.name = "スタバ 天神VIORO店"
   s.englishname = "Starbucks Coffee VIORO"
   s.address = "〒810-0001 福岡県福岡市中央区天神２丁目１０−３"
+  s.evaluation = 4
   s.mood = "静か"
   s.price = "400円〜"
   s.power = "電源10箇所"
@@ -87,6 +93,7 @@ Shop.seed do |s|
   s.name = "スタバメディアモール天神"
   s.englishname = "Starbucks Coffee MediaMallTenjin"
   s.address = "〒810-0001 福岡県福岡市中央区天神１丁目１０−１３"
+  s.evaluation = 4
   s.mood = "静か"
   s.price = "400円〜"
   s.power = "電源10箇所"
@@ -101,6 +108,7 @@ Shop.seed do |s|
   s.name = "コメダコーヒー天神南店"
   s.englishname = "KOMEDA Coffe SouthTenjin"
   s.address = "〒810-0001 福岡県福岡市中央区天神１丁目２−１"
+  s.evaluation = 4.5
   s.mood = "やや賑やか"
   s.price = "550円〜"
   s.power = "全席"
@@ -115,6 +123,7 @@ Shop.seed do |s|
   s.name = "スタバ天神地下街店"
   s.englishname = "Starbucks Coffee TenjinUnderground"
   s.address = "〒810-0000 福岡県福岡市中央区天神２丁目地下０号 天神地下街"
+  s.evaluation = 3
   s.mood = "静か"
   s.price = "400円〜"
   s.power = "電源10箇所"
@@ -129,6 +138,7 @@ Shop.seed do |s|
   s.name = "マクドナルド新天町店"
   s.englishname = " McDonald's Shintencho"
   s.address = "〒810-0001 福岡県福岡市中央区天神２丁目９−２０２"
+  s.evaluation = 4
   s.mood = "朝は静か"
   s.price = "100円〜"
   s.power = "電源あり12席"
@@ -143,6 +153,7 @@ Shop.seed do |s|
   s.name = "VITO中洲ゲイツ店"
   s.englishname = "VITO Coffe NakasuGate's"
   s.address = "〒810-0801 福岡県福岡市博多区中洲３丁目７−２４"
+  s.evaluation = 3.5
   s.mood = "静か"
   s.price = "400円〜"
   s.power = "電源10箇所"
@@ -157,6 +168,7 @@ Shop.seed do |s|
   s.name = "Café&Meal MUJI"
   s.englishname = "Café&Meal MUJI"
   s.address = "〒810-0041 福岡県福岡市中央区大名１丁目１５−４１"
+  s.evaluation = 3.5
   s.mood = "静か"
   s.price = "400円〜"
   s.power = "電源10箇所"
@@ -171,6 +183,7 @@ Shop.seed do |s|
   s.name = "スタバ天神西通店"
   s.englishname = "Starbucks Coffee WestStreet"
   s.address = "〒810-0041 福岡県福岡市中央区大名１丁目１３−２５"
+  s.evaluation = 3
   s.mood = "静か"
   s.price = "400円〜"
   s.power = "電源10箇所"
@@ -185,6 +198,7 @@ Shop.seed do |s|
   s.name = "スタートアップカフェ"
   s.englishname = "Startup Cafe"
   s.address = "〒810-0041 福岡県福岡市中央区大名２丁目６−１１"
+  s.evaluation = 4
   s.mood = "静か"
   s.price = "無料"
   s.power = "電源10箇所"
@@ -199,6 +213,7 @@ Shop.seed do |s|
   s.name = "タリーズコーヒー西鉄天神駅店"
   s.englishname = "TULLY'S COFFEE　Tenjin.sta"
   s.address = "〒810-0001 福岡県福岡市博多区天神２丁目１１−3"
+  s.evaluation = 4
   s.mood = "静か"
   s.price = "400円〜"
   s.power = "電源10箇所"
@@ -213,6 +228,7 @@ Shop.seed do |s|
   s.name = "レックコーヒー天神店"
   s.englishname = "Rec Coffe Tenjin"
   s.address = "〒810-0001 福岡県福岡市中央区天神２丁目３−３７"
+  s.evaluation = 4.5
   s.mood = "静か"
   s.price = "440円〜"
   s.power = "全席有"
@@ -227,6 +243,7 @@ Shop.seed do |s|
   s.name = "グランドミラージュカフェ"
   s.englishname = "GRAND MIRAGE Cafe"
   s.address = "〒810-0021 福岡県福岡市中央区今泉１丁目１７−１６"
+  s.evaluation = 4
   s.mood = "静か"
   s.price = "500円〜"
   s.power = "６箇所"
@@ -241,6 +258,7 @@ Shop.seed do |s|
   s.name = "上島珈琲店 天神地下街店"
   s.englishname = "Ueshima Coffe TenjinUnderground"
   s.address = "〒810-0001 福岡県福岡市中央区天神２丁目地下3号"
+  s.evaluation = 3.5
   s.mood = "静か"
   s.price = "500円〜"
   s.power = "22席"
