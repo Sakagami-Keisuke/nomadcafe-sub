@@ -43,7 +43,8 @@
                       < #{comment.user.nickname} >さん
                       ：
                     = comment.text
-
+                    - if current_user.id == comment.user.id
+                      =link_to "→削除する", shop_comment_path(comment.shop.id, comment.id), method: :delete, class: "comment-del-btn"
 
         .mapnavi
           = link_to  "https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=#{@shop.name}&dirflg=w", :target => "_blank", class: 'return-btn' do

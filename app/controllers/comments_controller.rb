@@ -4,6 +4,11 @@ class CommentsController < ApplicationController
     redirect_to  shop_path(params[:shop_id])
   end
 
+  def destroy
+    Comment.find_by(id: params[:id],shop_id: params[:shop_id]).destroy
+    redirect_to shop_path(params[:shop_id])
+  end
+
   private
   def comment_params
     params.require(:comment).permit(:text).merge(user_id: current_user.id, shop_id: params[:shop_id])
