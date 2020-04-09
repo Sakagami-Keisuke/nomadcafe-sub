@@ -11,9 +11,6 @@ class ShopsController < ApplicationController
   def index
     @shops = Shop.all.includes(:images)
 
-    # Actress.joins(:movies).includes(:movies)
-
-    # Shop.joins(:images).includes(:images)
 
   end
 

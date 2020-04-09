@@ -7,35 +7,55 @@
         .index-link-box
           = link_to  shop_path(shop.id),class: 'index-btn',data: {"turbolinks" => false} do 
             - if shop.evaluation == 0
+              %span.shopname #{shop.name}&emsp;#{shop.englishname}<br>
+              = image_tag shop.images[0].src ,class:"indexbtn-image"
               %span.rate.rate0
-              %span.shopname #{shop.name}<br>#{shop.englishname}
+
             - elsif shop.evaluation == 1
+              %span.shopname #{shop.name}&emsp;#{shop.englishname}<br>
+              = image_tag shop.images[0].src ,class:"indexbtn-image"
               %span.rate.rate1
-              %span.shopname #{shop.name}<br>#{shop.englishname}
+
             - elsif shop.evaluation == 1.5
+              %span.shopname #{shop.name}&emsp;#{shop.englishname}<br>
+              = image_tag shop.images[0].src ,class:"indexbtn-image"
               %span.rate.rate1.5
-              %span.shopname #{shop.name}<br>#{shop.englishname}
+
             - elsif shop.evaluation == 2
+              %span.shopname #{shop.name}&emsp;#{shop.englishname}<br>
+              = image_tag shop.images[0].src ,class:"indexbtn-image"
               %span.rate.rate2
-              %span.shopname #{shop.name}<br>#{shop.englishname}
+
             - elsif shop.evaluation == 2.5
+              %span.shopname #{shop.name}&emsp;#{shop.englishname}<br>
+              = image_tag shop.images[0].src ,class:"indexbtn-image"
               %span.rate.rate2.5
-              %span.shopname #{shop.name}<br>#{shop.englishname}
+
             - elsif shop.evaluation == 3
+              %span.shopname #{shop.name}&emsp;#{shop.englishname}<br>
+              = image_tag shop.images[0].src ,class:"indexbtn-image"
               %span.rate.rate3
-              %span.shopname #{shop.name}<br>#{shop.englishname}
+
             - elsif shop.evaluation == 3.5
+              %span.shopname #{shop.name}&emsp;#{shop.englishname}<br>
+              = image_tag shop.images[0].src ,class:"indexbtn-image"
               %span.rate.rate3-5
-              %span.shopname #{shop.name}<br>#{shop.englishname}
+
             - elsif shop.evaluation == 4
+              %span.shopname #{shop.name}&emsp;#{shop.englishname}<br>
+              = image_tag shop.images[0].src ,class:"indexbtn-image"
               %span.rate.rate4
-              %span.shopname #{shop.name}<br>#{shop.englishname}
+
             - elsif shop.evaluation == 4.5
+              %span.shopname #{shop.name}&emsp;#{shop.englishname}<br>
+              = image_tag shop.images[0].src ,class:"indexbtn-image"
               %span.rate.rate4-5
-              %span.shopname #{shop.name}<br>#{shop.englishname}
+
             - elsif shop.evaluation == 5
+              %span.shopname #{shop.name}&emsp;#{shop.englishname}<br>
+              = image_tag shop.images[0].src ,class:"indexbtn-image"
               %span.rate.rate5
-              %span.shopname #{shop.name}<br>#{shop.englishname}
+
             - else
             -# %i.fa.fa-coffee
             -# %span #{shop.name}<br>#{shop.englishname}

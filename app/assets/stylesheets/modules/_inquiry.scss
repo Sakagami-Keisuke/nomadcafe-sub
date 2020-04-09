@@ -1,0 +1,94 @@
+
+  .inquiry-index-title{
+    letter-spacing: 0.5vw;
+    font-size: 2vw;
+    text-align: center;
+    margin: 1.5vw 0 ;
+  }
+  .inquiry-index-table{
+    margin-top: 2vw;
+  }
+  #inquiry_name{
+    height: 5vw;
+    width: 50vw;
+  }
+  #inquiry_message{
+    height: 20vw;
+    width: 50vw;
+  }
+.inquiry-to-confirm{
+  transform:scale(0.7);
+  }
+  .btn-primary{
+    margin-top: 1vw;
+    display: inline-block;
+    width: 50vw;
+    font-size: 1.5vw;
+    line-height: auto;
+    border: 2px solid white;
+    text-align: center;
+    color: white;
+    letter-spacing:0.5vw;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1.5vw 1vw;
+    border-radius: 10vw;
+    background-color: rgba(112, 108, 108, 0.5);
+    transition: .4s;
+  }
+  .btn-primary:hover {
+    background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+    background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+    background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+    background-size:cover;
+    border-color: white;
+    color:white;
+  } 
+  table.confirm-table{
+    p{
+      width: 70vw;
+    }
+  }
+
+  .inquiry-back{
+    transform:scale(0.7);
+    text-align: center;
+  }
+  .inquiry-backbtn{
+    margin-top: 2vw;
+    display: inline-block;
+    width: 50vw;
+    font-size: 1.5vw;
+    line-height: auto;
+    border: 2px solid white;
+    text-align: center;
+    color: white;
+    letter-spacing:0.5vw;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1.2vw 0vw;
+    border-radius: 10vw;
+    background-color: rgba(112, 108, 108, 0.5);
+    transition: .4s;
+  }
+  .inquiry-backbtn:hover {
+    background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+    background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+    background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+    background-size:cover;
+    border-color: white;
+    color:white;
+  }   
+
+  .inquiry-sendbtn{
+    transform:scale(0.7);
+    text-align: center;
+  }
+.thanks-blank{
+  height: 7vw;
+  }
+.inquiry-thanks-totop{
+  transform:scale(0.7);
+  text-align: center;
+  height: 12vw;
+}
