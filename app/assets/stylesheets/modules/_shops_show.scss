@@ -85,6 +85,16 @@ p.comment-name{
    margin-left: 10px;
   }
 }
+.comment-del-btn{
+  line-height: 1.5vw;
+  width: 5vw;
+  font-size: 1.2vw;
+  color: white;
+  border: 2px solid rgb(92, 57, 25);
+  text-decoration: none;
+  background-color: rgb(92, 57, 25);
+}
+
 #comment_text.text_area{
   height: 5vw;
   width: 60vw;
