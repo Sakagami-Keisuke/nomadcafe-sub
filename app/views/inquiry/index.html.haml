@@ -1,0 +1,27 @@
+.inquiry-topwrapper
+  .heder-container
+    %h1 NomadCafe
+    %i.fa.fa-coffee
+    %span.toptext ノマドワークに適した wifi・電源フリー のお店をご案内します
+    %p.toptext-eng We will guide you to wifi and power-free Cafes suitable "for nomad work"
+    .hedaer-box
+      .hedaer-innner
+
+  .inquiry-index-form
+    = form_for @inquiry, :url => inquiry_confirm_path do |f|
+      .inquiry-index-title
+        お問い合わせフォーム
+        .inquiry-index-table
+          %table.table
+            %tr
+              %th.name
+                お名前
+                %span.text-danger （必須）
+              %td.name
+                = f.text_field :name,placeholder:"フルネームでお願いいたします"
+            %tr
+              %th.textarea
+                メッセージ
+              %td= f.text_area :message ,placeholder:"ご連絡先Eメールを書いて頂いた場合は、必ずご返答いたします"
+          .inquiry-to-confirm
+            = f.submit '確認ページにすすむ', class: 'btn-primary'

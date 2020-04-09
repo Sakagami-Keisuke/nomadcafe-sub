@@ -1,0 +1,31 @@
+.inquiry-topwrapper
+  .heder-container
+    %h1 NomadCafe
+    %i.fa.fa-coffee
+    %span.toptext ノマドワークに適した wifi・電源フリー のお店をご案内します
+    %p.toptext-eng We will guide you to wifi and power-free Cafes suitable "for nomad work"
+    .hedaer-box
+      .hedaer-innner
+
+  .inquiry-indez-form
+    = form_for @inquiry, :url => inquiry_thanks_path do |f|
+      .inquiry-index-title
+        以下の内容で送信してよろしいですか
+      %table.confirm-table
+        %tr
+          %th.name お名前
+          %td.name
+            = f.hidden_field :name
+            = @inquiry.name
+
+        %tr
+          %th.textarea メッセージ
+          %td
+            = f.hidden_field :message
+            = simple_format(@inquiry.message)
+      .inquiry-sendbtn
+        = f.submit '送　信', :class => 'btn-primary'
+      .inquiry-back
+        = link_to inquiry_path, :method => :get, class: 'inquiry-backbtn' do
+          %span もどる
+

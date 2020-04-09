@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_05_113714) do
+ActiveRecord::Schema.define(version: 2020_04_09_052940) do
 
   create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "user_id"
@@ -26,6 +26,13 @@ ActiveRecord::Schema.define(version: 2020_04_05_113714) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["shop_id"], name: "index_images_on_shop_id"
+  end
+
+  create_table "inquiries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name"
+    t.string "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "shops", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

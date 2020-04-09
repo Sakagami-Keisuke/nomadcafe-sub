@@ -123,12 +123,12 @@ color:white;
 // --------------------------------
 
 .sign-in{
-  margin-top: 10vw;
+  margin-top: 4vw;
   text-align: center;
 }
 .signin-btn {
   display: inline-block;
-  width: 50vw;
+  width: 40vw;
   font-size: 2vw;
   line-height: auto;
   border: 2px solid white;
@@ -137,7 +137,6 @@ color:white;
   letter-spacing:0.5vw;
   text-decoration: none;
   font-weight: bold;
-  padding: 0.5vw 1vw;
   border-radius: 10vw;
   background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
   background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
@@ -157,12 +156,12 @@ color:black;
 }
 // ---------------------------------------------
 .registrations{
-  margin-top: 10vw;
+  margin-top: 4vw;
   text-align: center;
 }
 .regist-btn {
   display: inline-block;
-  width: 50vw;
+  width: 40vw;
   font-size: 1.5vw;
   line-height: auto;
   border: 2px solid white;
@@ -171,7 +170,6 @@ color:black;
   letter-spacing:0.5vw;
   text-decoration: none;
   font-weight: bold;
-  padding: 0.5vw 1vw;
   border-radius: 10vw;
   background-color: rgba(112, 108, 108, 0.5);
   transition: .4s;
@@ -184,6 +182,39 @@ background-size:cover;
 border-color: white;
 color:white;
 }
+// ----------------------------------------
+.to-inquiry-index{
+  margin-top: 4vw;
+  text-align: center;
+}
+.inquiry-index-btn {
+  display: inline-block;
+  width: 40vw;
+  font-size: 1.5vw;
+  line-height: auto;
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  letter-spacing:0.5vw;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10vw;
+  background-color: rgba(112, 108, 108, 0.5);
+  transition: .4s;
+}
+.inquiry-index-btn:hover {
+background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+background-size:cover;
+border-color: white;
+color:white;
+}
+
+
+
+
+
 
 
 

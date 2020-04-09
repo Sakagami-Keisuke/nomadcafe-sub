@@ -34,19 +34,26 @@
 span.shopname{
   margin-left: 2vw;
 }
+.indexbtn-image{
+  margin-top: 1vw;
+  margin-right: 3vw;
+  width: 6vw;
+  height: 4vw;
+}
 .index-btn {
   display: inline-block;
-  width: 50vw;
+  width: 40vw;
   font-size: 1.5vw;
   border: 2px solid white;
   text-align: center;
-  // color: white;
-  // letter-spacing:0.5vw;
+  line-height: 1.5vw;
+  color: rgb(235, 235, 247);
   text-decoration: none;
   font-weight: bold;
   padding: 1.5vw 1vw;
   border-radius: 10vw;
-  background-color: rgba(83, 77, 77, 0.5);
+  background: linear-gradient(to top, rgba(31, 28, 25, 0.7) 0%, rgba(128, 58, 17, 0.7) 100%),url(mapimage.jpg); 
+  background-size:cover;
   transition: .4s;
 }
 .index-btn:hover {
@@ -73,6 +80,7 @@ span.shopname{
   font-weight: bold;
   padding: 8px 16px;
   border-radius: 150px;
+  background: linear-gradient(to top, rgba(128, 84, 128, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%); 
   transition: .4s;
 }
 .edit-btn:hover {
@@ -96,6 +104,7 @@ span.shopname{
   font-weight: bold;
   padding: 8px 16px;
   border-radius: 150px;
+  background: linear-gradient(to top, rgba(128, 84, 128, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%); 
   transition: .4s;
 }
 .destroy-btn:hover {
@@ -108,6 +117,7 @@ span.shopname{
 }
 // ----------------------------------------------------
 .to-top{
+  transform:scale(0.7);
   float: right;
   bottom: 20px;
   right: 40px;
@@ -176,7 +186,7 @@ span.shopname{
 
 // ------------------------
 //レート評価 変数
-$starFull: 16px;//星1個の幅
+$starFull: 1.5vw;//星1個の幅
 $starHalf: $starFull / 2;//星半分（0.5）の幅
 
 $rate1: $starFull;//星1
@@ -193,7 +203,8 @@ $rate5 :$starFull * 5;//星5
   position: relative;
   display: inline-block;
   width: $starFull * 5;
-  height: $starFull;
+  height: 3vw;
+  // height: $starFull;
   font-size: $starFull;
   &:before,&:after{
     position: absolute;
@@ -242,9 +253,8 @@ $rate5 :$starFull * 5;//星5
 }
 .rate5:after{//星5
   width: $rate5;
+  
 }
-
-
 .wrap{
   width: 1px;
   margin: 0 auto;
