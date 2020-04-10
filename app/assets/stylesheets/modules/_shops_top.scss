@@ -183,26 +183,26 @@ border-color: white;
 color:white;
 }
 // ----------------------------------------
-.to-inquiry-index{
+.inquirypage{
   margin-top: 4vw;
   text-align: center;
 }
-.inquiry-index-btn {
+.inquirypage-btn {
   display: inline-block;
-  width: 40vw;
-  font-size: 1.5vw;
-  line-height: auto;
+  width: 21vw;
+  font-size: 2w;
+  line-height: 3vw;
   border: 2px solid white;
   text-align: center;
   color: white;
-  letter-spacing:0.5vw;
   text-decoration: none;
   font-weight: bold;
+  padding: 0.5vw 1vw;
   border-radius: 10vw;
   background-color: rgba(112, 108, 108, 0.5);
   transition: .4s;
 }
-.inquiry-index-btn:hover {
+.inquirypage-btn:hover {
 background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
 background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
 background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);

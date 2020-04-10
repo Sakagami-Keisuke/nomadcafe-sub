@@ -24,8 +24,8 @@
             = f.hidden_field :message
             = simple_format(@inquiry.message)
       .inquiry-sendbtn
-        = f.submit '送　信', :class => 'btn-primary'
-      .inquiry-back
-        = link_to inquiry_path, :method => :get, class: 'inquiry-backbtn' do
+        = f.submit '送信する', :class => 'btn-primary'
+      .inquiry-thanks-totop
+        = link_to root_path, class: 'btn-primary' ,data: {"turbolinks" => false}do
           %span もどる
 

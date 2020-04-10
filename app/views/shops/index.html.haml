@@ -67,7 +67,7 @@
     .blank
     .to-top
       = link_to root_path, class: 'to-top-btn' ,data: {"turbolinks" => false}do
-        %span もどる<br>Go back to previous page
+        %span もどる<br>Go back
     .shopnew
       - if current_user.nickname == "TEST" && current_user.id == 1
         = link_to new_shop_path,class: 'shopnew-btn' do

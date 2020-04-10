@@ -141,7 +141,7 @@ span.shopname{
   padding: 1vw 1vw;
   border-radius: 10vw;
   transition: .4s;
-  background-color: rgba(112, 108, 108, 0.5);
+  background: linear-gradient(to top, rgba(128, 84, 128, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%);
   }
 .to-top-btn:hover {
   background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);

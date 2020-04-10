@@ -25,3 +25,6 @@
               %td= f.text_area :message ,placeholder:"ご連絡先Eメールを書いて頂いた場合は、必ずご返答いたします"
           .inquiry-to-confirm
             = f.submit '確認ページにすすむ', class: 'btn-primary'
+          .inquiry-thanks-totop
+            = link_to root_path, class: 'btn-primary' ,data: {"turbolinks" => false}do
+              %span もどる

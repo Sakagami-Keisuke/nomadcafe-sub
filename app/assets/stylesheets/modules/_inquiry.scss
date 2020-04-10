@@ -22,16 +22,15 @@
   .btn-primary{
     margin-top: 1vw;
     display: inline-block;
-    width: 50vw;
-    font-size: 1.5vw;
-    line-height: auto;
+    width: 25vw;
+    height: 4vw;
+    font-size: 2vw;
     border: 2px solid white;
     text-align: center;
     color: white;
     letter-spacing:0.5vw;
     text-decoration: none;
     font-weight: bold;
-    padding: 1.5vw 1vw;
     border-radius: 10vw;
     background-color: rgba(112, 108, 108, 0.5);
     transition: .4s;
@@ -84,6 +83,9 @@
     transform:scale(0.7);
     text-align: center;
   }
+.thanks-messege-content{
+  margin-left: 3vw;
+}
 .thanks-blank{
   height: 7vw;
   }

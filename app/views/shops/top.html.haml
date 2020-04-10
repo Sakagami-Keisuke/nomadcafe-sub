@@ -20,9 +20,9 @@
           .topsignout
             = link_to destroy_user_session_path, :method => :delete, class: 'topsignout-btn' do
               %span サインアウト<br>Sign out
-          .to-inquiry-index
-            = link_to inquiry_path, :method => :get, class: 'to-inquiry-index-btn' do
-              %span お問い合わせする<br>to inquiry
+          .inquirypage
+            = link_to inquiry_path, :method => :get, class: 'inquirypage-btn' do
+              %span 管理者へ問合せ<br>to inquiry
 - else
   .signout-topwrapper
     .heder-container
@@ -42,8 +42,8 @@
             .registrations
               = link_to new_user_registration_path,class: 'regist-btn' do
                 %span 登録して利用<br>Register and use
-            .to-inquiry-index
-              = link_to inquiry_path, :method => :get, class: 'inquiry-index-btn' do
+            .inquirypage
+              = link_to inquiry_path, :method => :get, class: 'inquirypage-btn' do
                 %span 管理者へ問合せ<br>to inquiry
 
 
