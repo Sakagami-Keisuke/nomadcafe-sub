@@ -1,5 +1,5 @@
 .background-index{
-  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(nomadgirl.jpg);  /* 背景画像指定 */
+  background: linear-gradient(to top, rgba(190, 158, 190, 0.7) 0%, rgba(74, 115, 119, 0.7) 100%),url(nomadgirl.jpg);  /* 背景画像指定 */
   background-repeat:  repeat-y;  /* 背景の繰り返し設定 */
   background-position: center;    /* 背景の位置指定 */
   background-size:cover;
@@ -37,8 +37,10 @@ span.shopname{
 .indexbtn-image{
   margin-top: 1vw;
   margin-right: 3vw;
-  width: 6vw;
-  height: 4vw;
+  width: 6.5vw;
+  height: 5vw;
+  border-radius: 10vw;
+  border: 1px solid ;
 }
 .index-btn {
   display: inline-block;
@@ -186,7 +188,7 @@ span.shopname{
 
 // ------------------------
 //レート評価 変数
-$starFull: 1.5vw;//星1個の幅
+$starFull: 2vw;//星1個の幅
 $starHalf: $starFull / 2;//星半分（0.5）の幅
 
 $rate1: $starFull;//星1
@@ -203,7 +205,7 @@ $rate5 :$starFull * 5;//星5
   position: relative;
   display: inline-block;
   width: $starFull * 5;
-  height: 3vw;
+  height: 3.5vw;
   // height: $starFull;
   font-size: $starFull;
   &:before,&:after{
