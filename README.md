@@ -31,6 +31,7 @@ wifiや電源がフリーでノマドワークに適したお店を地図、テ�
 ２）地図表示　GCP maps javascriput api    
 ３）ナビ機能　googlemap URLスキーム  
 　　→本家がアプリ起動し同時にナビ開始  
+  ![image](https://user-images.githubusercontent.com/60636597/78964906-76cfc600-7b36-11ea-8b6d-c34251cf955f.png)
 ４）サインイン機能(devise)  
 ５）簡単ログインボタン（簡易）  
 ６）CRUD機能（管理者のみ登録編集削除可）  
