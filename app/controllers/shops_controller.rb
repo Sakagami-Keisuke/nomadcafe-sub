@@ -16,6 +16,7 @@ class ShopsController < ApplicationController
 
   def show
     @shop =Shop.find(params[:id])
+    @shops = Shop.all.includes(:images)
     @image = @shop.images.includes(:shop)
     @comment = Comment.new
     @comments = @shop.comments.includes(:user)

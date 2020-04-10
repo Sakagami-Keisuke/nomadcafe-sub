@@ -6,32 +6,59 @@
       .shop-summary
         .summary-background
           .shop-name
-            = @shop.name
-          %table
-            %tr
-              %th 料 金
-              %td
-                = @shop.price
-            %tr
-              %th 電 源
-              %td.show
-                = @shop.power
-            %tr
-              %th 雰 囲 気
-              %td
-                = @shop.mood
-            %tr
-              %th 開 店 
-              %td
-                = @shop.open_time
-            %tr
-              %th 閉 店 
-              %td
-                = @shop.close_time
-            %tr
-              %th 定 休 日
-              %td
-                = @shop.holiday
+            #{@shop.name}&emsp;#{@shop.englishname}
+          .shop-avalution
+            - if @shop.evaluation == 0
+              %span.rate.rate0
+            - elsif @shop.evaluation == 1
+              %span.rate.rate1
+            - elsif @shop.evaluation == 1.5
+              %span.rate.rate1.5
+            - elsif @shop.evaluation == 2
+              %span.rate.rate2
+            - elsif @shop.evaluation == 2.5
+              %span.rate.rate2.5
+            - elsif @shop.evaluation == 3
+              %span.rate.rate3
+            - elsif @shop.evaluation == 3.5
+              %span.rate.rate3-5
+            - elsif @shop.evaluation == 4
+              %span.rate.rate4
+            - elsif @shop.evaluation == 4.5
+              %span.rate.rate4-5
+            - elsif @shop.evaluation == 5
+              %span.rate.rate5
+            %span.osusumedo おすすめ度
+
+          .show-tabele
+            %table
+              %tr
+                %th 営 業 時 間
+                %th Opening hours
+                %td Open #{ @shop.open_time }
+                %td Close #{ @shop.close_time }
+              %tr
+                %th 定 休 日
+                %th normally closed
+                %td{:colspan => "2"} #{ @shop.holiday }
+              %tr
+                %th 電 源 無 料
+                %th PowerPlug Free
+                %td{:colspan => "2"} #{ @shop.power }
+              %tr
+                %th 料 金
+                %th basic charge
+                %td{:colspan => "2"} #{ @shop.price }
+              %tr
+                %th 雰 囲 気
+                %th Feeling
+                %td{:colspan => "2"} #{ @shop.mood }
+              %tr
+                %th 所 在 地
+                %th address
+                %td{:colspan => "2"} #{ @shop.address }
+
+
 
           .comment-title -----------------------＜ 口 コ ミ ＞-----------------------
           .comments-container

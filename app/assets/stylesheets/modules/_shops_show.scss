@@ -34,31 +34,57 @@
   border-radius: 5vw;
 }
 .shop-name{
-  line-height: 60px;
+  padding-top: 1vw;
+  height: 3.5vw;
+  line-height: 3vw;
   text-align: center;
-  font-size: 30px;
+  width: 90%;
+  font-size: 2vw;
   font-weight: bold;
-  letter-spacing: 5px;
-  margin-bottom: 5px;
+  letter-spacing: 0.2vw;
+  margin: 0 auto;
+  background-color: rgba(150, 32, 32, 0.2);
+  border-radius: 5vw;
 }
-  table {
-    margin: auto;
-    font-size: 1.5vw;
-    font-weight: bold;
-    letter-spacing: 1vw;
-  }
-  tr {
-    height: 1.5vw;
-  }
-  table th{
-    padding: 0 10px 10px 50px;
-    width: 20vw;
-    font-weight: bold;
-  }
-  table td{
-    padding: 3px;
-    width: 20vw;
-  }
+
+
+
+.shop-avalution{
+  margin: auto;
+  width: 20vw;
+  height: 2.5vw;
+  text-align: center;
+  background-color: rgba(150, 32, 32, 0.2);
+  border-radius: 10vw;
+}
+span.osusumedo{
+  float: right;
+  font-size: 1vw;
+  margin-right: 1vw;
+  padding-top: 0.2vw;
+}
+table {
+	margin-left : auto ;
+	margin-right : auto ;
+  margin-top: 1vw;
+  font-size: 1.5vw;
+  text-align: center;
+  background-color: rgba(255,0,0,0.2);
+
+}
+table th, table td {
+  border: dotted 1px
+}
+th {
+  padding:0.3vw 1.2vw;
+}
+td {
+  padding: 0.3vw 3vw;
+}
+
+
+
+
 .comment-title{
   width: 90vw;
   text-align: center;
@@ -84,6 +110,9 @@ p.comment-name{
   .comment-innner{
    margin-left: 10px;
   }
+}
+.comment-submit{
+  transform: scale(0.8);
 }
 .comment-del-btn{
   line-height: 1.5vw;
