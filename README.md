@@ -26,37 +26,37 @@ wifiや電源がフリーでノマドワークに適したお店を地図、テ�
 
 *実装している機能一覧*
 ------
-*１）デモデータの充実　 seef.fu
-*２）地図表示　GCP maps javascriput api 
-*３）ナビ機能　googlemap URLスキーム
-*　　→本家がアプリ起動し同時にナビ開始
-*４）サインイン機能(devise)
-*５）簡単ログインボタン（簡易）
-*６）CRUD機能（管理者のみ登録編集削除可）
-*７）画像アップロード機能（carrierwave）
-*８）スマホレスポンシブ機能(非Bootstrap)
-*９）おすすめ度・星評価（DB取得型cssのみ）
-*１０）口コミ投稿削除機能
-*１１）お問合せフォーム機能（入力/確認/お礼/自動Gmail送信機能）
-*
-*１２）テスト（Rspec)
-*１３）AWS　EC２　
-*１４）自動デプロイ
-*１５）Docker 
-*
+１）デモデータの充実　 seef.fu  
+２）地図表示　GCP maps javascriput api    
+３）ナビ機能　googlemap URLスキーム  
+　　→本家がアプリ起動し同時にナビ開始  
+４）サインイン機能(devise)  
+５）簡単ログインボタン（簡易）  
+６）CRUD機能（管理者のみ登録編集削除可）  
+７）画像アップロード機能（carrierwave）  
+８）スマホレスポンシブ機能(非Bootstrap)  
+９）おすすめ度・星評価（DB取得型cssのみ）  
+１０）口コミ投稿削除機能  
+１１）お問合せフォーム機能（入力/確認/お礼/自動Gmail送信機能）  
+   
+１２）テスト（Rspec)  
+１３）AWS　EC２　  
+１４）自動デプロイ  
+１５）Docker   
+  
 
 *使用gem一覧*
 ------
-*gem 'haml-rails'
-*gem 'font-awesome-sass'
-*gem 'pry-rails'
-*gem 'seed-fu'
-*gem 'devise'
-*gem 'devise-i18n'
-*gem 'devise-i18n-views'
-*gem 'carrierwave'
-*gem 'mini_magick'
-*gem 'jquery-rails'
+*gem 'haml-rails'  
+*gem 'font-awesome-sass'  
+*gem 'pry-rails'  
+*gem 'seed-fu'  
+*gem 'devise'  
+*gem 'devise-i18n'  
+*gem 'devise-i18n-views'  
+*gem 'carrierwave'  
+*gem 'mini_magick'  
+*gem 'jquery-rails'  
 
 
 *ポートフォリオとしての目標地点と現在地*
