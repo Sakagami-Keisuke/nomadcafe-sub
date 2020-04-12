@@ -1,0 +1,53 @@
+    #docker-composeのバージョン
+version: '3'
+
+      #servicesは各コンテナを定義します
+services:
+
+      #dbはコンテナ名（１コンテナ１プロセス）
+      #ローカルでmysql --version → mysql  Ver 14.14 Distrib 5.6.47
+      #DockerHubでmysql5.6を確認できたので5.6と記述
+  db:
+    image: mysql:5.6
+
+      #environmentは環境変数を追加します
+      #環境変数MYSQL_ROOT_PASSWORDにpassword（例）を入れます
+      #都度パスワードの直打ちは危険なので、環境変数を作って対応していきます
+    environment:
+      MYSQL_ROOT_PASSWORD: 'password'
+
+      #portsは公開用のポートのことでホスト側とコンテナ側の両方のポートを指定します（ ホスト側:コンテナ側 ）
+      # ローカルmysql(3306)を使用しているので ホスト側を4306にします
+      #ローカル側のMYSQLはもともと3306です
+      #これでSequelproで4036を指定するとDockerのMYSQLが見られるわけです（これ大事！）
+    ports:
+      - "4306:3306"
+
+
+      #webはコンテナ名（１コンテナ１プロセス）
+      #buildはdockercompose.ymlを基点に指定フォルダー配下のDockerfileを元にコンテナを作成します。
+      #指定は .  ルート
+  web:
+    build: .
+
+      #commandは任意にコマンドを上書きできます。
+      #bashはOS カーネルとユーザの橋渡しするプログラムシェル
+      #起動停止の繰り返しで起こる「A server is already running.」エラー原因のpidをbuildのたび削除する（unicorn master KILLと同じ）
+      #Rails serverを立ち上げた際にURL(http://0.0.0.0:3000)にアクセス
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+
+      #volumesではパスを指定するとDockerエンジンはボリュームを作成します
+      # ローカルのディレクトリ(./db/mysql_data)とMySQLコンテナ(/var/lib/mysql)のデータ領域をマウントしています。
+      #データが保存されるとローカルのファイルとして残るので、仮にコンテナが消えてもデータは永続化できます。
+    volumes:
+      - .:/app_name
+
+
+      #portsは公開用のポートのことでホスト側とコンテナ側の両方のポートを指定します（ ホスト側:コンテナ側 ）
+    ports:
+      - "3000:3000"
+
+      #depends_onはサービス間の依存関係を指定します
+      #docker-compose up を実行したら、web: コンテナプロセスを開始する前に db を先に実行します
+    depends_on:
+      - db
