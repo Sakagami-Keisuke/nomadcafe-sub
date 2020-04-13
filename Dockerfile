@@ -16,14 +16,14 @@ RUN apt-get update -qq && \
         #mkdir(メイクディレ)=(make directory)
         #ディレクトリ名は自由です
 RUN mkdir /app_name
-        /#ENV(エンヴ)は、コンテナ内で使える環境変数を設定
+        #ENV(エンヴ)は、コンテナ内で使える環境変数を設定
         #変数TEST_ROOTにNOMADCAFEディレクトリを代入
         #Dockerfileに記載すると環境変数をイメージに焼き付けることになり、アクセストークンやパスワードなど流出すると危険な物は要注意です。
 ENV TEST_ROOT /app_name
-        /#WORKDIR(ワークディレ)は、RUNやADDなどの命令実行するカレントディレクトリ
+        #WORKDIR(ワークディレ)は、RUNやADDなどの命令実行するカレントディレクトリ
         #カレントディレクトリ（作業位置）を環境変数TEST_ROOT(mkdirした test)に移動（cdコマンドと同じ）
 WORKDIR /TEST_ROOT
-        /#COPY(コピー)はローカル側のファイルをdockerイメージ側の指定したディレクトリにコピーする
+        #COPY(コピー)はローカル側のファイルをdockerイメージ側の指定したディレクトリにコピーする
         #ローカルのGemfileをTEST_ROOT/Gemfileにコピーする
         #ローカルのGemfile.lock をTEST_ROOT/Gemfile.lockにコピーする
         #docker-compose build 実行する前に、ローカルGemfile.lock内を全削除しておきます!
