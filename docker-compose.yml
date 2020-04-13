@@ -1,5 +1,5 @@
         #docker-composeのバージョン(2020.4.12時点では"3"で問題なさそう)
-        version: '3'
+version: '3'
         #servicesは各コンテナを定義します
 services:
         #dbは1つのコンテナ名です（１コンテナ１プロセス）
@@ -39,3 +39,4 @@ services:
       #docker-compose up を実行したら、web:コンテナのプロセスを開始するより前にdb:コンテナのプロセスを先に実行します
     depends_on:
       - db
+
