@@ -45,13 +45,13 @@ wifiや電源がフリーでノマドワークに適したお店を地図、テ�
 **Qiita投稿**
 ----------
 ①Dockerを初めて導入して基本操作する (2020.4時点)  
-https://qiita.com/SakagamiKeisuke/items/4455631886b1c15a3b69  
+　　https://qiita.com/SakagamiKeisuke/items/4455631886b1c15a3b69  
 ②Dockerを初めて導入してRails sする (2020.4時点)  
-https://qiita.com/SakagamiKeisuke/items/d64ee54c22378223659a  
+　　https://qiita.com/SakagamiKeisuke/items/d64ee54c22378223659a  
 ③Docker MYSQLにデモデータ(seed_fu)を投入する!(2020.4時点)  
-https://qiita.com/SakagamiKeisuke/items/4ce1c4a4921abb57b896  
+　　https://qiita.com/SakagamiKeisuke/items/4ce1c4a4921abb57b896  
 ④ローカルDocker環境でデータ永続化、entrypointでseed_fuをやり直しする(2020.4.時点)  
-https://qiita.com/SakagamiKeisuke/items/8d3fc70a2939cd4bbe3e  
+　　https://qiita.com/SakagamiKeisuke/items/8d3fc70a2939cd4bbe3e  
 
 **開発日数**
 ----------
