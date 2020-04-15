@@ -1,4 +1,3 @@
-
         #FROM(フロム)はDocker に対して ベースとなるRubyイメージを指定する
 FROM ruby:2.5.1
         #run(ラン)はdocker-compose buildコマンドで実行される
@@ -9,7 +8,7 @@ FROM ruby:2.5.1
         #→⑥nodejs(サーバーサイドのJavaScript)  の順番でインストールする
         # \ バックスラッシュでコードを改行して見易くする       (\ はoption+¥です)
 RUN apt-get update -qq && \
-    apt-get install -y build-essential \
+        apt-get install -y build-essential \
                                 libpq-dev \
                                 nodejs
         #今回はapp_nameという名前のディレクトリ（場所）を作ります
@@ -26,11 +25,16 @@ WORKDIR /app_name
 COPY Gemfile /app_name/Gemfile
 COPY Gemfile.lock /app_name/Gemfile.lock
         #gem install bundler -v 1.3.0のインストール を実行する
-        #(注意)-v 1.3.0など指定しない場合、2系を自動インストールしてエラー地獄を引き起こします！（2020.4.12時点）
+        #(注意) -v 1.3.0など指定しない場合、2系を自動インストールしてエラー地獄を引き起こします！（2020.4.12時点）
         #bundle install を実行する
-        #TEST_ROOTに追加（コピー）する
 RUN gem install bundler -v 1.3.0
 RUN bundle install
         #ADD(アド)はローカル側のファイルをdockerイメージ側の指定したディレクトリに追加（コピー）する
-        #ローカルの(.)カレントディレクトリをapp_nameディレクトリに追加（コピー+解凍）する
+        #ローカルの(.)カレントディレクトリをコンテナのapp_nameディレクトリに追加（コピー+解凍）する
 ADD . /app_name
+        #ローカルの(.)で新規作成したentrypoint.shをコンテナのentrypoint.shファイルにコピーする
+COPY ./entrypoint.sh /
+        #chmodで（a）全てを対象に(x)実行権限を付与します
+RUN chmod a+x /entrypoint.sh
+        #entrypoint.shを参照し、ENTRYPOINTを実行します
+ENTRYPOINT ["/entrypoint.sh"]

@@ -1,8 +1,11 @@
 #!/bin/bash
 set -e
-
-# デモデータの投入
-bundle exec rake db:seed_fu
-
-# Then exec the container's main process (what's set as CMD in the Dockerfile).
+        #シェルスクリプトオプション記法
+        #実行したコマンドが0でないステータスで終了した場合、即座に終了するオプション。
+bundle
+        #rake rake db:migrateを実行してテーブルを更新して空にします。
+rake db:migrate
+        #rake db:seed_fuを実行してデモデータをテーブルに投入しておきます。
+rake db:seed_fu
+        #変数$@を書かないと、docker-compose upが止まります
 exec "$@"
