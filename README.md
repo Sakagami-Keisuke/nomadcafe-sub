@@ -1,5 +1,5 @@
 #NomadCafe
-
+----------
 ![image](https://user-images.githubusercontent.com/60636597/78964593-b34ef200-7b35-11ea-8a23-d118cbeeef3a.png)
 
 #このアプリで得られる体験
@@ -10,7 +10,7 @@ wifiや電源がフリーでノマドワークに適したお店を地図、テ�
 現在地からお店までの位置をgoogle mapsで示し、即座にご案内します。  
 
 #機能の紹介
-
+----------
 *wifiや電源がフリーでノマドワークに適したお店を表示（事前に調べて保存した情報を表示）  
 *お店の営業日時、電源、料金、雰囲気をテキストや写真、動画で説明（予定）  
 *GoogleCloudプラットフォーム サービスを利用（無料契約有り）  
@@ -21,7 +21,7 @@ wifiや電源がフリーでノマドワークに適したお店を地図、テ�
 *ユーザーはサインインなしでアプリにアクセス、自由に閲覧できる  
 
 #実装している機能一覧
-
+----------
 １）デモデータの充実　 seef.fu  
 ２）地図表示　GCP maps javascriput api    
 ３）ナビ機能　googlemap URLスキーム  
@@ -43,6 +43,7 @@ wifiや電源がフリーでノマドワークに適したお店を地図、テ�
 
 
 #Qiita投稿
+----------
 ①Dockerを初めて導入して基本操作する (2020.4時点)
 https://qiita.com/SakagamiKeisuke/items/4455631886b1c15a3b69
 ②Dockerを初めて導入してRails sする (2020.4時点)
@@ -53,7 +54,7 @@ https://qiita.com/SakagamiKeisuke/items/4ce1c4a4921abb57b896
 https://qiita.com/SakagamiKeisuke/items/8d3fc70a2939cd4bbe3e
 
 #開発日数
-
+----------
 作業期間　2020年4月　日　〜 2020年　月　日  
 工　数　　　日  
 うち機能実装　　日  
@@ -97,7 +98,7 @@ https://qiita.com/SakagamiKeisuke/items/8d3fc70a2939cd4bbe3e
 ○ 「CircleCIを使ってCI/CDパイプラインを構築」    
 
 #言語・使用技術
-
+----------
 ●フロント  
 Haml  
 scss  
@@ -116,6 +117,6 @@ Capistrano3
 RSpec  
 
 #連絡先
-
+----------
 坂上計介 サカガミケイスケ
 Gmail /  iwayasunset@gmail.com
