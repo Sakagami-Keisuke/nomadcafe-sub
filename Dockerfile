@@ -10,7 +10,8 @@ FROM ruby:2.5.1
 RUN apt-get update -qq && \
         apt-get install -y build-essential \
                                 libpq-dev \
-                                nodejs
+                                nodejs \
+                                vim
         #今回はapp_nameという名前のディレクトリ（場所）を作ります
         #mkdir(メイクディレ)=(make directory)
         #ディレクトリ名は自由です
@@ -27,7 +28,7 @@ COPY Gemfile.lock /app_name/Gemfile.lock
         #gem install bundler -v 1.3.0のインストール を実行する
         #(注意) -v 1.3.0など指定しない場合、2系を自動インストールしてエラー地獄を引き起こします！（2020.4.12時点）
         #bundle install を実行する
-RUN gem install bundler -v 1.3.0
+RUN gem install bundler -v 1.16.6
 RUN bundle install
         #ADD(アド)はローカル側のファイルをdockerイメージ側の指定したディレクトリに追加（コピー）する
         #ローカルの(.)カレントディレクトリをコンテナのapp_nameディレクトリに追加（コピー+解凍）する
