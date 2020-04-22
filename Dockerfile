@@ -7,11 +7,14 @@ FROM ruby:2.5.1
         #→④ubuntuのbuild-essential(OS基礎開発パッケージ) → ⑤libpq-dev(OS開発パッケージ）
         #→⑥nodejs(サーバーサイドのJavaScript)  の順番でインストールする
         # \ バックスラッシュでコードを改行して見易くする       (\ はoption+¥です)
+        #vimでcredentials編集したいので、vimをインストールする（nodejs下に記述したらできなかったので別に記述）
 RUN apt-get update -qq && \
         apt-get install -y build-essential \
                                 libpq-dev \
                                 nodejs \
-                                vim
+RUN apt-get update -qq && \
+        apt-get install -y vim
+
         #今回はapp_nameという名前のディレクトリ（場所）を作ります
         #mkdir(メイクディレ)=(make directory)
         #ディレクトリ名は自由です
