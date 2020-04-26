@@ -1,6 +1,8 @@
 **NomadCafe**
 ----------
-![image](https://user-images.githubusercontent.com/60636597/78964593-b34ef200-7b35-11ea-8a23-d118cbeeef3a.png)
+
+![image](https://user-images.githubusercontent.com/60636597/80310868-cfca7a00-8817-11ea-99c0-a40c64963f89.png)
+
 
 #このアプリで得られる体験
 
