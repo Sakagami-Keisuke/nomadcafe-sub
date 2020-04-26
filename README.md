@@ -22,52 +22,52 @@ wifiや電源がフリーでノマドワークに適したお店を地図、テ�
 
 **実装を完了した機能の一覧**
 ----------
-１）デモデータの充実(起動時にdb:seef.fuコマンドでモデルに事前投入）
-　　お店データ:18件、 画像データ:82枚  
+１）デモデータの充実(起動時にdb:seef.fuコマンドでモデルに事前投入）　　
+   お店データ:18件、 画像データ:82枚  
 ２）GoogleMaps地図表示　(Google Cloud Platformサービス maps javascriput api使用)    
    ２種類の地図表示　（お店一覧ページで全店舗の吹き出し表示、お店詳細ページでそのお店だけの吹き出し表示）  
 ３）ナビ機能　googlemap URLスキームを利用  
-  　お店一覧ページで全店舗の吹き出し表示のリンク、お店詳細ページでのナビボタンリンクで起動  
-　　→本家がアプリ起動し同時にナビ開始  
+   お店一覧ページで全店舗の吹き出し表示のリンク、お店詳細ページでのナビボタンリンクで起動  
+   →本家がアプリ起動し同時にナビ開始  
 ４）サインイン機能(devise)  
    手軽に使ってもらうため、ニックネーム、パスワードのみにカスタム  
 ５）簡単ログインボタン
-　　管理者やユーザーとして、簡単にテストログインできる  
+   管理者やユーザーとして、簡単にテストログインできる  
 ６）CRUD機能（管理者のみ登録編集削除可）  
-    管理者は、お店情報、画像、コメントを登録、編集、削除可能    
+   管理者は、お店情報、画像、コメントを登録、編集、削除可能    
 7）コメント（口コミ）投稿削除機能       
-    ユーザーはコメントの登録、削除のみ可能  
+   ユーザーはコメントの登録、削除のみ可能  
 8）画像アップロード機能（carrierwave）    
 9）スマホレスポンシブ機能   
-    非Bootstrap、スクラッチ  
+   非Bootstrap、スクラッチ  
 10）おすすめ度・星評価（DB取得型cssのみ）  
-　　評価レート１〜５のdbデータを取得し、星表示  
+   評価レート１〜５のdbデータを取得し、星表示  
 １１）お問合せフォーム機能（入力/確認/お礼/自動Gmail送信機能）   
-   サインイン、サインアウト状態問わず、お問い合わせフォームに遷移でき、問合せメッセージ送信すると自動でgmailが管理者に届く
+   サインインアウト状態問わず、お問い合わせフォームに遷移でき、ッセージ送信で自動でgmailが管理者に届く  
 12)Docker、docker-compose
    ローカル環境にてDocker実装、Dockerfile、Docker-composeにてイメージ、コンテナを管理  
 １２）テストの実施（model)  
-　　RSpec、factory_bot使用
+   RSpec、factory_bot使用
 作業中....  
 １４）AWS ECSを使用したデプロイ  
-  EC2インスタンスt3.micro、ECRイメージ管理
+   EC2インスタンスt3.micro、ECRイメージ管理
 15)CI/CDパイプライン構築  
  
 **Qiita投稿 4/26時点**
 ----------　
-[①Dockerを初めて導入して基本操作する (2020.4時点)](https://qiita.com/SakagamiKeisuke/items/4455631886b1c15a3b69) 2200view,44LGTM
-[②Dockerを初めて導入してRails sする (2020.4時点)](https://qiita.com/SakagamiKeisuke/items/d64ee54c22378223659a)700view,7LGTM
-[③Docker MYSQLにデモデータ(seed_fu)を投入する(2020.4時点)](https://qiita.com/SakagamiKeisuke/items/4ce1c4a4921abb57b896)200view
-[④ローカルDocker環境でデータ永続化、entrypointでseed_fuをやり直しする(2020.4.時点](https://qiita.com/SakagamiKeisuke/items/8d3fc70a2939cd4bbe3e)780view,2LGTM
-[⑤AWS仮想サーバを利用する、AWSアカウント作成 + EC2インスタンス作成(2020.4時点)](https://qiita.com/SakagamiKeisuke/items/9568754f318edd53e39d)270view
-[⑥ 知識ゼロからAWSインフラ構築・VPC + EC2 + SSHログイン する（2020.4時点）](https://qiita.com/SakagamiKeisuke/items/cf8c026f243053829c0b)390view,4LGTM
+[①Dockerを初めて導入して基本操作する (2020.4時点)](https://qiita.com/SakagamiKeisuke/items/4455631886b1c15a3b69) 2200view,44LGTM  
+[②Dockerを初めて導入してRails sする (2020.4時点)](https://qiita.com/SakagamiKeisuke/items/d64ee54c22378223659a)700view,7LGTM  
+[③Docker MYSQLにデモデータ(seed_fu)を投入する(2020.4時点)](https://qiita.com/SakagamiKeisuke/items/4ce1c4a4921abb57b896)200view  
+[④ローカルDocker環境でデータ永続化、entrypointでseed_fuをやり直しする(2020.4.時点](https://qiita.com/SakagamiKeisuke/items/8d3fc70a2939cd4bbe3e)780view,2LGTM  
+[⑤AWS仮想サーバを利用する、AWSアカウント作成 + EC2インスタンス作成(2020.4時点)](https://qiita.com/SakagamiKeisuke/items/9568754f318edd53e39d)270view  
+[⑥ 知識ゼロからAWSインフラ構築・VPC + EC2 + SSHログイン する（2020.4時点）](https://qiita.com/SakagamiKeisuke/items/cf8c026f243053829c0b)390view,4LGTM  
 
 **開発日数**
 ----------
 作業期間　2020年3月29日　〜 2020年4月26日  
 工　数　29日/230時間 (4/26時点)  
 うち、アプリ機能実装　日数　12日/120時間  
-うち、Dockerローカル開発環境設定 ５日/５０時間  
+うち、Dockerローカル開発環境設定 ５日/50時間  
 うち、テスト、Dockerデプロイ　12日/60時間
 
 **使用gem一覧**
