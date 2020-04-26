@@ -91,6 +91,7 @@
             %body
           .comments-form
             = form_with(model:[@shop, Comment.new],local: true) do |form|
+              = render 'layouts/error_messages', model: [@shop, Comment.new]
               .comment-text
                 = form.text_area :text,class: "text_area", placeholder: "口コミを書く",rows: "3"
               .comment-submit
