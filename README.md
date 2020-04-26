@@ -20,46 +20,55 @@ wifiや電源がフリーでノマドワークに適したお店を地図、テ�
 *メンテナンスは管理者のみ行う、サインインしてデータの追加や編集削除を行う（予定）  
 *ユーザーはサインインなしでアプリにアクセス、自由に閲覧できる  
 
-**実装している機能一覧**
+**実装を完了した機能の一覧**
 ----------
-１）デモデータの充実　 db:seef.fu  
-２）地図表示　GCP maps javascriput api    
-３）ナビ機能　googlemap URLスキーム  
+１）デモデータの充実(起動時にdb:seef.fuコマンドでモデルに事前投入）
+　　お店データ:18件、 画像データ:82枚  
+２）GoogleMaps地図表示　(Google Cloud Platformサービス maps javascriput api使用)    
+   ２種類の地図表示　（お店一覧ページで全店舗の吹き出し表示、お店詳細ページでそのお店だけの吹き出し表示）  
+３）ナビ機能　googlemap URLスキームを利用  
+  　お店一覧ページで全店舗の吹き出し表示のリンク、お店詳細ページでのナビボタンリンクで起動  
 　　→本家がアプリ起動し同時にナビ開始  
-  ![image](https://user-images.githubusercontent.com/60636597/78964906-76cfc600-7b36-11ea-8b6d-c34251cf955f.png)
 ４）サインイン機能(devise)  
-５）簡単ログインボタン（簡易）  
+   手軽に使ってもらうため、ニックネーム、パスワードのみにカスタム  
+５）簡単ログインボタン
+　　管理者やユーザーとして、簡単にテストログインできる  
 ６）CRUD機能（管理者のみ登録編集削除可）  
-７）画像アップロード機能（carrierwave）  
-８）スマホレスポンシブ機能(非Bootstrap)  
-９）おすすめ度・星評価（DB取得型cssのみ）  
-１０）口コミ投稿削除機能  
-１１）お問合せフォーム機能（入力/確認/お礼/自動Gmail送信機能） 
+    管理者は、お店情報、画像、コメントを登録、編集、削除可能    
+7）コメント（口コミ）投稿削除機能       
+    ユーザーはコメントの登録、削除のみ可能  
+8）画像アップロード機能（carrierwave）    
+9）スマホレスポンシブ機能   
+    非Bootstrap、スクラッチ  
+10）おすすめ度・星評価（DB取得型cssのみ）  
+　　評価レート１〜５のdbデータを取得し、星表示  
+１１）お問合せフォーム機能（入力/確認/お礼/自動Gmail送信機能）   
+   サインイン、サインアウト状態問わず、お問い合わせフォームに遷移でき、問合せメッセージ送信すると自動でgmailが管理者に届く
 12)Docker、docker-compose
-   
-１２）テスト（Rspec)  
-１３）AWS　EC２　  
-１４）自動デプロイ  
-
-
-**Qiita投稿**
-----------
-①Dockerを初めて導入して基本操作する (2020.4時点)  
-　　https://qiita.com/SakagamiKeisuke/items/4455631886b1c15a3b69  
-②Dockerを初めて導入してRails sする (2020.4時点)  
-　　https://qiita.com/SakagamiKeisuke/items/d64ee54c22378223659a  
-③Docker MYSQLにデモデータ(seed_fu)を投入する!(2020.4時点)  
-　　https://qiita.com/SakagamiKeisuke/items/4ce1c4a4921abb57b896  
-④ローカルDocker環境でデータ永続化、entrypointでseed_fuをやり直しする(2020.4.時点)  
-　　https://qiita.com/SakagamiKeisuke/items/8d3fc70a2939cd4bbe3e  
+   ローカル環境にてDocker実装、Dockerfile、Docker-composeにてイメージ、コンテナを管理  
+１２）テストの実施（model)  
+　　RSpec、factory_bot使用
+作業中....  
+１４）AWS ECSを使用したデプロイ  
+  EC2インスタンスt3.micro、ECRイメージ管理
+15)CI/CDパイプライン構築  
+ 
+**Qiita投稿 4/26時点**
+----------　
+[①Dockerを初めて導入して基本操作する (2020.4時点)](https://qiita.com/SakagamiKeisuke/items/4455631886b1c15a3b69) 2200view,44LGTM
+[②Dockerを初めて導入してRails sする (2020.4時点)](https://qiita.com/SakagamiKeisuke/items/d64ee54c22378223659a)700view,7LGTM
+[③Docker MYSQLにデモデータ(seed_fu)を投入する(2020.4時点)](https://qiita.com/SakagamiKeisuke/items/4ce1c4a4921abb57b896)200view
+[④ローカルDocker環境でデータ永続化、entrypointでseed_fuをやり直しする(2020.4.時点](https://qiita.com/SakagamiKeisuke/items/8d3fc70a2939cd4bbe3e)780view,2LGTM
+[⑤AWS仮想サーバを利用する、AWSアカウント作成 + EC2インスタンス作成(2020.4時点)](https://qiita.com/SakagamiKeisuke/items/9568754f318edd53e39d)270view
+[⑥ 知識ゼロからAWSインフラ構築・VPC + EC2 + SSHログイン する（2020.4時点）](https://qiita.com/SakagamiKeisuke/items/cf8c026f243053829c0b)390view,4LGTM
 
 **開発日数**
 ----------
-作業期間　2020年4月　日　〜 2020年　月　日  
-工　数　　　日  
-うち機能実装　　日  
-うちDockerローカル開発環境設定 ５日/５０時間  
-
+作業期間　2020年3月29日　〜 2020年4月26日  
+工　数　29日/230時間 (4/26時点)
+うち、アプリ機能実装　日数　12日/120時間  
+うち、Dockerローカル開発環境設定 ５日/５０時間  
+うち、テスト、Dockerデプロイ　12日/60時間
 
 **使用gem一覧**
 ------
@@ -73,9 +82,10 @@ wifiや電源がフリーでノマドワークに適したお店を地図、テ�
 *gem 'carrierwave'  
 *gem 'mini_magick'  
 *gem 'jquery-rails'  
+*gem 'rspec-rails'  
+*gem 'factory_bot_rails'  
 
-
-**雑食系エンジニアサロン情報を参考に、自分なりのロードマップを設け、開発作業を行った**
+**雑食系エンジニアサロンなどの参考情報を元に、自分のマイルストーンを決めて開発作業を行っている**
 ------------------------------
 ○ 「UI/UXを整える」  
 ○ 「READMEをきちんと書く」  
@@ -108,13 +118,15 @@ ruby 2.5.1
 Ruby on Rails 5.2.4.2  
 ●サーバー    
 ●DB  
-mysql  Ver 14.14   
-●インフラ・開発環境等（予定）  
+mysql  Ver 14.14  
+
+●インフラ・仮想環境  
 Docker/docker-compose  
-AWS（VPC, EC2, S3, Route 53, ALB, ACM）  
+AWS（ECS,ECR,VPC,EC2,S3,Route 53）  
 CircleCI（CI/CD)  
 Capistrano3  
-RSpec  
+RSpec, factory_bot 
+静的解析ツールgem RuboCop  
 
 **連絡先**
 ----------
