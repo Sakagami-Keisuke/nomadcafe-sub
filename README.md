@@ -53,8 +53,9 @@ wifiや電源がフリーでノマドワークに適したお店を地図、テ�
    EC2インスタンスt3.micro、ECRイメージ管理
 15)CI/CDパイプライン構築  
  
+　
 **Qiita投稿**
-----------  　
+----------    
 [①Dockerを初めて導入して基本操作する (2020.4時点)](https://qiita.com/SakagamiKeisuke/items/4455631886b1c15a3b69) 2200view,44LGTM  
 [②Dockerを初めて導入してRails sする (2020.4時点)](https://qiita.com/SakagamiKeisuke/items/d64ee54c22378223659a)700view,7LGTM  
 [③Docker MYSQLにデモデータ(seed_fu)を投入する(2020.4時点)](https://qiita.com/SakagamiKeisuke/items/4ce1c4a4921abb57b896)200view  
