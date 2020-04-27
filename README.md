@@ -53,11 +53,11 @@
 **9）スマホレスポンシブ機能  <br>**
 &emsp;&emsp;非Bootstrap、スクラッチ <br>
 **10）おすすめ度・星評価（レートDB取得css表示）  <br>**
-**１１）お問合せフォーム機能（入力/確認/お礼/自動Gmail送信機能）<br>**
+**11）お問合せフォーム機能（入力/確認/お礼/自動Gmail送信機能）<br>**
 &emsp;&emsp;サインインアウト状態問わず、お問い合わせフォームに遷移でき、メッセージ送信で自動でgmailが管理者に届く <br>
 **12)Docker、docker-compose<br>**
 &emsp;&emsp;ローカル環境にてDocker実装、Dockerfile、Docker-composeにてイメージ、コンテナを管理<br>
-**１２）テストの実施（model)<br>**
+**１3）テストの実施（model)<br>**
 &emsp;&emsp;RSpec、factory_bot使用<br>
 &emsp;&emsp;作業中.... <br>
 **１４）AWS ECSを使用したデプロイ<br>**
