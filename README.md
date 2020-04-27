@@ -57,10 +57,10 @@
 &emsp;&emsp;サインインアウト状態問わず、お問い合わせフォームに遷移でき、メッセージ送信で自動でgmailが管理者に届く <br>
 **12)Docker、docker-compose<br>**
 &emsp;&emsp;ローカル環境にてDocker実装、Dockerfile、Docker-composeにてイメージ、コンテナを管理<br>
-**１3）テストの実施（model)<br>**
+**13）テストの実施（model)<br>**
 &emsp;&emsp;RSpec、factory_bot使用<br>
 &emsp;&emsp;作業中.... <br>
-**１４）AWS ECSを使用したデプロイ<br>**
+**14）AWS ECSを使用したデプロイ<br>**
 &emsp;&emsp;EC2インスタンスt3.micro、ECRイメージ管理　<br>
 &emsp;&emsp;作業中....<br>
 **15)CI/CDパイプライン構築 （着手予定）<br>**
