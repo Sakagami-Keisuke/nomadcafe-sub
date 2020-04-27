@@ -25,50 +25,49 @@ wifiや電源がフリーでノマドワークに適したお店を地図、テ�
 
 **実装を完了した機能の一覧**
 ----------
-１）デモデータの充実(起動時にdb:seef.fuコマンドでモデルに事前投入）<br>
+**１）デモデータの充実(起動時にdb:seef.fuコマンドでモデルに事前投入）<br>**
 &emsp;&emsp;お店データ:18件、 画像データ:82枚  <br>
-２）GoogleMaps地図表示　(Google Cloud Platformサービス maps javascriput api使用) <br>
+**２）GoogleMaps地図表示　(Google Cloud Platformサービス maps javascriput api使用) <br>**
 &emsp;&emsp;２種類の地図表示　（お店一覧ページで全店舗の吹き出し表示、お店詳細ページでそのお店だけの吹き出し表示）<br>
-３）ナビ機能　googlemap URLスキームを利用 <br>
+**３）ナビ機能　googlemap URLスキームを利用 <br>**
 &emsp;&emsp;お店一覧ページで全店舗の吹き出し表示のリンク、お店詳細ページでのナビボタンリンクで起動 <br>
 &emsp;&emsp;→本家がアプリ起動し同時にナビ開始<br>
-４）サインイン機能(devise) <br>
+**４）サインイン機能(devise) <br>**
 &emsp;&emsp;手軽に使ってもらうため、ニックネーム、パスワードのみにカスタム <br>
-５）簡単ログインボタン <br>
+**５）簡単ログインボタン <br>**
 &emsp;&emsp;管理者やユーザーとして、簡単にテストログインできる  <br>
-６）CRUD機能（管理者のみ登録編集削除可） <br>
+**６）CRUD機能（管理者のみ登録編集削除可） <br>**
 &emsp;&emsp;管理者はお店情報、画像、コメントを登録、編集、削除可能 <br>
-7）コメント（口コミ）投稿削除機能<br>
+**7）コメント（口コミ）投稿削除機能<br>**
 &emsp;&emsp;ユーザーはコメントの登録、削除のみ可能<br>
-8）画像アップロード機能（carrierwave）<br>
-9）スマホレスポンシブ機能  <br>
+**8）画像アップロード機能（carrierwave）<br>**
+**9）スマホレスポンシブ機能  <br>**
 &emsp;&emsp;非Bootstrap、スクラッチ <br>
-10）おすすめ度・星評価（DB取得型cssのみ）  <br>
-&emsp;&emsp;評価レート１〜５のdbデータを取得し、星表示 <br>
-１１）お問合せフォーム機能（入力/確認/お礼/自動Gmail送信機能）<br>
+**10）おすすめ度・星評価（レートDB取得css表示）  <br>**
+**１１）お問合せフォーム機能（入力/確認/お礼/自動Gmail送信機能）<br>**
 &emsp;&emsp;サインインアウト状態問わず、お問い合わせフォームに遷移でき、メッセージ送信で自動でgmailが管理者に届く <br>
-12)Docker、docker-compose<br>
+**12)Docker、docker-compose<br>**
 &emsp;&emsp;ローカル環境にてDocker実装、Dockerfile、Docker-composeにてイメージ、コンテナを管理<br>
-１２）テストの実施（model)<br>
+**１２）テストの実施（model)<br>**
 &emsp;&emsp;RSpec、factory_bot使用<br>
 &emsp;&emsp;作業中.... <br>
-１４）AWS ECSを使用したデプロイ<br>
+**１４）AWS ECSを使用したデプロイ<br>**
 &emsp;&emsp;EC2インスタンスt3.micro、ECRイメージ管理　<br>
 &emsp;&emsp;作業中....<br>
-15)CI/CDパイプライン構築 <br>
+**15)CI/CDパイプライン構築 （着手予定）<br>**
  
 **Qiita投稿**
 ----------    
-[①Dockerを初めて導入して基本操作する (2020.4時点)](https://qiita.com/SakagamiKeisuke/items/4455631886b1c15a3b69) 2200view,44LGTM<br>
+**[①Dockerを初めて導入して基本操作する (2020.4時点)](https://qiita.com/SakagamiKeisuke/items/4455631886b1c15a3b69) 2200view,44LGTM<br>
 [②Dockerを初めて導入してRails sする (2020.4時点)](https://qiita.com/SakagamiKeisuke/items/d64ee54c22378223659a)700view,7LGTM<br>
 [③Docker MYSQLにデモデータ(seed_fu)を投入する(2020.4時点)](https://qiita.com/SakagamiKeisuke/items/4ce1c4a4921abb57b896)200view<br>
 [④ローカルDocker環境でデータ永続化、entrypointでseed_fuをやり直しする(2020.4.時点](https://qiita.com/SakagamiKeisuke/items/8d3fc70a2939cd4bbe3e)780view,2LGTM<br>
 [⑤AWS仮想サーバを利用する、AWSアカウント作成 + EC2インスタンス作成(2020.4時点)](https://qiita.com/SakagamiKeisuke/items/9568754f318edd53e39d)270view<br>
-[⑥ 知識ゼロからAWSインフラ構築・VPC + EC2 + SSHログイン する（2020.4時点）](https://qiita.com/SakagamiKeisuke/items/cf8c026f243053829c0b)390view,4LGTM<br>
+[⑥ 知識ゼロからAWSインフラ構築・VPC + EC2 + SSHログイン する（2020.4時点）](https://qiita.com/SakagamiKeisuke/items/cf8c026f243053829c0b)390view,4LGTM<br>**
 
 **開発日数**
 ----------
-作業期間　2020年3月29日　〜 2020年4月26日<br>
+**作業期間　2020年3月29日　〜 2020年4月26日<br>**
 工　数　29日/230時間 (4/26時点)  <br>
 うち、アプリ機能実装　日数　12日/120時間 <br>
 うち、Dockerローカル開発環境設定 ５日/50時間 <br>
@@ -113,26 +112,26 @@ wifiや電源がフリーでノマドワークに適したお店を地図、テ�
 
 **言語・使用技術**
 ----------
-●フロント <br>
+**●フロント <br>**
 &emsp;&emsp;Haml/scss/JavaScript<br>
-●バックエンド<br>
+**●バックエンド<br>**
 &emsp;&emsp;ruby 2.5.1 <br>
 &emsp;&emsp;Ruby on Rails 5.2.4.2<br>
-●サーバー<br>
+**●サーバー<br>**
 &emsp;&emsp;Docker web container<br>
-●DB<br>
+**●データベース<br>**
 &emsp;&emsp;Docker db container<br>
 &emsp;&emsp;mysql Ver 14.14<br>
-●インフラ・仮想環境<br>
+**●インフラ・仮想環境<br>**
 &emsp;&emsp;Docker/docker-compose<br>
 &emsp;&emsp;AWS（ECS,ECR,VPC,EC2,S3,Route 53） <br>
 &emsp;&emsp;CircleCI（CI/CD)<br>
 &emsp;&emsp;Capistrano3 <br>
-●テスト<br>
+**●テスト<br>**
 &emsp;&emsp;RSpec, factory_bot<br> 
 &emsp;&emsp;静的解析ツールRuboCop<br>
 
 **連絡先**
 ----------
-坂上計介 サカガミケイスケ
-&emsp;&emsp;Gmail /  iwayasunset@gmail.com
+**坂上計介 サカガミケイスケ
+&emsp;&emsp;Gmail /  iwayasunset@gmail.com**
