@@ -25,7 +25,7 @@ wifiや電源がフリーでノマドワークに適したお店を地図、テ�
 
 **実装を完了した機能の一覧**
 ----------
-１）デモデータの充実(起動時にdb:seef.fuコマンドでモデルに事前投入）  　　
+１）デモデータの充実(起動時にdb:seef.fuコマンドでモデルに事前投入） 　　 　　
 &emsp;&emsp;お店データ:18件、 画像データ:82枚  
 ２）GoogleMaps地図表示　(Google Cloud Platformサービス maps javascriput api使用)    
 &emsp;&emsp;２種類の地図表示　（お店一覧ページで全店舗の吹き出し表示、お店詳細ページでそのお店だけの吹き出し表示）  
@@ -47,13 +47,14 @@ wifiや電源がフリーでノマドワークに適したお店を地図、テ�
 &emsp;&emsp;評価レート１〜５のdbデータを取得し、星表示  
 １１）お問合せフォーム機能（入力/確認/お礼/自動Gmail送信機能）   
 &emsp;&emsp;サインインアウト状態問わず、お問い合わせフォームに遷移でき、メッセージ送信で自動でgmailが管理者に届く  
-12)Docker、docker-compose
+12)Docker、docker-compose　　
 &emsp;&emsp;ローカル環境にてDocker実装、Dockerfile、Docker-composeにてイメージ、コンテナを管理  
 １２）テストの実施（model)  
-&emsp;&emsp;RSpec、factory_bot使用
-作業中....  
+&emsp;&emsp;RSpec、factory_bot使用　　
+&emsp;&emsp;作業中....  
 １４）AWS ECSを使用したデプロイ  
-&emsp;&emsp;EC2インスタンスt3.micro、ECRイメージ管理
+&emsp;&emsp;EC2インスタンスt3.micro、ECRイメージ管理　　
+&emsp;&emsp;作業中....  
 15)CI/CDパイプライン構築  
  
 **Qiita投稿**
