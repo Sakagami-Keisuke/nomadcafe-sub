@@ -36,6 +36,8 @@ services:
         #カレントディレクトリ(.)をapp_nameディレクトリにマウントします。
     volumes:
       - .:/app_name
+        #webコンテナの外に作るvolumsのbundle_install:に/usr/local/bundleをマウントします。（パスなし）
+      - bundle_install:/usr/local/bundle
         #portsは公開用のポートのことでホスト側とコンテナ側の両方のポートを指定します（ ホスト側:コンテナ側 ）
     ports:
       - "3000:3000"
@@ -43,7 +45,6 @@ services:
         #docker-compose up を実行したら、web:コンテナのプロセスを開始するより前にdb:コンテナのプロセスを先に実行します
     depends_on:
       - db
-
-
-
-
+volumes:
+  bundle_install:
+    driver: local

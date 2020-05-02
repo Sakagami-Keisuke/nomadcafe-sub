@@ -9,12 +9,10 @@ FROM ruby:2.5.1
         # \ バックスラッシュでコードを改行して見易くする       (\ はoption+¥です)
         #vimでcredentials編集したいので、vimをインストールする（nodejs下に記述したらできなかったので別に記述）
 RUN apt-get update -qq && \
-        apt-get install -y build-essential \
-                                libpq-dev \
-                                nodejs \
-RUN apt-get update -qq && \
-        apt-get install -y vim
-
+        apt-get install -y vim \
+                        build-essential \
+                        libpq-dev \
+                        nodejs \
         #今回はapp_nameという名前のディレクトリ（場所）を作ります
         #mkdir(メイクディレ)=(make directory)
         #ディレクトリ名は自由です
