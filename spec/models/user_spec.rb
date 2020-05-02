@@ -31,12 +31,6 @@ RSpec.describe User,type: :model do
     expect(dup_user).to be_invalid
   end
 
-  it "name  すでに使用されている文字列は大文字小文字を区別せず保存しない" do
-    user = User.create( nickname: "kei", password: "rspec0000" )
-    dup_user = User.new( nickname: "KEI", password: "dupuser0000" )
-    expect(dup_user).to be_invalid
-  end
-
     #<パスワード最低6文字>
   it "password  5文字は保存しない" do
     user = User.new( nickname: "kei", password: "rspe0" )

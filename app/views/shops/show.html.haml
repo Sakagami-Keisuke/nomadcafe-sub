@@ -91,19 +91,17 @@
             %body
           .comments-form
             = form_with(model:[@shop, Comment.new],local: true) do |form|
-              = render 'layouts/error_messages', model: [@shop, Comment.new]
               .comment-text
                 = form.text_area :text,class: "text_area", placeholder: "口コミを書く",rows: "3"
               .comment-submit
                 = form.submit "送信",class: "comment-btn"
 
-  
         .shop-photo
           %figure.shop-img
           - @shop.images.each do |image|
             = image_tag image.src, :size =>'1400x1950', class: 'shop-image'
         .blank
-        .return 
+        .return
           = link_to shops_path, class: 'return-btn' ,data: {"turbolinks" => false} do
             %span もどる
 
