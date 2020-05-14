@@ -44,12 +44,8 @@ test:
 #   DATABASE_URL="mysql2://myuser:mypass@localhost/somedatabase"
 #
 # You can use this database configuration with:
-#
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
+
 production:
-  <<: *default
   database: nomadcafe_production
   password: <%= Rails.application.credentials[:DATABASE_PASSWORD] %>
   socket: /var/lib/mysql/mysql.sock
