@@ -47,5 +47,6 @@ test:
 
 production:
   database: nomadcafe_production
-  password: <%= Rails.application.credentials[:DATABASE_PASSWORD] %>
+  username: kei
+  password: <%= Rails.application.credentials.DATABASE_PASSWORD %>
   socket: /var/lib/mysql/mysql.sock
