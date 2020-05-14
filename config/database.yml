@@ -47,7 +47,7 @@ test:
 
 production:
   database: nomadcafe_production
-  username: kei
+  username: root
   password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
   host: localhost
