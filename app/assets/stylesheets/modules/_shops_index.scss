@@ -54,14 +54,14 @@ span.shopname{
   font-weight: bold;
   padding: 1.5vw 1vw;
   border-radius: 10vw;
-  background: linear-gradient(to top, rgba(31, 28, 25, 0.7) 0%, rgba(128, 58, 17, 0.7) 100%),url(mapimage.jpg); 
+  background: linear-gradient(to top, rgba(31, 28, 25, 0.7) 0%, rgba(128, 58, 17, 0.7) 100%),url(mapimage.jpg);
   background-size:cover;
   transition: .4s;
 }
 .index-btn:hover {
-  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
+  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
+  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
   background-size:cover;
   border-color: white;
   color:white;
@@ -82,13 +82,13 @@ span.shopname{
   font-weight: bold;
   padding: 8px 16px;
   border-radius: 150px;
-  background: linear-gradient(to top, rgba(128, 84, 128, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%); 
+  background: linear-gradient(to top, rgba(128, 84, 128, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%);
   transition: .4s;
 }
 .edit-btn:hover {
-  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
+  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
+  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
   background-size:cover;
   border-color: white;
   color:white;
@@ -106,13 +106,13 @@ span.shopname{
   font-weight: bold;
   padding: 8px 16px;
   border-radius: 150px;
-  background: linear-gradient(to top, rgba(128, 84, 128, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%); 
+  background: linear-gradient(to top, rgba(128, 84, 128, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%);
   transition: .4s;
 }
 .destroy-btn:hover {
-  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
+  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
+  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url();
   background-size:cover;
   border-color: white;
   color:white;
@@ -144,9 +144,9 @@ span.shopname{
   background: linear-gradient(to top, rgba(128, 84, 128, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%);
   }
 .to-top-btn:hover {
-  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
+  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
+  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
   background-size:cover;
   border-color: white;
   color:white;
@@ -178,9 +178,9 @@ span.shopname{
   transition: .4s;
   }
 .shopnew-btn:hover {
-  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
-  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../images/pic.jpg);
+  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
+  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
+  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
   background-size:cover;
   border-color: white;
   color:white;

@@ -1,39 +1,39 @@
-default: &default
-  adapter: mysql2
-  encoding: utf8
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  password: password
-  database: nomadcafe_production
-  #  socket: /tmp/mysql.sock
-  socket: /var/lib/mysql/mysql.sock
-  host: localhost
-development:
-  <<: *default
-  database: nomadcafe_development
-test:
-  <<: *default
-  database: nomadcafe_test
-production:
-  << : *default
-
-
-
-
-
-
 # default: &default
 #   adapter: mysql2
 #   encoding: utf8
 #   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 #   username: root
 #   password: password
-#   socket: /tmp/mysql.sock
+#   database: nomadcafe_production
+#   #  socket: /tmp/mysql.sock
+#   socket: /var/lib/mysql/mysql.sock
 #   host: localhost
-
 # development:
 #   <<: *default
 #   database: nomadcafe_development
+# test:
+#   <<: *default
+#   database: nomadcafe_test
+# production:
+#   << : *default
+
+
+
+
+
+
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  password: password
+  socket: /tmp/mysql.sock
+  host: localhost
+
+development:
+  <<: *default
+  database: nomadcafe_development
 
 # test:
 #   <<: *default
