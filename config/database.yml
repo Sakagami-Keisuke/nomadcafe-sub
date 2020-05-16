@@ -3,8 +3,8 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  password: password
+  username: <%= ENV['DATABASE_USER'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /tmp/mysql.sock
   host: localhost
 development:
@@ -16,10 +16,7 @@ test:
 production:
   <<: *default
   database: nomadcafe_production
-  username: root
-  password: password
   socket: /var/lib/mysql/mysql.sock
-  host: localhost
 
 
 
