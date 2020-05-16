@@ -3,7 +3,7 @@
 app_path = File.expand_path('../../', __FILE__)
 
 # リクエストを受け付けレスポンスを生成するworker数（任意）
-worker_processes 1
+worker_processes 2
 
 #Railsのルーティングなど参照するディレクトリを指定
 working_directory app_path
@@ -25,7 +25,7 @@ stderr_path "#{app_path}/log/unicorn.stderr.log"
 stdout_path "#{app_path}/log/unicorn.stdout.log"
 
 #Railsアプリケーションの応答を待つ上限時間を設定
-timeout 60
+timeout 150
 
 # 基本的には`true`を指定する。Unicornの再起動時にダウンタイムなしで再起動が行われる。
 preload_app true
