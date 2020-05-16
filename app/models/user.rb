@@ -4,8 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
           :recoverable, :rememberable, :trackable, :validatable
 
-  #nicknameは空白NG 一意性
-  validates :nickname, presence: true, uniqueness: true, uniqueness: { case_sensitive: false }
+  #nicknameは空白NG
+  validates :nickname, presence: true
 
   # パスワード認証に半角英数字だけを許可
   VALID_PASSWORD_REGEX = /\A[a-z0-9]+\z/i
