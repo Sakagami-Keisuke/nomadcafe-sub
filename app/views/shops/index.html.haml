@@ -167,19 +167,11 @@
     lat: 33.592261,
     lng: 130.398746
     }
-    ];  
+    ];
      //==================マーカー配列記述終わり==============
      //==================現在地取得とその情報での地図表示の記述===================
   function initMap() {
-                           // Geolocation APIに対応している
-    if (navigator.geolocation) {
-                              // 現在地を取得
-      navigator.geolocation.getCurrentPosition(
-                            // 取得成功した場合
-        function(position) {
-                          // 緯度・経度を変数に格納
-        var myLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-                          // マップオプションを変数に格納
+
         var mymapOptions = {
           zoom : 17,                 // 拡大倍率
           center : { lat: 33.588689,lng: 130.399967 },     // myLatLng, // 緯度・経度　SSL化までは使わない
@@ -230,33 +222,7 @@
           infoWindow[i].open(map, marker[i]); 
           });
         }
-     },
-         //=============ここまでが現在地取得成功した場合==========
-
-          // ============取得失敗した場合===============
-      function(error) {
-        // エラーメッセージを表示
-        switch(error.code) {
-          case 1: // PERMISSION_DENIED
-            alert("位置情報の利用が許可されていません");
-            break;
-          case 2: // POSITION_UNAVAILABLE
-            alert("現在位置が取得できませんでした");
-            break;
-          case 3: // TIMEOUT
-            alert("タイムアウトになりました");
-            break;
-          default:
-            alert("その他のエラー(エラーコード:"+error.code+")");
-            break;
-        }
-      }
-      );
-          // Geolocation APIに対応していない
-      } else {
-          alert("この端末では位置情報が取得できません");
-      };
-    }
+     }
 
         //%script{:async => "", :src => "https://maps.googleapis.com/maps/api/js?key=#{Rails.application.credentials.googlemap[:MAP_SECRET_KEY]}&callback=initMap"}
 %script{:async => "", :src => "https://maps.googleapis.com/maps/api/js?key=#{ENV['MAP_SECRET_KEY']}&callback=initMap"}
