@@ -13,10 +13,9 @@ working_directory app_path
 pid "#{app_path}/tmp/pids/unicorn.pid"
 
 #ポート番号を指定
-# Nginxで使用する場合は以下の設定を行う。
-# listen File.expand_path('../../tmp/sockets/unicorn.sock', __FILE__)
 # どのポート番号のリクエストを受け付けるか(3000ポートは仮です)
 # listen 3000
+# Nginxで使用する場合は以下の設定を行う。
 listen "#{app_path}/tmp/sockets/unicorn.sock"
 
 #エラーのログを記録するファイルを指定
