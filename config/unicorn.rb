@@ -16,7 +16,8 @@ pid "#{app_path}/tmp/pids/unicorn.pid"
 # Nginxで使用する場合は以下の設定を行う。
 # listen File.expand_path('../../tmp/sockets/unicorn.sock', __FILE__)
 # どのポート番号のリクエストを受け付けるか(3000ポートは仮です)
-listen 3000
+# listen 3000
+listen "#{app_path}/tmp/sockets/unicorn.sock"
 
 #エラーのログを記録するファイルを指定
 stderr_path "#{app_path}/log/unicorn.stderr.log"
