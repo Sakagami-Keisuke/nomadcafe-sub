@@ -7,7 +7,7 @@ body{
 .topwrapper{
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(topdemo.jpg);  /* 背景画像指定 */
+  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(/images/topdemo.jpg);  /* 背景画像指定 */
   background-repeat: repeat; 
   background-position: center;  
   background-size: cover;
@@ -15,7 +15,7 @@ body{
 .signout-topwrapper{
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(mapimage.jpg);  /* 背景画像指定 */
+  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(/images/mapimage.jpg);  /* 背景画像指定 */
   background-repeat: repeat; 
   background-position: center;  
   background-size: cover;
@@ -42,7 +42,6 @@ body{
     letter-spacing: 0.2vw;
   }
 }
-
 span.indicator{
   float: right;
   top:1vw;
@@ -63,7 +62,6 @@ span.indicator{
   border-radius: 10vw;
 }
 // --------------------------
-
 .guidance-box {
   margin-top: 2vw;
   text-align: center;
@@ -121,7 +119,6 @@ border-color: white;
 color:white;
 }
 // --------------------------------
-
 .sign-in{
   margin-top: 4vw;
   text-align: center;
@@ -212,28 +209,20 @@ color:white;
 }
 
 
-
-
-
-
-
-
 // -------------------------------
-/* スマホ　横幅　480px
+/* スマホ 横幅 480px
 ------------------------------ */
 @media screen and (max-width:420px) {
- 
   .topwrapper{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(democafe.jpg);  /* 背景画像指定 */
+    background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(/images/democafe.jpg);  /* 背景画像指定 */
     background-repeat:  no-repeat;  /* 背景の繰り返し設定 */
     background-position: center;    /* 背景の位置指定 */
     background-size: cover;
   }
   .heder-container{
     height: 23vw;
-
     p.toptext-eng {
       margin-left: 1vw;
       font-size: 1vw;
@@ -243,8 +232,6 @@ color:white;
   span.indicator{
     display: none;
   }
-
-
   .background-signin {
     width: 100vw;
     height: 100vh;
@@ -255,7 +242,6 @@ color:white;
     max-width: 100%;
     height: 12rem;
   }
- 
   .guidance-box {
     margin-top: 15vw;
   }

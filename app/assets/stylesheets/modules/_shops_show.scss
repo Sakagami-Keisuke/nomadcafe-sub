@@ -21,7 +21,7 @@
   height: 68vw;
   background: -moz-linear-gradient(top, #FFC778, transparent);
   background: -webkit-linear-gradient(top, #FFC778, transparent);
-  background: linear-gradient(to bottom, #FFC778, transparent),url(democafe.jpg);
+  background: linear-gradient(to bottom, #FFC778, transparent),url(/images/democafe.jpg);
   background-size: cover;
   color: white;
   border-radius: 5vw;
@@ -46,9 +46,6 @@
   background-color: rgba(150, 32, 32, 0.2);
   border-radius: 5vw;
 }
-
-
-
 .shop-avalution{
   margin: auto;
   width: 20vw;
@@ -70,7 +67,6 @@ table {
   font-size: 1.5vw;
   text-align: center;
   background-color: rgba(255,0,0,0.2);
-
 }
 table th, table td {
   border: dotted 1px
@@ -81,10 +77,6 @@ th {
 td {
   padding: 0.3vw 3vw;
 }
-
-
-
-
 .comment-title{
   width: 90vw;
   text-align: center;
@@ -123,7 +115,6 @@ p.comment-name{
   text-decoration: none;
   background-color: rgb(92, 57, 25);
 }
-
 #comment_text.text_area{
   height: 5vw;
   width: 60vw;
@@ -151,15 +142,12 @@ p.comment-name{
   .comment-btn:hover {
     border: dotted 1px #FFF;
   }
-
-
 input.visible{
   width : 2vw;
   height: 2vw;
   transform: scale(1.5);
   margin-left:10px;
 }
-
 input[value="sss"]:checked ~ .comments-form{
   visibility:visible;
   }
@@ -171,8 +159,6 @@ input[value="sss"]:checked ~ .comments-form{
   font-size: 2vw;
   color:rgb(122, 36, 36);
 }
-
-
 .return{
   z-index: 100;
   float: right;
@@ -234,21 +220,10 @@ input[value="sss"]:checked ~ .comments-form{
 
 
 
-
-
-
-
-
-
-
-
-
-
 // -------------------------------
-/* スマホ　横幅　480px
+/* スマホ 横幅 480px
 ------------------------------ */
 @media screen and (max-width:420px) {
- 
   .shop-name {
     line-height: 10vw;
     font-size: 3vw;
@@ -280,7 +255,6 @@ table td{
 .comments-container{
   font-size: 1vw;
   height: 25vw;
-  
 }
 #comment_text.text_area{
   height: 10vw;
@@ -304,4 +278,3 @@ table td{
   width: 35vw;
 }
 }
-

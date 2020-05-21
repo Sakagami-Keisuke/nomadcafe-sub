@@ -2,7 +2,7 @@
 .background-shop-new{
   width: 100vw;
   height: 830px;
-  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(art.jpg);
+  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(/images/art.jpg);
   background-repeat:  no-repeat;  /* 背景の繰り返し設定 */
   background-position: center;    /* 背景の位置指定 */
   background-size: cover;
@@ -40,13 +40,11 @@ ul.shop-new-form{
 }
 
 // -------------------------------
-/* スマホ　横幅　480px
+/* スマホ 横幅 480px
 ------------------------------ */
 @media screen and (max-width:420px) {
- 
   ul.shop-new-form{
     text-align: center;
-
     margin: 0 auto;
     input::placeholder{
       color: white;
@@ -58,9 +56,7 @@ ul.shop-new-form{
       text-align: center;
       width: 50vw;
       height: 6vw;
- 
     }
   }
-
 }
 

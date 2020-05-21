@@ -1,10 +1,9 @@
 .background-index{
-  background: linear-gradient(to top, rgba(190, 158, 190, 0.7) 0%, rgba(74, 115, 119, 0.7) 100%),url(nomadgirl.jpg);  /* 背景画像指定 */
+  background: linear-gradient(to top, rgba(190, 158, 190, 0.7) 0%, rgba(74, 115, 119, 0.7) 100%),url(/images/nomadgirl.jpg);  /* 背景画像指定 */
   background-repeat:  repeat-y;  /* 背景の繰り返し設定 */
   background-position: center;    /* 背景の位置指定 */
   background-size:cover;
 }
-
 .googlemap{
   width: 85vw;
   height: 40vw;
@@ -54,7 +53,7 @@ span.shopname{
   font-weight: bold;
   padding: 1.5vw 1vw;
   border-radius: 10vw;
-  background: linear-gradient(to top, rgba(31, 28, 25, 0.7) 0%, rgba(128, 58, 17, 0.7) 100%),url(mapimage.jpg);
+  background: linear-gradient(to top, rgba(31, 28, 25, 0.7) 0%, rgba(128, 58, 17, 0.7) 100%),url(/images/mapimage.jpg);
   background-size:cover;
   transition: .4s;
 }
@@ -270,7 +269,7 @@ $rate5 :$starFull * 5;//星5
 @media screen and (max-width:420px) {
  
   .background-index{
-    background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(top.jpg);  /* 背景画像指定 */
+    background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(/images/top.jpg);  /* 背景画像指定 */
     background-repeat:  repeat-y;  /* 背景の繰り返し設定 */
     background-position: center;    /* 背景の位置指定 */
     background-size:cover;
@@ -352,8 +351,3 @@ $rate5 :$starFull * 5;//星5
         padding: 2vw 5vw;
       }
 }
-
-
-
-
-
