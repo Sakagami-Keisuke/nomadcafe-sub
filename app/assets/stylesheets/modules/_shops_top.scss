@@ -243,29 +243,28 @@ color:white;
     height: 12rem;
   }
   .guidance-box {
-    margin-top: 15vw;
+    margin-top: 10vw;
   }
   .top-btn {
     width: 80%;
-    font-size: 1.5vw;
-    letter-spacing: 2vw;
+    font-size: 4vw;
+    letter-spacing: 1vw;
     border: 0.1rem solid white;
     height: 30vw;
     line-height: 10vw;
-    margin-top: 2rem;
     border-radius: 15vw;
   }
   .topsignout{
-    padding-top: 20vw;
+    padding-top: 10vw;
   }
   .topsignout-btn {
-    width: 40vw;
-    border: 0.1rem solid white;
-    font-size: 1.5vw;
+    width: 80%;
+    font-size: 4vw;
     letter-spacing: 1vw;
-    height: 10vw;
-    font-weight: normal;
-    line-height: 5vw;
+    border: 0.1rem solid white;
+    height: 20vw;
+    line-height: 10vw;
+    border-radius: 15vw;
   }
   span.indicator{
     font-size: 1vw;
@@ -280,7 +279,7 @@ color:white;
   // 以下サインアウト時-------------------------
 
   .signout-topwrapper{
-    height: 100vh;
+    height: 130vh;
   }
   .sign-in{
     padding-top: 13vw;
