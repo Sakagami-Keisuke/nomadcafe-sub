@@ -217,13 +217,10 @@ input[value="sss"]:checked ~ .comments-form{
 }
 
 
-
-
-
 // -------------------------------
-/* スマホ 横幅 480px
------------------------------- */
-@media screen and (max-width:420px) {
+// レスポンシブブレイクポイントwidth:820px
+// -------------------------------
+@media screen and (max-width:820px) {
   .shop-name {
     line-height: 10vw;
     font-size: 3vw;

@@ -260,13 +260,12 @@ $rate5 :$starFull * 5;//星5
   width: 1px;
   margin: 0 auto;
 }
-// -----------------------------
 
 
 // -------------------------------
-/* スマホ　横幅　480px
------------------------------- */
-@media screen and (max-width:420px) {
+// レスポンシブブレイクポイントwidth:820px
+// -------------------------------
+@media screen and (max-width:820px) {
  
   .background-index{
     background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(/images/top.jpg);  /* 背景画像指定 */
