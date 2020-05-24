@@ -235,7 +235,7 @@ color:white;
   }
   .background-signin {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background: none;
   }
   .explanationbox{
@@ -244,7 +244,7 @@ color:white;
     height: 12rem;
   }
   .guidance-box {
-    margin-top: 10vw;
+    margin-top: 8vw;
   }
   .top-btn {
     width: 80%;
@@ -256,7 +256,7 @@ color:white;
     border-radius: 15vw;
   }
   .topsignout{
-    padding-top: 10vw;
+    padding-top: 8vw;
   }
   .topsignout-btn {
     width: 80%;
@@ -270,7 +270,7 @@ color:white;
   // 以下サインアウト時-------------------------
 
   .signout-topwrapper{
-    height: 130vh;
+    height: 100vh;
   }
   .sign-in{
     padding-top: 13vw;
@@ -297,7 +297,7 @@ color:white;
     letter-spacing: 1.5vw;
     border: 0.1rem bold white;
     height: 22vw;
-    margin-top: 8vw;
+    margin-top: 7vw;
     border-radius: 15vw;
   }
   .inquirypage{
@@ -310,9 +310,9 @@ color:white;
     line-height: 10vw;
     font-weight: bold;
     letter-spacing: 1.5vw;
-    border: 0.1rem bold white;
-    height: 22vw;
-    margin-top: 8vw;
+    border: 0.1rem solid white;
+    height: 21vw;
+    margin-top: 7vw;
     border-radius: 15vw;
   }
 }
