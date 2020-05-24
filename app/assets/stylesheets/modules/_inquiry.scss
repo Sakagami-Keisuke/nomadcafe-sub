@@ -132,4 +132,22 @@
       line-height: 5vw;
       white-space: normal
     }
+    .confirm-table{
+      text-align: left;
+      width: 90vw;
+      .name{
+        text-align: left;
+        height: 15vw;
+        line-height: 5vw;
+        overflow:auto;
+      }
+      .textarea {
+        height: 60vw;
+        line-height: 5vw;
+        overflow:auto;
+      }
+
+
+    }
+
 }
