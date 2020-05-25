@@ -1,7 +1,7 @@
 Shop.seed do |s|
   s.id = 1
   s.name = "エンジニアカフェ"
-  s.englishname = "Engineer Cafe"
+  s.englishname = "EngineerCafe"
   s.address = "〒810-0001 福岡県福岡市中央区天神1丁目15−30"
   s.evaluation = 5
   s.mood = "静か Quiet"
@@ -16,7 +16,7 @@ end
 Shop.seed do |s|
   s.id = 2
   s.name = "カフェベローチェ"
-  s.englishname = "CAFE VELOCE 1chome"
+  s.englishname = "CafeVeloce "
   s.address = "〒810-0001 福岡県福岡市中央区天神1丁目12−20"
   s.evaluation = 3
   s.mood = "賑やか  Rowdy"
@@ -30,8 +30,8 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 3
-  s.name = "BOOK & CO."
-  s.englishname = "BOOK & CO."
+  s.name = "BOOK&CO."
+  s.englishname = "BookAndCo."
   s.address = "〒810-0001 福岡県福岡市中央区天神4丁目4−11"
   s.evaluation = 3
   s.mood = "静か Quiet"
@@ -45,8 +45,8 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 4
-  s.name = "タリーズ 天神店"
-  s.englishname = "TULLY'S COFFEE Tenjin"
+  s.name = "タリーズ天神店"
+  s.englishname = "TULLY'S Tenjin"
   s.address = "〒810-0001 福岡県福岡市中央区天神2丁目14−33"
   s.evaluation = 4
   s.mood = "静か Quiet"
@@ -60,8 +60,8 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 5
-  s.name = "タリーズ 新天町店"
-  s.englishname = "TULLY'S COFFEE Shintencho"
+  s.name = "タリーズ新天町店"
+  s.englishname = "TULLY'S Shintencho"
   s.address = "〒810-0001 福岡県福岡市中央区天神2丁目7−241"
   s.evaluation = 4
   s.mood = "静か Quiet"
@@ -75,8 +75,8 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 6
-  s.name = "スタバ 天神VIORO店"
-  s.englishname = "Starbucks Coffee VIORO"
+  s.name = "スタバ天神VIORO店"
+  s.englishname = "Starbucks VIORO"
   s.address = "〒810-0001 福岡県福岡市中央区天神2丁目10−3"
   s.evaluation = 4
   s.mood = "静か Quiet"
@@ -91,7 +91,7 @@ end
 Shop.seed do |s|
   s.id = 7
   s.name = "スタバメディアモール天神"
-  s.englishname = "Starbucks Coffee MediaMallTenjin"
+  s.englishname = "Starbucks MediaMallTenjin"
   s.address = "〒810-0001 福岡県福岡市中央区天神1丁目10−13"
   s.evaluation = 4
   s.mood = "少し賑やか a little Rowdy"
@@ -105,8 +105,8 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 8
-  s.name = "コメダコーヒー天神南店"
-  s.englishname = "KOMEDA Coffe SouthTenjin"
+  s.name = "コメダ天神南店"
+  s.englishname = "Komeda Coffe"
   s.address = "〒810-0001 福岡県福岡市中央区天神2丁目2−1"
   s.evaluation = 4.5
   s.mood = "少し賑やか a little Rowdy"
@@ -121,7 +121,7 @@ end
 Shop.seed do |s|
   s.id = 9
   s.name = "スタバ天神地下街店"
-  s.englishname = "Starbucks Coffee TenjinUnderground"
+  s.englishname = "Starbucks TenjinUnderground"
   s.address = "〒810-0000 福岡県福岡市中央区天神2丁目地下0号"
   s.evaluation = 3
   s.mood = "賑やか  Rowdy"
@@ -135,7 +135,7 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 10
-  s.name = "マクドナルド新天町店"
+  s.name = "マクド新天町店"
   s.englishname = " McDonald's Shintencho"
   s.address = "〒810-0001 福岡県福岡市中央区天神2丁目9−202"
   s.evaluation = 4
@@ -151,7 +151,7 @@ end
 Shop.seed do |s|
   s.id = 11
   s.name = "VITO中洲ゲイツ店"
-  s.englishname = "VITO Coffe NakasuGate's"
+  s.englishname = "VITO NakasuGate's"
   s.address = "〒810-0801 福岡県福岡市博多区中洲3丁目7−24"
   s.evaluation = 3.5
   s.mood = "静か Quiet"
@@ -181,7 +181,7 @@ end
 Shop.seed do |s|
   s.id = 13
   s.name = "スタバ天神西通店"
-  s.englishname = "Starbucks Coffee WestStreet"
+  s.englishname = "Starbucks  WestStreet"
   s.address = "〒810-0041 福岡県福岡市中央区大名1丁目13−25"
   s.evaluation = 3
   s.mood = "少し賑やか a little Rowdy"
@@ -196,7 +196,7 @@ end
 Shop.seed do |s|
   s.id = 14
   s.name = "スタートアップカフェ"
-  s.englishname = "Startup Cafe"
+  s.englishname = "StartUpCafe"
   s.address = "〒810-0041 福岡県福岡市中央区大名2丁目6−11"
   s.evaluation = 4
   s.mood = "静か Quiet"
@@ -210,8 +210,8 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 15
-  s.name = "タリーズコーヒー西鉄天神駅店"
-  s.englishname = "TULLY'S COFFEE Tenjin.sta"
+  s.name = "タリーズ西鉄天神駅店"
+  s.englishname = "TULLY'S Tenjin.sta"
   s.address = "〒810-0001 福岡県福岡市博多区天神2丁目11−3"
   s.evaluation = 4
   s.mood = "静か Quiet"
@@ -226,7 +226,7 @@ end
 Shop.seed do |s|
   s.id = 16
   s.name = "レックコーヒー天神店"
-  s.englishname = "Rec Coffe Tenjin"
+  s.englishname = "RecCoffe Tenjin"
   s.address = "〒810-0001 福岡県福岡市中央区天神2丁目3−37"
   s.evaluation = 4.5
   s.mood = "静か Quiet"
@@ -241,7 +241,7 @@ end
 Shop.seed do |s|
   s.id = 17
   s.name = "グランドミラージュカフェ"
-  s.englishname = "GRAND MIRAGE Cafe"
+  s.englishname = "GrandMirageCafe"
   s.address = "〒810-0021 福岡県福岡市中央区今泉1丁目17−16"
   s.evaluation = 4
   s.mood = "少し賑やか a little Rowdy"
@@ -255,8 +255,8 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 18
-  s.name = "上島珈琲店 天神地下街店"
-  s.englishname = "Ueshima Coffe TenjinUnderground"
+  s.name = "上島珈琲 天神地下街店"
+  s.englishname = "Ueshima Coffe"
   s.address = "〒810-0001 福岡県福岡市中央区天神2丁目地下3号"
   s.evaluation = 3.5
   s.mood = "少し賑やか a little Rowdy"
