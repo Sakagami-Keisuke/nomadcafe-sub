@@ -34,6 +34,7 @@
     border-radius: 10vw;
     background-color: rgba(112, 108, 108, 0.5);
     transition: .4s;
+    box-shadow: 5px 5px 5px 2px gray;
   }
   .btn-primary:hover {
     background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
@@ -69,6 +70,7 @@
     border-radius: 10vw;
     background-color: rgba(112, 108, 108, 0.5);
     transition: .4s;
+    box-shadow: 5px 5px 5px 2px gray;
   }
   .inquiry-backbtn:hover {
     background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
@@ -77,6 +79,7 @@
     background-size:cover;
     border-color: white;
     color:white;
+    box-shadow: 5px 5px 5px 2px gray;
   }
 
   .inquiry-sendbtn{

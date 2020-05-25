@@ -6,26 +6,26 @@
     %p.toptext-eng We will guide you to wifi and power-free Cafes suitable "for nomad work"
   .hedaer-box
     .hedaer-innner
-  .user-sessions-form
-    .blankspace
-    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-      .field
-        = f.label :ニックネーム
-        %br/
-        = f.text_field :nickname, class:'nickname', placeholder:"nickname", autofocus: true
-      .field
-        = f.label :パスワード
-        - if @minimum_password_length
-          %em
-            (#{@minimum_password_length} 文字以上)
-        %br/
-        = f.password_field :password, class:'password', placeholder:"passward",  autocomplete: "new-password"
-      .field
-        = f.label :パスワード（再確認）
-        %br/
-        = f.password_field :password_confirmation, class:'password_confirmation', placeholder:"password_confirmation", autocomplete: "new-password"
-      .actions
-        = f.submit "sign in",class:"sessions-btn"
+  -# .user-sessions-form
+  -#   .blankspace
+  -#   = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+  -#     .field
+  -#       = f.label :ニックネーム
+  -#       %br/
+  -#       = f.text_field :nickname, class:'nickname', placeholder:"nickname", autofocus: true
+  -#     .field
+  -#       = f.label :パスワード
+  -#       - if @minimum_password_length
+  -#         %em
+  -#           (#{@minimum_password_length} 文字以上)
+  -#       %br/
+  -#       = f.password_field :password, class:'password', placeholder:"passward",  autocomplete: "new-password"
+  -#     .field
+  -#       = f.label :パスワード（再確認）
+  -#       %br/
+  -#       = f.password_field :password_confirmation, class:'password_confirmation', placeholder:"password_confirmation", autocomplete: "new-password"
+  -#     .actions
+  -#       = f.submit "sign in",class:"sessions-btn"
 
   .easy-login
   = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
@@ -47,3 +47,25 @@
     = f.hidden_field :password, value: "ayu0000"
     = f.hidden_field :password_confirmation, value: "ayu0000"
     = f.submit "かんたんログイン（ayu）", class:"e-login-btn"
+
+
+  .user-sessions-form
+  .blankspace
+  = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+    .field
+      = f.label :ニックネーム
+      %br/
+      = f.text_field :nickname, class:'nickname', placeholder:"nickname", autofocus: true
+    .field
+      = f.label :パスワード
+      - if @minimum_password_length
+        %em
+          (#{@minimum_password_length} 文字以上)
+      %br/
+      = f.password_field :password, class:'password', placeholder:"passward",  autocomplete: "new-password"
+    .field
+      = f.label :パスワード（再確認）
+      %br/
+      = f.password_field :password_confirmation, class:'password_confirmation', placeholder:"password_confirmation", autocomplete: "new-password"
+    .actions
+      = f.submit "sign in",class:"sessions-btn"
