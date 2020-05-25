@@ -268,3 +268,18 @@ Shop.seed do |s|
   s.latitude = "33.592261"
   s.longitude = "130.398746"
 end
+Shop.seed do |s|
+  s.id = 19
+  s.name = "シアトルズベスト 天神西通店"
+  s.englishname = "Seattle'sBestWeststreet"
+  s.address = "〒810-0001 福岡県福岡市中央区天神２丁目５−１７"
+  s.evaluation = 4.5
+  s.mood = "少し賑やか a little Rowdy"
+  s.price = "¥300円〜"
+  s.power = "8席 8seats"
+  s.open_time = "80時0分"
+  s.close_time = "23時"
+  s.holiday = "不定休 random opening hours"
+  s.latitude = "33.587793"
+  s.longitude = "130.397136"
+end
