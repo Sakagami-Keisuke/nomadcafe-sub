@@ -30,7 +30,7 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 3
-  s.name = "BOOK&CO."
+  s.name = "BOOK & CO."
   s.englishname = "BookAndCo."
   s.address = "〒810-0001 福岡県福岡市中央区天神4丁目4−11"
   s.evaluation = 3
@@ -45,7 +45,7 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 4
-  s.name = "タリーズ天神店"
+  s.name = "タリーズ 天神店"
   s.englishname = "TULLY'S Tenjin"
   s.address = "〒810-0001 福岡県福岡市中央区天神2丁目14−33"
   s.evaluation = 4
@@ -60,7 +60,7 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 5
-  s.name = "タリーズ新天町店"
+  s.name = "タリーズ 新天町店"
   s.englishname = "TULLY'S Shintencho"
   s.address = "〒810-0001 福岡県福岡市中央区天神2丁目7−241"
   s.evaluation = 4
@@ -75,7 +75,7 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 6
-  s.name = "スタバ天神VIORO店"
+  s.name = "スタバ 天神VIORO店"
   s.englishname = "Starbucks VIORO"
   s.address = "〒810-0001 福岡県福岡市中央区天神2丁目10−3"
   s.evaluation = 4
@@ -90,7 +90,7 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 7
-  s.name = "スタバメディアモール天神"
+  s.name = "スタバ メディアモール天神"
   s.englishname = "Starbucks MediaMallTenjin"
   s.address = "〒810-0001 福岡県福岡市中央区天神1丁目10−13"
   s.evaluation = 4
@@ -105,7 +105,7 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 8
-  s.name = "コメダ天神南店"
+  s.name = "コメダ 天神南店"
   s.englishname = "Komeda Coffe"
   s.address = "〒810-0001 福岡県福岡市中央区天神2丁目2−1"
   s.evaluation = 4.5
@@ -120,7 +120,7 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 9
-  s.name = "スタバ天神地下街店"
+  s.name = "スタバ 天神地下街店"
   s.englishname = "Starbucks TenjinUnderground"
   s.address = "〒810-0000 福岡県福岡市中央区天神2丁目地下0号"
   s.evaluation = 3
@@ -135,7 +135,7 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 10
-  s.name = "マクド新天町店"
+  s.name = "マクド 新天町店"
   s.englishname = " McDonald's Shintencho"
   s.address = "〒810-0001 福岡県福岡市中央区天神2丁目9−202"
   s.evaluation = 4
@@ -150,7 +150,7 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 11
-  s.name = "VITO中洲ゲイツ店"
+  s.name = "VITO 中洲ゲイツ店"
   s.englishname = "VITO NakasuGate's"
   s.address = "〒810-0801 福岡県福岡市博多区中洲3丁目7−24"
   s.evaluation = 3.5
@@ -165,7 +165,7 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 12
-  s.name = "Café&Meal MUJI"
+  s.name = "Café & Meal MUJI"
   s.englishname = "Café&Meal MUJI"
   s.address = "〒810-0041 福岡県福岡市中央区大名1丁目15−41"
   s.evaluation = 3.5
@@ -180,7 +180,7 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 13
-  s.name = "スタバ天神西通店"
+  s.name = "スタバ 天神西通店"
   s.englishname = "Starbucks  WestStreet"
   s.address = "〒810-0041 福岡県福岡市中央区大名1丁目13−25"
   s.evaluation = 3
@@ -210,7 +210,7 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 15
-  s.name = "タリーズ西鉄天神駅店"
+  s.name = "タリーズ 西鉄天神駅店"
   s.englishname = "TULLY'S Tenjin.sta"
   s.address = "〒810-0001 福岡県福岡市博多区天神2丁目11−3"
   s.evaluation = 4
@@ -225,7 +225,7 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 16
-  s.name = "レックコーヒー天神店"
+  s.name = "レックコーヒー 天神店"
   s.englishname = "RecCoffe Tenjin"
   s.address = "〒810-0001 福岡県福岡市中央区天神2丁目3−37"
   s.evaluation = 4.5
@@ -240,7 +240,7 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 17
-  s.name = "グランドミラージュカフェ"
+  s.name = "グランドミラージュ カフェ"
   s.englishname = "GrandMirageCafe"
   s.address = "〒810-0021 福岡県福岡市中央区今泉1丁目17−16"
   s.evaluation = 4
