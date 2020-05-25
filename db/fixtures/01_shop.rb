@@ -30,8 +30,8 @@ Shop.seed do |s|
 end
 Shop.seed do |s|
   s.id = 3
-  s.name = "BOOK & CO."
-  s.englishname = "BookAndCo."
+  s.name = "ブックアンドコー"
+  s.englishname = "Book&Co."
   s.address = "〒810-0001 福岡県福岡市中央区天神4丁目4−11"
   s.evaluation = 3
   s.mood = "静か Quiet"
