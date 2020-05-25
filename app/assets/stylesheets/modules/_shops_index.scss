@@ -1,9 +1,5 @@
 .background-index{
-  background: linear-gradient(to top, rgba(190, 158, 190, 0.5) 100%, rgba(74, 115, 119, 0.5) 100%),url(/images/art2.jpg);
-  background-repeat:  repeat-y;  /* 背景の繰り返し設定 */
-  background-position: center;    /* 背景の位置指定 */
-  // background-size:cover;
-  background-size:contain;                               /* 画像のサイズを指定    */
+  background: linear-gradient(to top right, brown, white);
   width:100%;                                            /* 横幅のサイズを指定    */
   height:4700px;                                          /* 縦幅のサイズを指定    */
 }
@@ -20,8 +16,8 @@
     }
   }
   .googlemap img.map-img{
-    height: 40vw;
-    width: 55vw;
+    height: 60vw;
+    width: 75vw;
   }
     .sample {
       font-family: "Sawarabi Gothic";
@@ -39,8 +35,8 @@ span.shopname{
 .indexbtn-image{
   margin-top: 1vw;
   margin-right: 3vw;
-  width: 6.5vw;
-  height: 5vw;
+  height: 6vw;
+  width: 7.5vw;
   border-radius: 10vw;
   border: 1px solid ;
 }
@@ -206,7 +202,7 @@ $rate5 :$starFull * 5;//星5
   position: relative;
   display: inline-block;
   width: $starFull * 5;
-  height: 3.5vw;
+  height: 4.2vw;
   // height: $starFull;
   font-size: $starFull;
   &:before,&:after{
