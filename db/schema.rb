@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 2020_04_09_052940) do
     t.string "holiday"
     t.decimal "latitude", precision: 9, scale: 6
     t.decimal "longitude", precision: 9, scale: 6
+    t.string "homepage"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

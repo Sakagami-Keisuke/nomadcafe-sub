@@ -13,6 +13,7 @@ class CreateShops < ActiveRecord::Migration[5.2]
       t.string :holiday
       t.decimal :latitude, :precision => 9, :scale => 6
       t.decimal :longitude, :precision => 9, :scale => 6
+      t.string :homepage
       t.timestamps
     end
   end

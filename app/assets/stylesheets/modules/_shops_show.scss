@@ -39,11 +39,10 @@
   line-height: 3vw;
   text-align: center;
   width: 90%;
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-weight: bold;
   letter-spacing: 0.2vw;
   margin: 0 auto;
-  // background-color: rgba(150, 32, 32, 0.2);
   border-radius: 5vw;
 }
 .shop-avalution{
@@ -186,8 +185,35 @@ input[value="sss"]:checked ~ .comments-form{
   box-shadow: 5px 5px 5px 2px gray;
   }
 .return-btn:hover {
-  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
-  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
+  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
+  background-size:cover;
+  border-color: black;
+  color:black;
+}
+.homepage{
+  z-index: 100;
+  float: right;
+  bottom: 210px;
+  right: 30px;
+  position: fixed;
+  padding: 10px;
+}
+.homepage-btn {
+  background-color: rgba(41, 9, 9, 0.25);
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+  line-height: 50px;
+  border: 2px solid rgb(92, 57, 25);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 4px 5px;
+  border-radius: 60px;
+  transition: .4s;
+  box-shadow: 5px 5px 5px 2px gray;
+  }
+.homepage-btn:hover {
   background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
   background-size:cover;
   border-color: black;
@@ -292,10 +318,13 @@ table td{
   width: 35vw;
 }
 
-
-
-
-
-
+.homepage{
+  float: right;
+  bottom: 25vw;
+  left: 3vw;
+}
+.homepage-btn {
+  width: 35vw;
+  }
 
 }

@@ -12,6 +12,7 @@ Shop.seed do |s|
   s.holiday = "最終月曜日"
   s.latitude = "33.593152"
   s.longitude = "130.401884"
+  s.homepage = "https://engineercafe.jp/ja/"
 end
 Shop.seed do |s|
   s.id = 2
@@ -27,6 +28,7 @@ Shop.seed do |s|
   s.holiday = "不定休 random opening hours"
   s.latitude = "33.592187"
   s.longitude = "130.399474"
+  s.homepage = "https://chatnoir-company.com/veloce/"
 end
 Shop.seed do |s|
   s.id = 3
@@ -42,6 +44,7 @@ Shop.seed do |s|
   s.holiday = "不定休 random opening hours"
   s.latitude = "33.593852"
   s.longitude = "130.39835"
+  s.homepage = "https://bookandco.jp"
 end
 Shop.seed do |s|
   s.id = 4
@@ -57,6 +60,7 @@ Shop.seed do |s|
   s.holiday = "不定休 random opening hours"
   s.latitude = "33.591618"
   s.longitude = "130.396871"
+  s.homepage = "https://www.tullys.co.jp"
 end
 Shop.seed do |s|
   s.id = 5
@@ -72,6 +76,7 @@ Shop.seed do |s|
   s.holiday = "不定休 random opening hours"
   s.latitude = "33.590074"
   s.longitude = "130.397071"
+  s.homepage = "https://www.tullys.co.jp"
 end
 Shop.seed do |s|
   s.id = 6
@@ -87,6 +92,7 @@ Shop.seed do |s|
   s.holiday = "不定休 random opening hours"
   s.latitude = "33.589645 "
   s.longitude = "130.398415"
+  s.homepage = "https://www.starbucks.co.jp"
 end
 Shop.seed do |s|
   s.id = 7
@@ -102,6 +108,7 @@ Shop.seed do |s|
   s.holiday = "不定休 random opening hours"
   s.latitude = "33.590907 "
   s.longitude = "130.400564"
+  s.homepage = "https://www.starbucks.co.jp"
 end
 Shop.seed do |s|
   s.id = 8
@@ -117,6 +124,7 @@ Shop.seed do |s|
   s.holiday = "不定休 random opening hours"
   s.latitude = "33.589295"
   s.longitude = "130.403634"
+  s.homepage = "http://www.komeda.co.jp"
 end
 Shop.seed do |s|
   s.id = 9
@@ -132,6 +140,7 @@ Shop.seed do |s|
   s.holiday = "不定休 random opening hours"
   s.latitude = "33.588061"
   s.longitude = "130.401138"
+  s.homepage = "https://www.starbucks.co.jp"
 end
 Shop.seed do |s|
   s.id = 10
@@ -147,6 +156,7 @@ Shop.seed do |s|
   s.holiday = "不定休 random opening hours"
   s.latitude = "33.590196"
   s.longitude = "130.398437"
+  s.homepage = "https://www.mcdonalds.co.jp"
 end
 Shop.seed do |s|
   s.id = 11
@@ -162,6 +172,7 @@ Shop.seed do |s|
   s.holiday = "不定休 random opening hours"
   s.latitude = "33.593775"
   s.longitude = "130.406223"
+  s.homepage = "https://vitojapan.jp"
 end
 Shop.seed do |s|
   s.id = 12
@@ -177,6 +188,7 @@ Shop.seed do |s|
   s.holiday = "不定休 random opening hours"
   s.latitude = "33.587337"
   s.longitude = "130.396749"
+  s.homepage = "https://cafemeal.muji.com/jp"
 end
 Shop.seed do |s|
   s.id = 13
@@ -192,6 +204,7 @@ Shop.seed do |s|
   s.holiday = "不定休 random opening hours"
   s.latitude = "33.587888"
   s.longitude = "130.396641"
+  s.homepage = "https://www.starbucks.co.jp"
 end
 Shop.seed do |s|
   s.id = 14
@@ -207,6 +220,7 @@ Shop.seed do |s|
   s.holiday = "不定休 random opening hours"
   s.latitude = "33.589162"
   s.longitude = "130.395307"
+  s.homepage = "https://startupcafe.jp"
 end
 Shop.seed do |s|
   s.id = 15
@@ -222,6 +236,7 @@ Shop.seed do |s|
   s.holiday = "不定休 random opening hours"
   s.latitude = " 33.589917"
   s.longitude = "130.398976"
+  s.homepage = "https://www.tullys.co.jp/"
 end
 Shop.seed do |s|
   s.id = 16
@@ -237,6 +252,7 @@ Shop.seed do |s|
   s.holiday = "不定休 random opening hours"
   s.latitude = " 33.587336"
   s.longitude = "130.398705"
+  s.homepage = "https://rec-coffee.com/coffee-shop/tenjin"
 end
 Shop.seed do |s|
   s.id = 17
@@ -252,6 +268,7 @@ Shop.seed do |s|
   s.holiday = "土日休 closed on weekends"
   s.latitude = "33.586168"
   s.longitude = "130.39879"
+  s.homepage = "https://grand-mirage.com"
 end
 Shop.seed do |s|
   s.id = 18
@@ -267,6 +284,7 @@ Shop.seed do |s|
   s.holiday = "不定休 random opening hours"
   s.latitude = "33.592261"
   s.longitude = "130.398746"
+  s.homepage = "https://www.ueshima-coffee-ten.jp"
 end
 Shop.seed do |s|
   s.id = 19
@@ -282,4 +300,5 @@ Shop.seed do |s|
   s.holiday = "不定休 random opening hours"
   s.latitude = "33.587793"
   s.longitude = "130.397136"
+  s.homepage = "http://www.jrff.co.jp/seabest/"
 end
