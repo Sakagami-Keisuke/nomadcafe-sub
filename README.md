@@ -60,8 +60,9 @@ https://sakagami-keisuke-aws-app.com/
 &emsp;&emsp;ローカル環境にてDocker実装、Dockerfile、Docker-composeにてイメージ、コンテナを管理<br>
 **13）テストの実施（model)<br>**
 &emsp;&emsp;RSpec、factory_bot使用<br>
-**14）Docker環境をやめて、手動デプロイ変更 rails＋unicorn+nginx**<br>
-&emsp;&emsp;Rails環境リポジトリ=nomadcafe-sub<br>
+https://github.com/Sakagami-Keisuke/nomadcafe<br><br>
+
+**14）リポジトリごとコピー Docker環境をやめて、手動デプロイ rails＋unicorn+nginx**<br>
 
 〜以下、CircleCI自動デプロイ作業=nomadcafe-subリポジトリ〜<br>
 https://github.com/Sakagami-Keisuke/nomadcafe-sub<br>
