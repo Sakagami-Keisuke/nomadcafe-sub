@@ -110,8 +110,8 @@ https://qiita.com/SakagamiKeisuke
 **●バックエンド<br>**
 &emsp;&emsp;ruby 2.5.1 <br>
 &emsp;&emsp;Ruby on Rails 5.2.4.2<br>
-**●データベース<br>**
-&emsp;&emsp;MySQL5.6
+**●データベース**<br>
+&emsp;&emsp;MySQL5.6  
 **●テスト<br>**
 &emsp;&emsp;RSpec, factory_bot<br> 
 **●インフラ<br>**
@@ -120,6 +120,12 @@ https://qiita.com/SakagamiKeisuke
 &emsp;&emsp;Nginx手動デプロイ<br>
 &emsp;&emsp;独自ドメイン、SSL/HTTPS<br>
 &emsp;&emsp;CircleCI（作業中） <br>
+**●Gem<br>**
+haml-rails/font-awesome-sass/pry-rails/seed-fu<br>
+devise/devise-i18n/devise-i18n-views<br>
+carrierwave/mini_magick/jquery-rails<br>
+unicorn/mini_racer/dotenv-rails<br>
+rspec-rails/factory_bot_rails<br><br>
 
 **連絡先**
 ----------
