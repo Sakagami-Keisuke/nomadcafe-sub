@@ -1,7 +1,6 @@
 **個人制作アプリ NomadCafe-sub**<br>
 https://sakagami-keisuke-aws-app.com/
 ----------
-
 |root|かんたんログイン|カフェ一覧|カフェ詳細|
 |---|---|---|---|
 |![](https://user-images.githubusercontent.com/60636597/82975335-17ab0f80-a017-11ea-82f6-2ed8f5df1161.PNG)|![](https://user-images.githubusercontent.com/60636597/82975362-2bef0c80-a017-11ea-84f1-188202c066eb.PNG)|![](https://user-images.githubusercontent.com/60636597/82975390-4628ea80-a017-11ea-86f5-dabf1d11f84e.PNG)|![](https://user-images.githubusercontent.com/60636597/82975443-66f14000-a017-11ea-84fa-caddfd97815b.PNG)|  
@@ -9,9 +8,8 @@ https://sakagami-keisuke-aws-app.com/
 |![](https://user-images.githubusercontent.com/60636597/82976519-42e32e00-a01a-11ea-99a4-16082d065a38.PNG)|![](https://user-images.githubusercontent.com/60636597/82976951-6bb7f300-a01b-11ea-95ed-8dea15efef2f.PNG)|![](https://user-images.githubusercontent.com/60636597/82977033-9d30be80-a01b-11ea-8683-0223d23f1531.PNG)|  
 
 
-**開発に対する想い**
+**アイデア**
 ----------
-**ビフォアコロナのアイデアです<br>**
 **■FreeWifi+Free電源のカフェは生活必需のインフラである<br>**
 &emsp;&emsp;私は福岡市に引越しした時、真っ先に探したのがスーパーマーケットとFreeWifi＋Free電源のあるカフェでした<br>
 **■正確、最新、集約的なFreeWifi+Free電源のカフェの情報は、ググってもありませんでした<br>**
@@ -60,9 +58,8 @@ https://sakagami-keisuke-aws-app.com/
 &emsp;&emsp;ローカル環境にてDocker実装、Dockerfile、Docker-composeにてイメージ、コンテナを管理<br>
 **13）テストの実施（model)<br>**
 &emsp;&emsp;RSpec、factory_bot使用<br>
-https://github.com/Sakagami-Keisuke/nomadcafe<br><br>
-
-**14）リポジトリごとコピー Docker環境をやめて、手動デプロイ rails＋unicorn+nginx**<br>
+**14）Docker環境をやめて、手動デプロイ変更 rails＋unicorn+nginx**<br>
+&emsp;&emsp;Rails環境リポジトリ=nomadcafe-sub<br>
 
 〜以下、CircleCI自動デプロイ作業=nomadcafe-subリポジトリ〜<br>
 https://github.com/Sakagami-Keisuke/nomadcafe-sub<br>
@@ -103,31 +100,32 @@ https://qiita.com/SakagamiKeisuke
 ○ Docker（コンテナサービス）活用<br>
 ○ CI/CD CircleCI活用(作業中)<br>
 
-**言語・使用技術**
-----------
-**●フロント<br>**
-&emsp;&emsp;Haml/scss/JavaScript<br>
-**●バックエンド<br>**
-&emsp;&emsp;ruby 2.5.1 <br>
-&emsp;&emsp;Ruby on Rails 5.2.4.2<br>
-**●データベース**<br>
-&emsp;&emsp;MySQL5.6  
-**●テスト<br>**
-&emsp;&emsp;RSpec, factory_bot<br> 
-**●インフラ<br>**
-&emsp;&emsp;AWS EC2 Linux2 t3small,Route 53 <br>
-**●本番環境<br>**
-&emsp;&emsp;Nginx手動デプロイ<br>
-&emsp;&emsp;独自ドメイン、SSL/HTTPS<br>
-&emsp;&emsp;CircleCI（作業中） <br>
-**●Gem<br>**
+**使用言語技術**
+--------------
+言語・フレームワーク<br>
+&emsp;&emsp;Ruby2.5.1/Rails2.5.1<br>
+フロント<br>
+&emsp;&emsp;THML/CSS Haml/SCSS/Javascript/API<br>
+データベース<br>
+&emsp;&emsp;MySQL5.6<br>
+テスト<br>
+&emsp;&emsp;RSpec/factory_bot<br>
+インフラ<br>
+&emsp;&emsp;AWS EC2 Linux2AMI t3small<br>
+ドメイン・DNS<br>
+&emsp;&emsp;お名前ドットコム/AWS Route53<br>
+本番環境<br>
+&emsp;&emsp;webサーバー/Nginx 手動デプロイ<br>
+&emsp;&emsp;CircleCI（学習中）<br>
+使用Gem<br>
 haml-rails/font-awesome-sass/pry-rails/seed-fu<br>
 devise/devise-i18n/devise-i18n-views<br>
 carrierwave/mini_magick/jquery-rails<br>
 unicorn/mini_racer/dotenv-rails<br>
 rspec-rails/factory_bot_rails<br><br>
 
-**連絡先**
+
+連絡先
 ----------
-**坂上計介 サカガミケイスケ
-&emsp;&emsp;Gmail / iwayasunset@gmail.com** &emsp;&emsp;twitter / https://twitter.com/slope_top_kei
+坂上計介 サカガミケイスケ
+&emsp;&emsp;Gmail / iwayasunset@gmail.com &emsp;&emsp;twitter / https://twitter.com/slope_top_kei
