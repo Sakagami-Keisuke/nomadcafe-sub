@@ -116,7 +116,7 @@ https://qiita.com/SakagamiKeisuke
 &emsp;&emsp;お名前ドットコム/AWS Route53<br>
 本番環境<br>
 &emsp;&emsp;webサーバー/Nginx 手動デプロイ<br>
-&emsp;&emsp;CircleCI（学習中）<br>
+&emsp;&emsp;CircleCI（もう少し）<br>
 使用Gem<br>
 haml-rails/font-awesome-sass/pry-rails/seed-fu<br>
 devise/devise-i18n/devise-i18n-views<br>
