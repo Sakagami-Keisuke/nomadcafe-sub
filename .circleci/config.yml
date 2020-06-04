@@ -6,7 +6,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "3f:e9:ee:a1:88:05:be:c4:59:74:26:18:8e:16:ad:65" #上記メモったハッシュを指定
+            - "75:46:eb:b1:77:e4:f5:55:f2:30:db:68:22:12:f3:65" #上記メモったハッシュを指定
       - run: ssh -p $SSH_PORT $SSH_USER@$SSH_HOST "sudo ~/deploy-me.sh"
  
 workflows:
