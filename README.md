@@ -1,9 +1,10 @@
+＜＜circleCI動作チェック＞＞
 **個人制作アプリ NomadCafe-sub**<br>
 https://sakagami-keisuke-aws-app.com/
 ----------
 |root|かんたんログイン|カフェ一覧|カフェ詳細|
 |---|---|---|---|
-|![](https://user-images.githubusercontent.com/60636597/82975335-17ab0f80-a017-11ea-82f6-2ed8f5df1161.PNG)|![](https://user-images.githubusercontent.com/60636597/82975362-2bef0c80-a017-11ea-84f1-188202c066eb.PNG)|![](https://user-images.githubusercontent.com/60636597/82975390-4628ea80-a017-11ea-86f5-dabf1d11f84e.PNG)|![](https://user-images.githubusercontent.com/60636597/82975443-66f14000-a017-11ea-84fa-caddfd97815b.PNG)|  
+|![](https://user-images.githubusercontent.com/60636597/82975335-17ab0f80-a017-11ea-82f6-2ed8f5df1161.PNG)|![](https://user-images.githubusercontent.com/60636597/82975362-2bef0c80-a017-11ea-84f1-188202c066eb.PNG)|![](https://user-images.githubusercontent.com/60636597/82975390-4628ea80-a017-11ea-86f5-dabf1d11f84e.PNG)|![](https://user-images.githubusercontent.com/60636597/82975443-66f14000-a017-11ea-84fa-caddfd97815b.PNG)|
 |カフェ紹詳細|カフェサイト遷移|ナビURLスキーム|
 |![](https://user-images.githubusercontent.com/60636597/82976519-42e32e00-a01a-11ea-99a4-16082d065a38.PNG)|![](https://user-images.githubusercontent.com/60636597/82976951-6bb7f300-a01b-11ea-95ed-8dea15efef2f.PNG)|![](https://user-images.githubusercontent.com/60636597/82977033-9d30be80-a01b-11ea-8683-0223d23f1531.PNG)|  
 
@@ -27,7 +28,7 @@ https://sakagami-keisuke-aws-app.com/
 **このアプリで得られる体験**
 ----------
 ●ノマドワークに適したFreeWifi+Free電源のカフェをGoogleMap、テキストや画像で表示します<br>
-●アプリを開いてすぐに、どんなカフェがあるか具体的な写真で見せて、現在地から行きたいお店まで経路をナビします <br> 
+●アプリを開いてすぐに、どんなカフェがあるか具体的な写真で見せて、現在地から行きたいお店まで経路をナビします <br>
 ●ユーザーにコメント機能で口コミを共有できます<br>
 ●お問い合わせフォームで、ユーザー側からの掲載情報更新の要請などに応えます<br>
 
@@ -35,9 +36,9 @@ https://sakagami-keisuke-aws-app.com/
 ----------
 **１）デモデータの充実(起動時にdb:seef.fuコマンドでモデルに事前投入）<br>**
 &emsp;&emsp;デモデータ:19件、 デモ画像:95枚<br>
-**２）GoogleMaps地図表示、現在地取得　(Google Cloud Platformサービス maps javascriput API使用) <br>**
-&emsp;&emsp;２種類の地図表示　（お店一覧ページで全店舗の吹き出し表示、お店詳細ページでそのお店だけの吹き出し表示）<br>
-**３）ナビ機能　googlemap URLスキーム（外部依存）利用 <br>**
+**２）GoogleMaps地図表示、現在地取得 (Google Cloud Platformサービス maps javascriput API使用) <br>**
+&emsp;&emsp;２種類の地図表示 （お店一覧ページで全店舗の吹き出し表示、お店詳細ページでそのお店だけの吹き出し表示）<br>
+**３）ナビ機能 googlemap URLスキーム（外部依存）利用 <br>**
 &emsp;&emsp;お店一覧ページで全店舗の吹き出し表示のリンク、お店詳細ページでナビボタン押下で起動 <br>
 &emsp;&emsp;→本家がアプリ起動し同時にナビ開始<br>
 **４）サインイン機能(devise) <br>**
@@ -61,21 +62,22 @@ https://sakagami-keisuke-aws-app.com/
 **14）Docker環境をやめて、手動デプロイ変更 rails＋unicorn+nginx**<br>
 &emsp;&emsp;Rails環境リポジトリ=nomadcafe-sub<br>
 
-〜以下、CircleCI自動デプロイ作業=nomadcafe-subリポジトリ〜<br>
+〜以下、CircleCI自動デプロイ実装 = nomadcafe-sub リポジトリ〜<br>
 https://github.com/Sakagami-Keisuke/nomadcafe-sub<br>
-**15）独自ドメイン取得、AWS Route53DNS、Let’s Encryptで無料SSL証明書取得、HTTPS接続設定**<br>
-**16）スマートフォン実機でのアプリ動作、マップ表示、現在地取得、ナビURLスキーム検証、CSS調整**<br>
-**17）CI/CD CircleCI masterpush自動デプロイ化（学習作業中）**<br><br>
-**18）課題：EC2インスタンスコスト縮減　定時自動起動停止(Lambda とCloudWatch)** <br>
- 
-**Qiita投稿 現在10記事　他執筆中**
-----------    
+**15）独自ドメイン取得、AWS Route53DNS、Let’s Encryptで無料SSL証明書取得、HTTPS設定**<br>
+**16）スマホ実機でアプリ動作、マップ表示、現在地取得、ナビURLスキーム検証、CSSチェック**<br>
+**17）CircleCI push origin/master merge で自動デプロイ**<br><br>
+
+**課題：EC2インスタンスコスト縮減 定時自動起動停止(Lambda とCloudWatch)** <br>
+
+**Qiita投稿 現在10記事 他執筆中**
+----------
 https://qiita.com/SakagamiKeisuke
 
 **開発日数**
 ----------
-**作業期間　2020年3月29日　〜 2020年5月26日<br>**
-のべ工数　61日/426時間 <br>
+**作業期間 2020年3月29日 〜 2020年5月26日<br>**
+のべ工数 62日/436時間 <br>
 
 
 **雑食系サロン等を参考に、自身でマイルストーンを決めて開発作業を実施**
@@ -94,11 +96,11 @@ https://qiita.com/SakagamiKeisuke
 ○ スクラッチCSSである程度装飾<br>
 ○ コードに綺麗にする・静的コードチェックアプリ活用<br>
 ○ RSpecテストを実施<br>
-○ Nginx,Unicorn,Puma,Rake,railsサーバー役割理解<br>
+○ Nginx,Unicorn,Puma,Rake,rails、サーバー理解<br>
 ○ webサーバー nginx理解活用<br>
-○ インフラにAWS/EC2サービス活用(一時VPC,ECR使用,ECSは中止）<br>
-○ Docker（コンテナサービス）活用<br>
-○ CI/CD CircleCI(成功した？？)<br>
+○ インフラにAWS/EC2活用 VPC,ECR,ECSは中止 <br>
+○ Dockerコンテナ環境活用<br>
+○ CI/CD CircleCI 活用<br>
 
 **使用言語技術**
 --------------
