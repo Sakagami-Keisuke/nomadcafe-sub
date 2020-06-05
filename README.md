@@ -1,4 +1,3 @@
-＜＜circleCI動作チェック＞＞
 **個人制作アプリ NomadCafe-sub**<br>
 https://sakagami-keisuke-aws-app.com/
 ----------
