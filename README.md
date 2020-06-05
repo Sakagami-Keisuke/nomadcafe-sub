@@ -98,7 +98,7 @@ https://qiita.com/SakagamiKeisuke
 ○ webサーバー nginx理解活用<br>
 ○ インフラにAWS/EC2サービス活用(一時VPC,ECR使用,ECSは中止）<br>
 ○ Docker（コンテナサービス）活用<br>
-○ CI/CD CircleCI活用(作業中)<br>
+○ CI/CD CircleCI(成功した？？)<br>
 
 **使用言語技術**
 --------------
