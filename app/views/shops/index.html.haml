@@ -59,11 +59,11 @@
             - else
             -# %i.fa.fa-coffee
             -# %span #{shop.name}<br>#{shop.englishname}
-        .edit-box
-          - if current_user.nickname == "TEST" && current_user.id == 1
-            -# = link_to '編集', "/shops/#{shop.id}/edit", method: :get, class: 'edit-btn' 
-            -# = link_to '削除', "/shops/#{shop.id}", method: :delete, class: 'destroy-btn',data: {confirm: "削除しますか？"}
-          - else
+        -# .edit-box
+        -#   - if current_user.nickname == "TEST" && current_user.id == 1
+        -#     = link_to '編集', "/shops/#{shop.id}/edit", method: :get, class: 'edit-btn' 
+        -#     = link_to '削除', "/shops/#{shop.id}", method: :delete, class: 'destroy-btn',data: {confirm: "削除しますか？"}
+        -#   - else
     .blank
     .to-top
       = link_to root_path, class: 'to-top-btn' ,data: {"turbolinks" => false}do
